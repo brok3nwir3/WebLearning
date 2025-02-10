@@ -86,7 +86,7 @@
 - Make sure ICMP (ping) traffic is once again disabled.
 
 ### IAM User Test
-Log out of your root account.
-Sign into your account (or a partners account) with the read-only user.
-Search "EC2" in the AWS console (top of screen).
-If you're able to view running EC2 instances, then the 'ReadOnlyAdmin' policy was updated successfully.
+- Log out of your root account.
+- Sign into your account (or a partners account) with the read-only user.
+- Search "EC2" in the AWS console (top of screen).
+- If you're able to view running EC2 instances, then the 'ReadOnlyAdmin' policy was updated successfully.
