@@ -38,9 +38,9 @@
 - For this exercise you'll need a copy of your EC2 instance key.
 - Note: If you did not save your first key, then simply create a new instance and a new key.
 - Open your terminal and change directory (cd) to the same directory your key is located.
-- Update the permissions for your key file using: chmod 0400 test-key.pem
+- Update the permissions for your key file using: `chmod 0400 test-key.pem`
 - Visit this page to see what the previous command did: https://chmodcommand.com/chmod-0400/
-- Now SSH to your instance using the following command: ssh -i <keyfile>.pem ec2-user@<IPaddress>
+- Now SSH to your instance using the following command: `ssh -i <keyfile>.pem ec2-user@<IPaddress>`
 - You should now be logged into your EC2 instance.
 - Try running a few commands, like: whoami, ping google.com, ls, etc.
 - Note: If you created a new instance and key, make sure to delete them at the end of this exercise.
