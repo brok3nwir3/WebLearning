@@ -4,22 +4,22 @@
 
 ### Setup
 - Open Notepad or another text editor.
-- Copy the contents of the hello_world.html file into the text editor.
-- Save the file as: hello_world.html locally on your system, with 'Save as type' set to 'All Files'.
+- Copy the contents of the `hello_world.html` file into the text editor.
+- Save the file as: `hello_world.html` locally on your system, with 'Save as type' set to 'All Files'.
 
 #### Q1
 - Open the `hello_world.html` file in your browser of choice.
 - a. Where does the 'title' appear?
 
 ### Update 1
-- Open the hello_world.html file in your editor.
+- Open the `hello_world.html` file in your editor.
 - Update the title element to say: '<Your Name>'s Title Page'
 - Update the heading element to say: 'Hello'
 - Upate the paragraph element to say: 'World!'
 - Save the file and open it again in your browser, to view the changes.
 
 ### Update 2
-- Open the hello_world.html file in your editor.
+- Open the `hello_world.html` file in your editor.
 - Copy the heading and paragraph elements, then paste them below the existing ones.
 - Change the copied paragraph element to say 'Universe!'
 - Save the file and open it again in your browser, to view the changes.
@@ -34,7 +34,7 @@
 ### Account Security
 - Make sure your password is unique, i.e. it isn't used on any other websites or services.
 - Save your password somewhere safe, ideally in a password manager.
-- Enable multi-factor authentication (Suggestion: Authy is a great free MFA mobile app.)
+- Enable multi-factor authentication (Suggestion: Authy is a great free MFA mobile app).
 
 ### IAM Policy
 - Search 'IAM' in the AWS console (top of screen).
