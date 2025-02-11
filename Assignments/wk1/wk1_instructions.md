@@ -8,7 +8,7 @@
 - Save the file as: hello_world.html locally on your system, with 'Save as type' set to 'All Files'.
 
 #### Q1
-- Open the hello_world.html file in your browser of choice.
+- Open the `hello_world.html` file in your browser of choice.
 - a. Where does the 'title' appear?
 
 ### Update 1
@@ -37,7 +37,7 @@
 - Enable multi-factor authentication (Suggestion: Authy is a great free MFA mobile app.)
 
 ### IAM Policy
-- Search "IAM" in the AWS console (top of screen).
+- Search 'IAM' in the AWS console (top of screen).
 - Click the 'Policies' tab (left side of screen).
 - Click 'Create policy'.
 - Click the 'JSON' tab.
@@ -46,7 +46,7 @@
 - Click 'Create policy'.
 
 ### IAM User Group
-- Search "IAM" in the AWS console (top of screen).
+- Search 'IAM' in the AWS console (top of screen).
 - Click the 'User Groups' tab (left side of screen).
 - Click 'Create group'.
 - Name the group 'ReadOnlyAdmins'.
@@ -54,7 +54,7 @@
 - Click 'Create user group'.
 
 ### IAM User
-- Search "IAM" in the AWS console (top of screen).
+- Search 'IAM' in the AWS console (top of screen).
 - Click the 'Users' tab (left side of screen).
 - Click 'Create User'.
 - Name the user 'auditor-ro'. Note: You could replace 'auditor' with the name of a classmate/partner.
@@ -74,12 +74,12 @@
 - Try signing into the account with the read-only user.
 - You should be prompted to change the users password to something new.
 
-#### Check 1...
-- Next, search "IAM" in the AWS console (top of screen).
+#### Check 1
+- Next, search 'IAM' in the AWS console (top of screen).
 - Click the 'Policies' tab (left side of screen).
 - Search for the 'ReadOnlyAdmin' policy.
 - If you see the policy, the first check is done.
 
-#### Check 2...
-- Next, search "EC2" in the AWS console (top of screen).
+#### Check 2
+- Next, search 'EC2' in the AWS console (top of screen).
 - If the page says 'Insuffcient permissions' or is blank, then your read-only user was created successfully.
