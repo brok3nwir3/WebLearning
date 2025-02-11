@@ -24,15 +24,41 @@
 
 ## AWS
 
+### EC2 SSH - Console Instance Connect
+- Search 'EC2' in the AWS console (top of screen).
+- Click the 'instances' button, under the resources menu (center of screen).
+- Click the checkbox of an instance.
+- Click 'connect' option (above the instance).
+- This should take you to the 'EC2 Instance Connect' menu.
+- Click 'Connect'.
+- You should now be logged into your EC2 instance.
+- Try running a few commands, like: whoami, ping google.com, ls, etc.
+
+### EC2 SSH - Terminal From Local Host
+- For this exercise you'll need a copy of your EC2 instance key.
+- Note: If you did not save your first key, then simply create a new instance and a new key.
+- Open your terminal and change directory (cd) to the same directory your key is located.
+- Update the permissions for your key file using: chmod 0400 test-key.pem
+- Visit this page to see what the previous command did: https://chmodcommand.com/chmod-0400/
+- Now SSH to your instance using the following command: ssh -i <keyfile>.pem ec2-user@<IPaddress>
+- You should now be logged into your EC2 instance.
+- Try running a few commands, like: whoami, ping google.com, ls, etc.
+- Note: If you created a new instance and key, make sure to delete them at the end of this exercise.
+
 ### Billing Budget
 - Log into AWS with your root account.
-- Search "Billing and Cost Management" in the AWS console (top of screen).
-- Click the 'Budget' tab (left side of screen).
+- Search 'Billing and Cost Management' in the AWS console (top of screen).
+- Scroll down to 'Budgets and Planning,' then click the 'Budgets' tab (left side of screen).
 - Click 'Create a budget'.
-- **WIP**
+- By default a budget template for 'Zero spend' should be selected.
+- Add a budget name, like 'My Zero Spend Budget'.
+- Add an email recipient.
+- Click 'Create budget'.
+- You now have a budget that will alert you if your account is charged any amount money.
+- Note: If you are not a free-tier user, repeat these steps, but select the 'Monthly cost budget' template.
 
 ### Cost Explorer
-- Search "Billing and Cost Management" in the AWS console (top of screen).
+- Search 'Billing and Cost Management' in the AWS console (top of screen).
 - Click the 'Cost Explorer' tab (left side of screen).
 - Click the 'Date Range' in the 'Report Parameters' section (right side of screen).
 - Click 'More' under the options for 'Past:' and select '1 Year'.
