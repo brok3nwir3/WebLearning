@@ -26,7 +26,7 @@
 ## AWS
 
 ### IAM Policy Update (Add EC2 Read)
-- Search "IAM" in the AWS console (top of screen).
+- Search 'IAM' in the AWS console (top of screen).
 - Click the 'Policies' tab (left side of screen).
 - Search for 'ReadOnlyAdmin' and click the policy.
 - Click the 'JSON' button.
@@ -36,7 +36,7 @@
 - Click 'Save changes'.
 
 ### EC2 Security Group
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - Click the 'Security Groups' tab (left side of screen, nested under Network & Security).
 - Click 'Create security group'.
 - Name your security group 'ec2-ssh-allow'.
@@ -46,14 +46,14 @@
 - Leave all other options to their default setting, and click 'Create security group'.
 
 ### EC2 Key Pair
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - Click the 'Key Pairs' tab (left side of screen, nested under Network & Security).
 - Click 'Create key pair'.
 - Name the key pair 'test-instance-key'.
 - Leave all other options to their default setting, click 'Create key pair'.
 
 ### EC2 Instance
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - Click the 'Instances' tab (left side of screen, nested under 'Instances').
 - Click 'Launch instances'.
 - Name the instance 'test-instance'.
@@ -65,7 +65,7 @@
 - Leave all other options to their default setting, click 'Launch instance'.
 
 #### EC2 Network Test 1
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - Click the 'Instances' tab (left side of screen, nested under 'Instances').
 - Check that your 'test-instance' has a green 'Status check'. This may take a moment.
 - Note the 'Public IPv4 address'.
@@ -73,7 +73,7 @@
 - This should result in a 'Request timed out' message.
 
 #### EC2 Network Test 2
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - Click the 'Security Groups' tab (left side of screen, nested under Network & Security).
 - Click your 'ec2-ssh-allow' rule from the list.
 - Click 'Edit inbound rules'.
@@ -88,5 +88,5 @@
 ### IAM User Test
 - Log out of your root account.
 - Sign into your account (or a partners account) with the read-only user.
-- Search "EC2" in the AWS console (top of screen).
+- Search 'EC2' in the AWS console (top of screen).
 - If you're able to view running EC2 instances, then the 'ReadOnlyAdmin' policy was updated successfully.
