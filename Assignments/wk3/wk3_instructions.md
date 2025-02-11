@@ -54,7 +54,7 @@
 - Add a budget name, like 'My Zero Spend Budget'.
 - Add an email recipient.
 - Click 'Create budget'.
-- You now have a budget that will alert you if your account is charged any amount money.
+- You now have a budget that will preemptively alert you if your account is going to be charge any amount money.
 - Note: If you are not a free-tier user, repeat these steps, but select the 'Monthly cost budget' template.
 
 ### Cost Explorer
