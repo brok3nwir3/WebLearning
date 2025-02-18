@@ -58,5 +58,18 @@
 - https://aws.amazon.com/compare/the-difference-between-on-demand-instances-and-reserved-instances/
 - Note: For accounts with both on-demand and reserved instances, you'll have to view them in their respective instance tabs (i.e. they don't all show up in the same place).
 
-### WIP
+### Creating an EC2 Image
 - Search 'EC2' in the AWS console (top of screen).
+- Navigate to "Instances" and select one of your instances; If you have none, create one.
+- Connect to your instance.
+- Run the following command:
+- `touch test-file.txt`
+- Open test-file.txt and add some text like, "validity test" or something similar.
+- Disconnect from your instance, select the instance from the "Instance" menu, click "Instance state" and click "Stop instance".
+- Click the stopped instance, click "Actions" > "Images and templates" > "Create image".
+- Name the image "test-instance-image", leave all other settings to defaults, and click "Create image".
+- Note: It make take a few minutes for the image job to complete.
+- Next, navigate to: "EC2" > "Images" > "AMIs" and ensure your image has been created successfully.
+- Create a launch a new instance named "test-instance" using your saved image.
+- Note: You'll find the saved image under "Application and OS Images" > "My AMIs".
+- Lastly, connect to the new instance and locate `test-file.txt`
