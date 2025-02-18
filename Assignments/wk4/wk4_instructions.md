@@ -64,7 +64,7 @@
 - Connect to your instance.
 - Run the following command:
 - `touch test-file.txt`
-- Open test-file.txt and add some text like, "validity test" or something similar.
+- Open `test-file.txt` with a nano or another text editor, and add some text like, "validity test" or something similar.
 - Disconnect from your instance, select the instance from the "Instance" menu, click "Instance state" and click "Stop instance".
 - Click the stopped instance, click "Actions" > "Images and templates" > "Create image".
 - Name the image "test-instance-image", leave all other settings to defaults, and click "Create image".
