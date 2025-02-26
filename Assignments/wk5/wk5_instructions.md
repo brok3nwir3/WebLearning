@@ -1,4 +1,4 @@
-**`Week 5 - HTML Hyperlinks, CSS, and AWS Billing.`**
+**`Week 5 - HTML Hyperlinks, Intro to VPCs, and Launch Templates.`**
 
 ## HTML
 
