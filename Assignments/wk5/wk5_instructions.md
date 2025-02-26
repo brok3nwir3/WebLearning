@@ -58,7 +58,7 @@
 - Create a new security group called "allow-all-http" that allows all inbound traffic over port 80 and 443.
 - Add the "coding-hour" resource tag.
 - Expand the "Advanced Details" tab, scroll to the bottom, to the "User data" section.
-- Add the following script, within the text box:
+- Add the following script, within the text box (without the backtick characters):
 `#!/bin/bash`
 `yum update -y`
 `yum install -y httpd`
