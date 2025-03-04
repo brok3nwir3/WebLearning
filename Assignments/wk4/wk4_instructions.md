@@ -1,4 +1,4 @@
-**`Week 4 - HTML Comments, CSS, and AWS Billing.`**
+**`Week 4 - HTML Comments, CSS, and AWS Billing`**
 
 ## HTML
 
