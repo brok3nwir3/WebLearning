@@ -1,4 +1,4 @@
-**`Week 2 - HTML Elements, Attributes, and AWS EC2.`**
+**`Week 2 - HTML Elements, Attributes, and AWS EC2`**
 
 ## HTML
 

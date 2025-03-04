@@ -1,4 +1,4 @@
-**`Week 3 - HTML Headings, Paragraphs, Styles, and AWS Billing.`**
+**`Week 3 - HTML Headings, Paragraphs, Styles, and AWS Billing`**
 
 ## HTML
 
