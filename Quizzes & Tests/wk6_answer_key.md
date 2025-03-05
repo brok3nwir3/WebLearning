@@ -48,6 +48,7 @@ Scroll down for the answers.
 \
 \
 \
+
 1. D
 2. C
 3. D - A key pair must be manually created for your first EC2 instance.
