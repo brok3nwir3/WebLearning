@@ -75,7 +75,7 @@
 - C. Network maintenance
 - D. Access management
 
-13. Which of the following instance types would be ideal for data analysis?
+13. Which of the following instance types is optimized for memory intensive operations, like data analysis or caching?
 - A. R4
 - B. P4
 - C. T4
