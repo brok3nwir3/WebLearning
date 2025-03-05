@@ -1,11 +1,11 @@
 **`Week 6 Quiz - Answer Key`**
 \
 \
-Scroll down for the answers.
+Scroll down for the answers. \/
 \
-\  ||
-\  ||
-\  ||
+  ||\
+  ||\
+  ||\
 \\  /\
  \\/\
 \
