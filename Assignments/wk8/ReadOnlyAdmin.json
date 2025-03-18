@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ReadOnlyAdmin",
+            "Effect": "Allow",
+            "Action": [
+                "iam:Get*",
+                "iam:List*",
+                "iam:Generate*",
+                "ec2:Get*",
+                "ec2:List*",
+                "ec2:Describe*",
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

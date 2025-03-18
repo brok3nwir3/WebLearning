@@ -1,4 +1,4 @@
-**`Week 7 - HTML Images, JavaScript Intro, `**
+**`Week 7 - HTML Images, JavaScript Intro, and AWS EBS & EFS`**
 
 ## HTML
 
