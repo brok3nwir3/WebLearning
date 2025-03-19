@@ -32,7 +32,7 @@
 - Add the relevent lines of code to have at *four* rows and *two* columns (4x2).
 - Add text to each table cell, to match the cell position, for example "1A", "1B", etc.
 - Save the changes, open your HTML file in your browser, and review the changes.
-- Lastly, test when happens when you edit the style block to use `4px`, also try deleting `th`.
+- Lastly, test what happens when you edit the style block to use `4px`, also try deleting `th`.
 
 ## AWS
 
