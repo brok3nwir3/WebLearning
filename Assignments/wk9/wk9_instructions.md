@@ -1,4 +1,4 @@
-**`Week 9 - HTML  Classes, ID Attribute, Iframes, Javascript Buttons, S3 Versioning, `**
+**`Week 9 - HTML  Classes, ID Attribute, Iframes, Javascript Buttons, S3: Versioning, Replication, & Storage Classes`**
 
 ## HTML
 
