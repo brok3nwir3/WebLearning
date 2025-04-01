@@ -1,4 +1,4 @@
-**`Week 8 - HTML Favicon, Tables,  `**
+**`Week 8 - HTML Favicon, Tables, and AWS S3`**
 
 ## HTML
 
