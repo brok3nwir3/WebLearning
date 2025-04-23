@@ -69,6 +69,7 @@
 - Under "Listeners and routing" click "Create target group".
 - Name the target group `alb-test-group` and click "Next".
 - Select the ALB test EC2 instances you created earlier for this exercise.
+- Note: Make sure to click the "Include as pending below" option.
 - Click "Create target group".
 - Return to the ALB settings page, and set your target group to the `alb-test-group`.
 - Click "Create load balancer".
@@ -93,3 +94,6 @@
 - Return to the "Target Groups" tab and select your ALB from the list.
 - Click the "Details" tab and make sure you have `1` "healthy" instance and `1` "unused" instance.
 - Note: It may take a minute for the health checks to complete.
+
+### AWS Clean Up Reminder
+- Once you're finished, make sure to terminate any unused project assets.
