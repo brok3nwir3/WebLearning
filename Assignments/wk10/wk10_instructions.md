@@ -71,7 +71,8 @@
 - Return to the ALB settings page, and set your target group to the `alb-test-group`.
 - Click "Create load balancer".
 
-### Test Your ALB, Pt. 1
+### Test 1 - ALB Load Balancing
+- Search 'EC2' in the AWS console (top of screen).
 - Navigate to the "Load Balancers" tab (Bottom left).
 - You should see your ALB in the list.
 - Note: It may take a minute for the ALB to fully provision.
@@ -81,12 +82,12 @@
 - Press the F5 key repeatedly and you should see the listed IP address change.
 - This means your http application is successfully load balancing between the two instances.
 
-### Test Your ALB, Pt. 2
-- Navigate to the "Load Balancers" tab (Bottom left).
-- You should see your ALB in the list.
-- Note: It may take a minute for the ALB to fully provision.
-- Select your ALB and copy the "DNS name" field.
-- Paste this URL into a new tab and hit enter.
-- You should see the local IP address of the serving EC2 instance.
-- Press the F5 key repeatedly and you should see the listed IP address change.
-- This means your http application is successfully load balancing between the two instances.
+### Test 2 - ALB Health Check
+- Search 'EC2' in the AWS console (top of screen).
+- Navigate to the "Target Groups" tab (Bottom left).
+- Click your ALB from the list.
+- Under the "Targets" tab, select one of the EC2 instances and navigate to the EC2 settings page.
+- Click the "Instance State" drop-down menu and select "Stop instance".
+- Return to the "Target Groups" tab and select your ALB from the list.
+- Click the "Details" tab and make sure you have `1` "healthy" instance and `1` "unused" instance.
+- Note: It may take a minute for the health checks to complete.
