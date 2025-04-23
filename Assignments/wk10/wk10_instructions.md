@@ -2,13 +2,15 @@
 
 ## HTML
 
-### Entities
+### Character Entities
 - Create a copy of one of your HTML website files, within the same directory.
 - Rename the new file to `website_page4`.
 - Open the file in your text editor and add a new paragraph element.
-- Use *only* HTMl entities, within the element, to write the following text:
+- Use *only* HTMl character entities within the element, to write the following text:
 - `<'"> &`
 - Save the file and open it in your browser to confirm the text displays as expected.
+- If you get stuck, see the related W3 page:
+- https://www.w3schools.com/html/html_entities.asp
 
 ### URL Encoding
 - Read the W3 page about URL encoding, here:
