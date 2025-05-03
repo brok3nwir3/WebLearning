@@ -3,10 +3,10 @@
 ### This is a quiz (not a test), so feel free to use notes, books, the Internet, etc. if needed.
 
 1. What is another HTML element used when defining image maps?
-- A. The <perimeter> element
-- B. The <content> element
-- C. The <shape> element
-- D. The <area> element <<<<<< https://www.w3schools.com/html/exercise.asp?x=xrcise_images_imagemap2
+- A. The `<perimeter>` element
+- B. The `<content>` element
+- C. The `<shape>` element
+- D. The `<area>` element <<<<<< https://www.w3schools.com/html/exercise.asp?x=xrcise_images_imagemap2
 
 2. How do you migrate an EBS Volume to a new AZ?
 - A. Use the AWS cloning tool.
