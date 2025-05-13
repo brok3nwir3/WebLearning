@@ -41,6 +41,48 @@
 
 ## AWS
 
-### EC2 Load Balancing, Pt. 1
-- Search 'EC2' in the AWS console (top of screen).
+### Create a VPC
+- Note: This exercise is based on exercise 4.1 from the textbook.
+- Search 'VPC' in the AWS console (top of screen).
+- Click the "Create a VPC" button.
+- Select "VPC Only" from the menu.
+- Set the name to: "my-test-vpc"
+- Set the IPv4 CIDR to: 172.16.0.0/16
+- Leave all other settings to their defaults.
+- Click "Create VPC".
+- From the VPC dashboard (left of screen), click "Your VPCs".
+- Ensure the new VPC was created, and shows up in the list.
 
+### Add a New VPC CIDR
+- Search 'VPC' in the AWS console (top of screen).
+- From the VPC dashboard (left of screen), click "Your VPCs".
+- Click VPC ID to navigate to the VPC details page.
+- Click the "CIDRs" tab.
+- Click "Edit CIDRs".
+- Click "Add new IPv4 CIDR".
+- Enter the following CIDR: 172.12.0.0/16
+- If the status says "Associated" you're done.
+
+### Add a New VPC Subnet
+- Note: This exercise is based on exercise 4.2 from the textbook.
+- Search 'VPC' in the AWS console (top of screen).
+- From the VPC dashboard (left of screen), click "Subnets".
+- Click VPC ID to navigate to the VPC details page.
+- Select your test VPC.
+- Name the subnet: my-test-subnet
+- Set the availability zone to your current AZ.
+- Choose this VPC CIDR block: 172.16.0.0/16
+- Enter this subnet CIDR block: 172.16.100.0/16
+- Click "Create subnet".
+
+### Create an ENI
+- Note: This exercise is based on exercise 4.3 from the textbook.
+- Search 'EC2' in the AWS console (top of screen).
+- Under "Network & Security", click "Network Interfaces".
+- Click "Create network interface".
+- Add an ENI description of: my-test-eni
+- Choose the subnet you named "my-test-subnet"
+- For "Private IPv4 address" click "Custom".
+- Enter the following address: 172.16.100.99
+- Select the default security group.
+- Click "Create network interface".
