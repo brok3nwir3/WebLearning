@@ -31,11 +31,12 @@
 ### Comments & Concatenation
 - Open the HTML file from the previous exercise.
 - Declare a new variable called `myString` and set its value to "5".
-- Update the existing calculation to add `myString` at the start, i.e. `myString +`...
+- Update the existing calculation to add `myString` at the start, i.e. `myString +`
 - Next, add a comment somewhere in the JavaScript element.
 - The comment should display your guess for what the calculation result will be.
 - Open your webpage in a new tab, then open the developer tools for the page.
 - Check the calculation output in the console tab.
+- Discuss the result with the class.
 
 
 ## AWS
