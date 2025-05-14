@@ -86,3 +86,7 @@
 - Enter the following address: 172.16.100.99
 - Select the default security group.
 - Click "Create network interface".
+
+### Important Note
+- The AWS infrastructure from this week will be used in the following week.
+- These resources should cost little to no money.
