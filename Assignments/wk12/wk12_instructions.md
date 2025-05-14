@@ -67,10 +67,10 @@
 - Note: This exercise is based on exercise 4.2 from the textbook.
 - Search 'VPC' in the AWS console (top of screen).
 - From the VPC dashboard (left of screen), click "Subnets".
-- Click VPC ID to navigate to the VPC details page.
-- Select your test VPC.
+- Click "Create subnet".
+- SElect your test VPC ID. 
 - Name the subnet: my-test-subnet
-- Set the availability zone to your current AZ.
+- Set the availability zone to any from your region.
 - Choose this VPC CIDR block: 172.16.0.0/16
 - Enter this subnet CIDR block: 172.16.100.0/16
 - Click "Create subnet".
