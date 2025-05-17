@@ -49,13 +49,17 @@ Scroll down for the answers.
 \
 \
 
-1.
+1. 
+```
+HTML ...
+<p id="problem_1"></p>
+<script src="wk13.js"></script>
+
+JavaScript ...
+let x;
+x = 8;
+const y = 3;
+let sum = x + y;
+document.getElementById("problem_1").innerText = `${sum}`;
+```
 2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
