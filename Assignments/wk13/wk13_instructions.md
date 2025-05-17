@@ -32,6 +32,11 @@
 - Set the ID to `question_2`, and set the output to the variables `a` plus `b`.
 - Save the file, and check if your output is displaying correctly.
 
+### Question 3 - 
+- Inside the HTML file, create a new paragraph element within the body (immediately below the previous paragraph element).
+- 
+
+
 
 ## AWS
 
