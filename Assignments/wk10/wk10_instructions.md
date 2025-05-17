@@ -1,4 +1,4 @@
-**`Week 10 - HTML  Entities, URL Encoding, External JavaScript file, and EC2 Load Balancing `**
+**`Week 10 - HTML  Entities, URL Encoding, External JavaScript file, and EC2 Load Balancing`**
 
 ## HTML
 
