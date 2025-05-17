@@ -5,7 +5,7 @@
 ### Question 1 - Let & Const
 - Note: If you get stuck on this question, the following examples might be helpful...
 - https://www.w3schools.com/js/js_string_templates.asp
-- Step 1...
+  - *Step 1...*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk13.html`.
 - Also create a new Javascript file, and name it `wk13.js`.
 - Inside the HTML file, create a new paragraph element within the body.
@@ -13,7 +13,7 @@
 - Below the paragraph element, add a script element.
 - Add the source attribute to the script element, and set it to `wk13.js`.
 - Save the HTML file, and open the Javascript file.
-- Step 2...
+  - *Step 2...*
 - Within the Javascript file declare variable `x` using `let`.
 - On the next line, initialize `x` to `8`.
 - One the line below that, declare `y` and initialize it to `3` using `const`, on the same line.
