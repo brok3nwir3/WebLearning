@@ -9,7 +9,7 @@
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk13.html`.
 - Also create a new Javascript file, and name it `wk13.js`.
 - Inside the HTML file, create a new paragraph element within the body.
-- Add the ID attribute to the paragraph, and set it to `problem_1`.
+- Add the ID attribute to the paragraph, and set it to `question_1`.
 - Below the paragraph element, add a script element.
 - Add the source attribute to the script element, and set it to `wk13.js`.
 - Save the HTML file, and open the Javascript file.
@@ -19,11 +19,12 @@
 - One the line below that, declare `y` and initialize it to `3` using `const`, on the same line.
 - On the next line, `let` variable `sum` equal `x` plus `y`.
 - Next, add a get element by ID statement for your output.
-- Set the ID to `problem_1`, and set the output to the `sum` variable.
+- Set the ID to `question_1`, and set the output to the `sum` variable.
 - Save the file, and check if your output is displaying correctly.
 
 ### Question 2 - 
-- 
+- Inside the HTML file, create a new paragraph element within the body.
+- Add the ID attribute to the paragraph, and set it to `question_2`.
 
 ## AWS
 
