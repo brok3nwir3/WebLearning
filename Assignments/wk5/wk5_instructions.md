@@ -58,13 +58,15 @@
 - Create a new security group called "allow-all-http" that allows all inbound traffic over port 80 and 443.
 - Add the "coding-hour" resource tag.
 - Expand the "Advanced Details" tab, scroll to the bottom, to the "User data" section.
-- Add the following script, within the text box (without the backtick characters):
-`#!/bin/bash`
-`yum update -y`
-`yum install -y httpd`
-`systemctl start httpd`
-`systemctl enable httpd`
-`echo "<h1>Hello World, from $(hostname -f)</h1>" > /var/www/html/index.html`
+- Add the following script, within the text box:
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World, from $(hostname -f)</h1>" > /var/www/html/index.html
+```
 - Click "Create launch template".
 - Next, select your launch template and click the action "Launch instance from template".
 - Click "Launch instance" and wait for your instance to finish initializing.
