@@ -47,13 +47,15 @@
 - Choose to allow HTTP/HTTPS traffic via new or existing security group.
 - Choose to add a new key pair for the instances.
 - Scroll down to the "Advanced details" section, and click to expand it.
-- Within the "User data" section, paste the following script (without the backtick characters):
-`#!/bin/bash`
-`yum update -y`
-`yum install -y httpd`
-`systemctl start httpd`
-`systemctl enable httpd`
-`echo "<h1>Hello World, from $(hostname -f)</h1>" > /var/www/html/index.html`
+- Within the "User data" section, paste the following script:
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World, from $(hostname -f)</h1>" > /var/www/html/index.html
+```
 - Click "Launch instance" and wait for your instances to finish initializing.
 - Lastly, locate the public IP address for one of the instances and navigate to:
 - http://<public_IP>/index.html
