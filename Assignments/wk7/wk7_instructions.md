@@ -18,11 +18,13 @@
 - Set an `href` attribute to this page: https://en.wikipedia.org/wiki/Eye
 - Add an `onclick` attribute, set to `"myFunction()"`within your area element.
 - Next, add the following JavaScript *below* your `map` element:
-`<script>`
-`function myFunction() {`
-`  alert("You found the animals eye!");`
-`}`
-`</script>`
+```
+<script>
+function myFunction() {
+  alert("You found the animals eye!");
+}
+</script>
+```
 - Lastly, adjust your coordinates and radius to actually map to the eye of your animal.
 - Note: Use the W3 reference page, if you get stuck: https://www.w3schools.com/html/html_images_imagemap.asp
 - Save the changes, open your HTML file in your browser, and review the changes.
@@ -87,10 +89,12 @@
 - You'll notice a couple new security groups that were automatically created for the EFS.
 - Next, connect to 'efs-instance'.
 - From the command line, run the following commands:
-`ls /mnt/efs/fs1/`
-`sudo su`
-`echo "hello world" > /mnt/efs/fs1/hello.txt`
-`cat /mnt/efs/fs1/hello.txt`
+```
+ls /mnt/efs/fs1/
+sudo su
+echo "hello world" > /mnt/efs/fs1/hello.txt
+cat /mnt/efs/fs1/hello.txt
+```
 - You've now verified the EFS is working correctly.
 - Bonus: If you want see the benefit of an EFS, create a second instance with 'demo-efs' attached...
 - Then connect to the new instance and view the shared file by running the following command:
