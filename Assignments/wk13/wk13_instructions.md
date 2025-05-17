@@ -22,9 +22,16 @@
 - Set the ID to `question_1`, and set the output to the `sum` variable.
 - Save the file, and check if your output is displaying correctly.
 
-### Question 2 - 
-- Inside the HTML file, create a new paragraph element within the body.
+### Question 2 - Operators & Arithmetic
+- Inside the HTML file, create a new paragraph element within the body (immediately below the previous paragraph element).
 - Add the ID attribute to the paragraph, and set it to `question_2`.
+- Save the HTML file, and open the Javascript file.
+- Within the Javascript file declare variable `a` and initialize it to `2` to the 3rd power, using `let`.
+- Next, declare variable `b` and initialize it to `7` mod `2`, using `let`.
+- Lastly, add a get element by ID statement for your output.
+- Set the ID to `question_2`, and set the output to the variables `a` plus `b`.
+- Save the file, and check if your output is displaying correctly.
+
 
 ## AWS
 
