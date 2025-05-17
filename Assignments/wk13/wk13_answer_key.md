@@ -50,12 +50,13 @@ Scroll down for the answers.
 \
 
 1. 
+- HTML ...
 ```
-HTML ...
 <p id="problem_1"></p>
 <script src="wk13.js"></script>
-
-JavaScript ...
+```
+- JavaScript ...
+```
 let x;
 x = 8;
 const y = 3;
