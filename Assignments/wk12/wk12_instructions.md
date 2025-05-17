@@ -1,4 +1,4 @@
-**`Week 12 - JavaScript Output, Variables, Concatenation, `**
+**`Week 12 - JavaScript Output, Variables, Concatenation, & AWS VPCs and ENIs`**
 
 ## JavaScript
 
