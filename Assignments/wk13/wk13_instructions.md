@@ -29,17 +29,23 @@
 - Within the Javascript file declare variable `a` and initialize it to `2` to the 3rd power, using `let`.
 - Next, declare variable `b` and initialize it to `7` mod `2`, using `let`.
 - Lastly, add a get element by ID statement for your output.
-- Set the ID to `question_2`, and set the output to the variables `a` plus `b`.
+- Set the ID to `question_2`, and set the output to display variables `a` and `b`.
 - Save the file, and check if your output is displaying correctly.
 
 ### Question 3 - 
 - Inside the HTML file, create a new paragraph element within the body (immediately below the previous paragraph element).
-- 
-
+- Add the ID attribute to the paragraph, and set it to `question_3`.
+- Save the HTML file, and open the Javascript file.
+- Within the Javascript file declare variable `total` and initialize it to `x + y + a + b`, using `let`.
+- Next, declare variable `expression`, using `let`.
+- Within the expression, use strings for the text, and variables for the numbers, to display the following:
+- `Add 8, 3, 8, and 1, you get 20.`
+- Lastly, add a get element by ID statement for your output.
+- Set the ID to `question_3`, and set the output to display variables `expression`.
+- Save the file, and check if your output is displaying correctly.
 
 
 ## AWS
-
 
 ### Create an ENI
 - Note: This exercise is based on exercise 4.3 from the textbook.
