@@ -79,3 +79,20 @@ let a = 2 ** 3;
 let b = 7 % 2;
 document.getElementById("question_2").innerText = `${a} + ${b}`;
 ```
+
+- Question 3
+  - *HTML ...*
+```
+<p id="question_1"></p>
+<p id="question_2"></p>
+<p id="question_3"></p>
+<script src="wk13.js"></script>  
+```
+
+- Question 3
+  - *JavaScript ...*
+```
+let total = `${x + y + a + b}`;
+let expression = `Add ${x}, ${y}, ${a}, and ${b}, you get ${total}.`;
+document.getElementById("question_3").innerText = `${expression}`;
+```
