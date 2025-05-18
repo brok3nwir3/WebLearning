@@ -1,4 +1,4 @@
-**`Week 13 - JavaScript Let, Const, Hoisting, Operators, & Arithmetic`**
+**`Week 13 - JavaScript Let, Const, Operators, & Template Strings`**
 
 ## JavaScript
 
@@ -22,7 +22,7 @@
 - Set the ID to `question_1`, and set the output to the `sum` variable.
 - Save the file, and check if your output is displaying correctly.
 
-### Question 2 - Operators & Arithmetic
+### Question 2 - Operators
 - Inside the HTML file, create a new paragraph element within the body (immediately below the previous paragraph element).
 - Add the ID attribute to the paragraph, and set it to `question_2`.
 - Save the HTML file, and open the Javascript file.
@@ -32,7 +32,8 @@
 - Set the ID to `question_2`, and set the output to display variables `a` and `b`.
 - Save the file, and check if your output is displaying correctly.
 
-### Question 3 - 
+### Question 3 - Template Strings
+- Note: If you've coded in Python before, template strings work similarly to Python f-strings.
 - Inside the HTML file, create a new paragraph element within the body (immediately below the previous paragraph element).
 - Add the ID attribute to the paragraph, and set it to `question_3`.
 - Save the HTML file, and open the Javascript file.
