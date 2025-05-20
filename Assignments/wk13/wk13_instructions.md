@@ -48,14 +48,50 @@
 
 ## AWS
 
-### Create an ENI
-- Note: This exercise is based on exercise 4.3 from the textbook.
+### Create an Internet Gateway
+- Note: This exercise is based on exercise 4.4 from the textbook.
+- Search 'VPC' in the AWS console (top of screen).
+- Under 'Virtual private cloud', click 'Internet gateways'.
+- Click 'Create internet gateway'.
+- Add a name tag of: my-internet-gateway
+- Click 'Create internet gateway'.
+
+### Attach the Internet Gateway
+- Return to the Internet gateways list, on the VPC page.
+- Select your newly created Internet gateway.
+- Select the 'Actions' drop-down menu, and choose 'Attach to VPC'.
+- Select 'my-test-vpc' and then click 'attach internet gateway'.
+
+### Set a Default Route
+- Return to the VPC page and click 'Route tables'.
+- Select the route table that's assigned to 'my-test-vpc'.
+- Click the 'Actions' drop-down menu and select 'Edit routes'.
+- Click the 'Add route' button.
+- For destination, choose: 0.0.0.0/0
+- For target, choose: Internet Gateway > my-internet-gateway
+- Lastly, click 'Save changes'.
+
+### Allocate an Elastic IP Address (EIP)
+- Note: This exercise is based on exercise 4.7 from the textbook.
+- Search 'VPC' in the AWS console (top of screen).
+- Under 'Virtual private cloud', click 'Elastic IPs'.
+- Click 'Allocate elastic IP address'.
+- Leave all setting to their default, and click 'Allocate'.
+
+### Assign an Elastic IP Address
 - Search 'EC2' in the AWS console (top of screen).
-- Under "Network & Security", click "Network Interfaces".
-- Click "Create network interface".
-- Add an ENI description of: my-test-eni
-- Choose the subnet you named "my-test-subnet"
-- For "Private IPv4 address" click "Custom".
-- Enter the following address: 172.16.100.99
-- Select the default security group.
-- Click "Create network interface".
+- Take the steps to launch a new EC2 instance named 'my-test-instance'.
+- Next, search 'VPC' in the AWS console.
+- Under 'Virtual private cloud', click 'Elastic IPs'.
+- Select your newly allocated EIP.
+- Use the 'Actions' drop-down menu, and choose 'Associate elastic IP address'.
+- Select 'my-test-instance' for the instance.
+- Select any private IP address.
+- Click 'Associate'.
+- Return to the EC2 page.
+- Select 'my-test-instance' from the list.
+- Click the 'Networking' tab for the instance.
+- Review the public and private IP information.
+
+## Important Note
+- Ensure you delete all test resources from week 12 and wek 13.
