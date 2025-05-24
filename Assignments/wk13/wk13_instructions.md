@@ -1,4 +1,4 @@
-**`Week 13 - JavaScript Let, Const, Operators, & Template Strings`**
+**`Week 13 - JavaScript Let, Const, Operators, & Template Strings; AWS IG, Routes, and EIP`**
 
 ## JavaScript
 
