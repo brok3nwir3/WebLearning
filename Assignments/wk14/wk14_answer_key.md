@@ -52,7 +52,7 @@ Scroll down for the answers.
 - Question 1 - HTML
 ```
 <p id="question_1"></p>
-<script src="wk13.js"></script>
+<script src="wk14.js"></script>
 ```
 - Question 1 - JavaScript
 ```
@@ -77,28 +77,29 @@ document.getElementById("question_1").innerText = typeTest(myString) + "\n" + ty
 - Question 2 - HTML
 ```
 <p id="question_1"></p>
-<p id="question_2"></p>
-<script src="wk13.js"></script>  
+
+<h2>Question 2 (Counter)</h2>
+<p id="counter">0</p>
+<button id="leftButton">Left</button>
+<button id="rightButton">Right</button>
+<script src="wk14.js"></script>  
 ```
 
 - Question 2 - JavaScript
 ```
-let a = 2 ** 3;
-let b = 7 % 2;
-document.getElementById("question_2").innerText = `${a} + ${b}`;
-```
+let counter = 0;
 
-- Question 3 - HTML
-```
-<p id="question_1"></p>
-<p id="question_2"></p>
-<p id="question_3"></p>
-<script src="wk13.js"></script>  
-```
+function updateCounter() {
+    document.getElementById("counter").innerText = counter;
+}
 
-- Question 3 - JavaScript
-```
-let total = `${x + y + a + b}`;
-let expression = `Add ${x}, ${y}, ${a}, and ${b}, you get ${total}.`;
-document.getElementById("question_3").innerText = `${expression}`;
+document.getElementById("leftButton").addEventListener("click", function() {
+    counter -= 1;
+    updateCounter();
+});
+
+document.getElementById("rightButton").addEventListener("click", function() {
+    counter += 1;
+    updateCounter();
+});
 ```
