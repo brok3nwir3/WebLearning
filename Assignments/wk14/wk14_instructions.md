@@ -1,5 +1,5 @@
 
-**`Week 14 - JavaScript JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS RDS, Read Replica, Promoting to Master`**
+**`Week 14 - JavaScript JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS RDS, Read Replica, Promoting to Master, Multi-AZ Deployment`**
 
 ## JavaScript
 
@@ -83,6 +83,15 @@
 - Choose a 'Backup window' of: 03:00 UTC with a maintenance window of 1 hour.
 - Click 'Promote read replica'.
 - Return to the database dashboard and ensure the change was successful.
+
+### Convert an RDS to Multi-AZ Deployment
+- Search 'RDS' in the AWS console (top of screen).
+- Click the 'Databases' tab (left of screen).
+- Select the read replica database you previously promoted; `my-read-replica`.
+- Click the 'Actions' button and choose 'Convert to Multi-AZ deployment'.
+- Click the checkbox to 'Apply immediately'.
+- Click 'Convert to Multi-AZ'.
+- Return to the database list, scroll to the right, and ensure the database states that it is Multi-AZ.
 
 ## Important Note
 - Ensure you delete all test resources once you're finished.
