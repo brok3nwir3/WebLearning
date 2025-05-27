@@ -1,5 +1,5 @@
 
-**`Week 14 - JavaScript JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS `**
+**`Week 14 - JavaScript JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS RDS, Read Replica, Promoting to Master`**
 
 ## JavaScript
 
@@ -48,10 +48,38 @@
 
 ## AWS
 
-### Create an Internet Gateway
-- Note: This exercise is based on exercise 4.4 from the textbook.
-- Search 'VPC' in the AWS console (top of screen).
-- Under 'Virtual private cloud', click 'Internet gateways'.
-- Click 'Create internet gateway'.
-- Add a name tag of: my-internet-gateway
-- Click 'Create internet gateway'.
+### Create an RDS Database Instance
+- Note: This exercise is based on exercise 5.1 from the textbook.
+- Search 'RDS' in the AWS console (top of screen).
+- This will take you to the dashboard page, where you can click 'Create a database'.
+- Under 'Engine options' select 'MariaDB'.
+- Under 'Templates' select 'Free tier'.
+- Set a master username and password.
+- Scroll down to the bottom of the options and expand 'Additional configuration'.
+- Set the initial database name to: `my_test_mariadb`
+- Leave all other settings to their defaults, and click 'Create database'.
+- The creation of the database will take a few minutes.
+- Once the database has been created, review the Region, Size, and VPC that have been assigned to the database.
+- Next, click the database to view all the configuration tabs.
+- Identify the following: Port used, most recent logs, license model, and latest backup activity.
+- Discuss your findings with a classmate.
+
+### Create a Read Replica
+- Note: This exercise is based on exercise 5.2 from the textbook.
+- Search 'RDS' in the AWS console (top of screen).
+- Click the 'Databases' tab (left of screen).
+- Select the database you previously created; `my_test_mariadb`.
+- Click the 'Actions' button and choose 'Create read replica'.
+- Under the 'DB instance identifier' section, enter the name: `my-read-replica`.
+- Leave all other settings to their defaults, and click 'Create read replica'.
+
+### Promote a Read Replica to Master
+- Note: This exercise is based on exercise 5.3 from the textbook.
+- Search 'RDS' in the AWS console (top of screen).
+- Click the 'Databases' tab (left of screen).
+- Select the read replica database you previously created; `my-read-replica`.
+- Click the 'Actions' button and choose 'Promote'.
+- Choose a 'Backup retention period' of 30 days.
+- Choose a 'Backup window' of: 03:00 UTC with a maintenance window of 1 hour.
+- Click 'Promote read replica'.
+- Return to the database dashboard and ensure the change was successful.
