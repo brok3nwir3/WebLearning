@@ -83,3 +83,6 @@
 - Choose a 'Backup window' of: 03:00 UTC with a maintenance window of 1 hour.
 - Click 'Promote read replica'.
 - Return to the database dashboard and ensure the change was successful.
+
+## Important Note
+- Ensure you delete all test resources once you're finished.
