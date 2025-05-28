@@ -55,7 +55,7 @@ Scroll down for the answers.
 <script src="wk14.js"></script>
 ```
 - Question 1 - JavaScript
-```
+```js
 let myString = 'test';
 let myInt = 123;
 let myUndef;
@@ -75,7 +75,7 @@ function typeTest(x) {
 document.getElementById("question_1").innerText = typeTest(myString) + "\n" + typeTest(myInt) + "\n" + typeTest(myUndef);
 ```
 - Question 2 - HTML
-```
+```html
 <p id="question_1"></p>
 
 <h2>Question 2 (Counter)</h2>
@@ -86,7 +86,7 @@ document.getElementById("question_1").innerText = typeTest(myString) + "\n" + ty
 ```
 
 - Question 2 - JavaScript
-```
+```js
 let counter = 0;
 
 function updateCounter() {
