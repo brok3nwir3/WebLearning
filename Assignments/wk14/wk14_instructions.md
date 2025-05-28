@@ -40,7 +40,10 @@
 - We will use this function to update the number displayed on the page.
 - Next, add two get element by ID statements; one for the left button and one for the right button.
 - The first statement will be for `leftButton`, and require an event listener for `click` events.
-- This statement will listen for `click` events, and when they are received, decrement `counter` and call the `updateCounter` function.
+- This statement will listen for `click` events, and when they are received, a small unnamed (anonymous) function should be called.
+- The anonymous function will decrement `counter` and call the `updateCounter` function.
+- For example, your anonymous function should look like... `function() {your code here}`.
+- Note: Learn about event listeners here https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 - The second statement will be identifical to the first, but for `rightButton`, and will increment the value of `counter`.
 - Once you've finished, the expected output would be an HTML page with two buttons, which decrease or increase a value on the page.
 - Lastly, save the file, and check if your output is displaying correctly.
