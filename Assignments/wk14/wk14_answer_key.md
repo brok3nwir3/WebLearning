@@ -50,7 +50,7 @@ Scroll down for the answers.
 \
 
 - Question 1 - HTML
-```
+```html
 <p id="question_1"></p>
 <script src="wk14.js"></script>
 ```
