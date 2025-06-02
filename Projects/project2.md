@@ -32,5 +32,5 @@
 - https://www.vev.design/blog/web-carousel-design/
 
 ### Example Code
-- An example of this project can be found on W3 schools, here:
+- Example code for this project can be found on W3 schools, here:
 - https://www.w3schools.com/howto/howto_js_slideshow.asp
