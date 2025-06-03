@@ -5,24 +5,31 @@
 
 ### Question 1 - Data Type Test Function
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk14.html`.
-- Also create a new JavaScript file, and name it `wk14.js`.
-- Inside the HTML file, create a new paragraph element within the body.
-- Add the ID attribute to the paragraph, and set it to `question_1`.
-- Below the paragraph element, add a script element.
-- Add the source attribute to the script element, and set it to `wk14.js`.
-- Save the HTML file, and open the JavaScript file.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk15.html`.
+- Inside the HTML file, create three new paragraph element within the body.
+- Add the `class` attribute to all paragraph elements, set to the value `words`.
+- The first paragraph should have the text: `Chameleon`
+- The second paragraph should have the text: `Seagull`
+- The third paragraph should have the text: `Ferret`
+- Next, add a single button element.
+- Set the `onclick` attribute for the button element, and set the value to `hideText()`
+- Below the paragraph elements, add a script element.
+- Add the source attribute to the script element, and set it to `wk15.js`.
+- Save the HTML file.
   - *JavaScript*
-- Within the JavaScript declare three variables: `myString`, `myInt`, and `myUndef`.
-- Initialize `myString` equal to `test`, `myInt` equal to `123`, and leave `myUndef` uninitialized.
-- Next, create a function called `typeTest`, which takes in one variable: `x`.
-- Within the function, you'll have one `if`, one `else if`, and one `else` statements.
-- The `if` statement checks if `x` is `typeof` string, and returns `x is a string` when true.
-- The `else if` statement checks if `x` is `typeof` number, and returns `x is a number` when true.
-- And the `else` statement returns `x is not an integer or string` when true.
-- Next, add a get element by ID statement for your output.
-- Set the ID to `question_1`, and set the output to display `typeTest()` for each of the three variables, on their own lines.
-- Save the file, and check if your output is displaying correctly.
+- Create a new JavaScript file, name it `wk15.js`, and open it.
+- Within the JavaScript file, initialize one variable, `clicked`, equal to `false`.
+- Next, create a function called `hideText`, which doesn't take any variables/parameters.
+- Within the function, initialize one variable, `myText`, equal to `document.getElementsByClassName`.
+- Then, pass `words` as the target class for `myText`.
+- Next, you'll need to create one `if`, and one `else` statement.
+- The `if` statement checks if `clicked` is `false`.
+- If the statement evaluates to true, then set `clicked` to `true`.
+- Additionally, the object at `myText` array position zero, should be set to `.style.display` equal to `"none"`.
+- In the `else` statement, when it evaluates to true, we set `clicked` to `false`.
+- Additionally, the object at `myText` array position zero, should be set to `.style.display`  equal to `"block"`.
+- You should now have a button that alternates between hiding and revealing the first element in the `myText` array.
+- Save the file, and check if your button is working correctly.
 
 
 
