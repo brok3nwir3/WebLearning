@@ -51,11 +51,30 @@ Scroll down for the answers.
 
 - Question 1 - HTML
 ```html
-abcd
+<p class="words">Chameleon</p>
+<p class="words">Seagull</p>
+<p class="words">Ferret</p>
+
+<button onclick="hideText()">Button</button>
+
+<script src="wk13.js"></script>  
 ```
 - Question 1 - JavaScript
 ```js
-abcd
+let clicked = false;
+
+function hideText(){
+    let myText = document.getElementsByClassName("words");
+    if (clicked === false){
+        clicked = true;
+        myText[0].style.display = "none";
+    }
+    else{
+        clicked = false;
+        myText[0].style.display = "block"; 
+    }
+    
+}
 ```
 - Question 2 - HTML
 ```html
