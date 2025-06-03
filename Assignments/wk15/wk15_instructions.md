@@ -3,7 +3,7 @@
 
 ## JavaScript
 
-### Question 1 - Data Type Test Function
+### Question 1 - Working with Arrays, Pt.1
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk15.html`.
 - Inside the HTML file, create three new paragraph element within the body.
@@ -11,7 +11,7 @@
 - The first paragraph should have the text: `Chameleon`
 - The second paragraph should have the text: `Seagull`
 - The third paragraph should have the text: `Ferret`
-- Next, add a single button element.
+- Next, add a single button element, with text set to `Hide/Reveal`.
 - Set the `onclick` attribute for the button element, and set the value to `hideText()`
 - Below the paragraph elements, add a script element.
 - Add the source attribute to the script element, and set it to `wk15.js`.
@@ -31,7 +31,13 @@
 - You should now have a button that alternates between hiding and revealing the first element in the `myText` array.
 - Save the file, and check if your button is working correctly.
 
+### Question 2 - Working with Arrays, Pt.2
+  - *HTML*
+- Inside your HTML file, create three new paragraph element within the body.
 
+- Save the HTML file.
+  - *JavaScript*
+- Create a new JavaScript file, name it `wk15.js`, and open it.
 
 ## AWS
 
