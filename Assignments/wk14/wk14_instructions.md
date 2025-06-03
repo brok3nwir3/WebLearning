@@ -1,5 +1,5 @@
 
-**`Week 14 - JavaScript JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS RDS, Read Replica, Promoting to Master, Multi-AZ Deployment`**
+**`Week 14 - JavaScript Functions, Strings, Events, Data Types, & If/Else; AWS RDS, Read Replica, Promoting to Master, Multi-AZ Deployment`**
 
 ## JavaScript
 
