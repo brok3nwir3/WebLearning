@@ -1,9 +1,10 @@
 
-**`Week 15 - JavaScript On-click Events, Arrays, Events, CSS Display, & Element by Class; AWS ...`**
+**`Week 15 - JavaScript On-click Events, Arrays, Events, CSS Display, For Loops, & Element by Class; AWS ...`**
 
 ## JavaScript
 
 ### Question 1 - Working with Arrays, Pt.1
+- For this question, we'll be writing a script that hides/reveals a single element in an array.
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk15.html`.
 - Inside the HTML file, create three new paragraph element within the body.
@@ -32,12 +33,18 @@
 - Save the file, and check if your button is working correctly.
 
 ### Question 2 - Working with Arrays, Pt.2
+- For this question, we'll be expanding our script to hide/reveal all of the elements in our array.
   - *HTML*
-- Inside your HTML file, create three new paragraph element within the body.
-
-- Save the HTML file.
+- No changes will be made to the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk15.js`, and open it.
+- Open your JavaScript file, `wk15.js`.
+- We need to add two `for` loops to the `hideText` function.
+- The first `for` loop will wrap the `myText[0].style.display = "none";` action.
+- The second `for` loop will wrap the `myText[0].style.display = "block"; ` action.
+- Each for loop should `let` variable `i` equal 0, run for the `length` of the array, and increement by 1 on each run.
+- Next, you will need to update your CSS display actions to point to the correct array index.
+- You should now have a button that alternates between hiding and revealing all elements in the `myText` array.
+- Save the file, and check if your button is working correctly.
 
 ## AWS
 
