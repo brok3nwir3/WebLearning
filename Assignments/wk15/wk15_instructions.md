@@ -46,26 +46,41 @@
 - You should now have a button that alternates between hiding and revealing all elements in the `myText` array.
 - Save the file, and check if your button is working correctly.
 
+
 ## AWS
 
-### Create an RDS Database Instance
-- Note: This exercise is based on exercise 5.1 from the textbook.
-- Search 'RDS' in the AWS console (top of screen).
-- This will take you to the dashboard page, where you can click 'Create a database'.
-- Under 'Engine options' select 'MariaDB'.
-- Under 'Templates' select 'Free tier'.
-- Set a master username and password.
-- Scroll down to the bottom of the options and expand 'Additional configuration'.
-- Set the initial database name to: `my_test_mariadb`
-- Leave all other settings to their defaults, and click 'Create database'.
-- The creation of the database will take a few minutes.
-- Once the database has been created, review the Region, Size, and VPC that have been assigned to the database.
-- Next, click the database to view all the configuration tabs.
-- Identify the following: Port used, most recent logs, license model, and latest backup activity.
-- Discuss your findings with a classmate.
+### Configuring AWS CLI; Pre-requisite (User Creation)
+- Note: We'll be doing the "bad way" first; Using an IAM long-term credential, which we'll delete at the end.
+- Start by opening the AWS console and searching "IAM".
+- Next, click the "create user" button.
+- Name the user `test-user`.
+- Attach the `ReadOnlyAdmins` group (made during week 1-3 in this course) to the user.
+- Click "Next" through the remaining pages, keeping all other settings to their defaults.
 
+### Configuring AWS CLI; Pre-requisite (Access Key)
+- Start by opening the AWS console and searching "IAM".
+- From the "Users" list, click `test-user`.
+- Select the "Security credentials" tab.
+- Under the "Access keys" section, click the "Create access key" option.
+- Select the "User case" as "CLI", and click "Next".
+- Click "Create access key".
+- Lastly, click the option to download the access key as a `.csv` file.
 
+### Configuring AWS CLI; Pre-requisite (CLI Download)
+- Navigate to the following page:
+- https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+- Download the required file for your operating system.
+- Install the file on your computer.
+- Open a terminal on your computer.
+- Type `aws --version` and hit enter.
+- If you see a version listed, then your installation was successful.
 
-## Important Note
-- Ensure you delete all test resources once you're finished.
+### Configuring AWS CLI; Pre-requisite (CLI Configuration)
+- From your terminal, type `aws configure` and hit enter.
+- Enter your AWS Access Key ID, Secret Access Key, and default region name.
+- Hit enter to skip the output format prompt.
+- From your terminal, type `aws s3 ls` and hit enter.
+- If your configuration worked, you should see the S3 buckets we created earlier in the course.
 
+## Deletion Reminder
+- Ensure you delete the test access key and test user from IAM, once you're finished.
