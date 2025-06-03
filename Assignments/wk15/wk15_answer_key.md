@@ -95,13 +95,13 @@ function hideText(){
     let myText = document.getElementsByClassName("words");
     if (clicked === false){
         clicked = true;
-        for(let i = 0; i < myText.length; i++){
+        for (let i = 0; i < myText.length; i++){
             myText[i].style.display = "none";
         }
     }
     else{
         clicked = false;
-        for(let i = 0; i < myText.length; i++){
+        for (let i = 0; i < myText.length; i++){
             myText[i].style.display = "block"; 
         }
     }
