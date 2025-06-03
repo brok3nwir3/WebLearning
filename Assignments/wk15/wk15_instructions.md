@@ -50,7 +50,7 @@
 ## AWS
 
 ### Configuring AWS CLI; Pre-requisite (User Creation)
-- Note: We'll be doing the "bad way" first; Using an IAM long-term credential, which we'll delete at the end.
+- Note: We'll be doing the "bad way" first; Using an IAM long-term credential, which we'll disable at the end.
 - Start by opening the AWS console and searching "IAM".
 - Next, click the "create user" button.
 - Name the user `test-user`.
@@ -82,5 +82,5 @@
 - From your terminal, type `aws s3 ls` and hit enter.
 - If your configuration worked, you should see the S3 buckets we created earlier in the course.
 
-## Deletion Reminder
-- Ensure you delete the test access key and test user from IAM, once you're finished.
+## Disable Reminder
+- This CLI IAM user isn't the most secure CLI access option, and should be disabled once you're finished.
