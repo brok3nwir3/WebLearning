@@ -50,7 +50,7 @@
 ## AWS
 
 ### Configuring AWS CLI; Pre-requisite (User Creation)
-- Note: We'll be doing the "bad way" first; Using an IAM long-term credential, which we'll disable at the end.
+- Note: We'll be doing the less secure way first; Using an IAM long-term credential.
 - Start by opening the AWS console and searching "IAM".
 - Next, click the "create user" button.
 - Name the user `test-user`.
@@ -82,5 +82,15 @@
 - From your terminal, type `aws s3 ls` and hit enter.
 - If your configuration worked, you should see the S3 buckets we created earlier in the course.
 
-## Disable Reminder
-- This CLI IAM user isn't the most secure CLI access option, and should be disabled once you're finished.
+### Add User MFA
+- This step will help secure the IAM user we created.
+- In the AWS console, navigate to the "IAM" page.
+- Click the "Users" tab, and click `test-user` from the list.
+- Select the "Security credentials" tab.
+- Scroll down to the "Multi-factor authentication" section and click "Assign MFA device".
+- Enter the device name: `test-user-mfa-device`.
+- Click "Authenticator app" from the list.
+- Click "Next".
+- Follow the steps on screen.
+- Note: Authy is a free authenticator app, you could choose.
+- Your test user is now slightly more secure. We will use this account occasionally, for CLI practice.
