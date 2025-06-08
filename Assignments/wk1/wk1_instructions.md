@@ -7,10 +7,6 @@
 - Copy the contents of the `hello_world.html` file into the text editor.
 - Save the file as: `hello_world.html` locally on your system, with 'Save as type' set to 'All Files'.
 
-#### Q1
-- Open the `hello_world.html` file in your browser of choice.
-- a. Where does the 'title' appear?
-
 ### Update 1
 - Open the `hello_world.html` file in your editor.
 - Update the title element to say: '<Your Name>'s Title Page'
