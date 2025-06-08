@@ -1,4 +1,4 @@
-# WebLEarning
+# WebLearning
 ##### Learn AWS and web programming with this repo!
 > _This repo was created to help individuals with tech or programming backgrounds learn AWS and web coding for free.
  It is my sincere hope that this content aids you in your learning journey and challenges you to improve your skills.
