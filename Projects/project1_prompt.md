@@ -8,7 +8,6 @@
 - Next, you should create a template HTML page and then copy it for each choice in your story.
 - This will allow you to build a branching narrative where each choice leads to a different path in the story.
 
-
 ### Requirements (90pts)
 - This game will be a seperate project from your current weekly website.
 - The game must have its own folder and `.css` file.
@@ -18,17 +17,14 @@
 - A minimum of 5 image files.
 - The game should tell a story, and have a minimum of 3 potential outcomes.
 
-
 ### Bonus Points (10pts)
 - Add colors to text, background, etc.
 - Add styling, color, or animations to the links/buttons.
-
 
 ### Expectations
 - Each person in the class will demonstrate their project.
 - You will have one month to create your project.
 - When you demo your project, you will share your file structure, template, diagram, and a walk-through of the game.
-
 
 ### Example Game
 - Check out this example game, to see what an HTML Choose You Own Adventure game might look like:
