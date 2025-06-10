@@ -22,7 +22,7 @@
 - When you demo your project, you will share your files and explain their code.
 
 ### Example Free Geolocation API
-- Check out this list of example image carousels for ideas:
+- You can use a free geolocation API, such as the following, for your project:
 - https://ip-api.com/
 
 ### Example Code
