@@ -1,5 +1,5 @@
 
-**`Week 15 - JavaScript On-click Events, Arrays, Events, CSS Display, For Loops, & Element by Class; AWS ...`**
+**`Week 15 - JavaScript On-click Events, Arrays, Events, CSS Display, For Loops, & Element by Class; AWS CLI Setup`**
 
 ## JavaScript
 
