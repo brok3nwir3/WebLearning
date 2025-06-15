@@ -21,7 +21,13 @@
 - Save the file, and check if your array is displaying correctly.
 
 ### Question 2 - More with Arrays, Pt.2
-- 
+- Now we'll convert our existing HTML and JavaScript files to use a class, instead of an ID.
+- First, replace `ID` with `class` in the HTML file.
+- Second, replace `getElementById` with `getElementsByClassName` in the Javascript.
+- Save the file, and check if your array is displaying correctly.
+- This change should break your HTML file, and nothing should display.
+- To fix this, we need to specify an element target of `[0]` for `getElementsByClassName`.
+- Save the file, and check if your array is displaying correctly.
 
 ### API Project Prep
 - Read the JavaScript API Intro page:
