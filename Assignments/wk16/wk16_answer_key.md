@@ -62,7 +62,7 @@ document.getElementById("wk16").innerHTML = fruits;
 
 - Question 2 - HTML
 ```html
-<p id="wk16"></p>
+<p class="wk16"></p>
 <script src="wk16.js"></script> 
 ```
 - Question 2 - JavaScript
