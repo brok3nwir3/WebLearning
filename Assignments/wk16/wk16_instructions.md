@@ -28,6 +28,7 @@
 - This change should break your HTML file, and nothing should display.
 - To fix this, we need to specify an element target of `[0]` for `getElementsByClassName`.
 - Save the file, and check if your array is displaying correctly.
+- Discuss your observations with the class.
 - Note: You can read more about the difference between ID and Class here:
 - https://www.geeksforgeeks.org/javascript-getelementsbyclassname-vs-getelementbyid-method/
 
