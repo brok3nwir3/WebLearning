@@ -52,8 +52,7 @@ Scroll down for the answers.
 - Question 1 - HTML
 ```html
 <p id="wk16"></p>
-
-<script src="wk13.js"></script>  
+<script src="wk16.js"></script>
 ```
 - Question 1 - JavaScript
 ```js
