@@ -32,7 +32,20 @@
 - Save the file, and check if your button is working correctly.
 
 ### Question 2 - 
+- 
 
+### API Project Prep
+- Read the JavaScript API Intro page:
+- https://www.w3schools.com/js/js_api_intro.asp
+- Next, search the Internet for a free geolocation API.
+  - Example: https://app.ipgeolocation.io/
+- Create a user account, if needed.
+- Create an API key, if needed.
+- Find the API documentation.
+  - Example: https://ipgeolocation.io/documentation.html
+- Try making a simple API call from your browser search bar (or curl via terminal).
+  - Example: `https://api.ipgeolocation.io/v2/ipgeo?apiKey=API_KEY&ip=8.8.8.8`
+- Once you've finished making the API call, share your progress with the class.
 
 ## AWS
 
