@@ -1,4 +1,4 @@
-**`Week 16 - JavaScript ...; AWS ...`**
+**`Week 16 - JavaScript Get Element ID vs Class, Array Methods, API Prep; AWS GuardDuty`**
 
 ## JavaScript
 
@@ -66,10 +66,16 @@
 
 ## AWS
 
-### Configuring AWS CLI; Pre-requisite (User Creation)
-- Note: We'll be doing the less secure way first; Using an IAM long-term credential.
-- Start by opening the AWS console and searching "IAM".
-- Next, click the "create user" button.
-- Name the user `test-user`.
-- Attach the `ReadOnlyAdmins` group (made during week 1-3 in this course) to the user.
-- Click "Next" through the remaining pages, keeping all other settings to their defaults.
+### GuardDuty
+- Note: We won't be configuring GuardDuty, because it costs money. But we will review it as an AWS service.
+- Log into your AWS console and search "GuarDuty".
+- Read the following sections: "Benefits and features" and "Use cases".
+- Next, click the link titled "What is GuardDuty?".
+- Read the page and watch the video.
+- Next, use the Internet to find a list of all the GuardDuty detections AWS offers.
+- Next, use the Internet to find how GuardDuty is priced.
+- Lastly, discuss the following with a classmate:
+  - What is GuardDuty?
+  - Why might a company enable GuardDuty for their AWS account?
+  - What sort of things could GuardDuty detect?
+  - How much does GuardDuty cost?
