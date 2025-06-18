@@ -68,7 +68,7 @@
 
 ### GuardDuty
 - Note: We won't be configuring GuardDuty, because it costs money. But we will review it as an AWS service.
-- Log into your AWS console and search "GuarDuty".
+- Log into your AWS console and search "GuardDuty".
 - Read the following sections: "Benefits and features" and "Use cases".
 - Next, click the link titled "What is GuardDuty?".
 - Read the page and watch the video.
