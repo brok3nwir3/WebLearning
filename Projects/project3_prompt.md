@@ -8,7 +8,7 @@
 - Three main files: `index.html`, `script.js`, and `styls.css` .
 - At least one API call is made.
 - You can choose how you want the API call to be made...
-- For example, you can have the API call be made via a button click, or any time the page is loaded.
+  - For example, you can have the API call be made via a button click, or any time the page is loaded.
 - At least one HTML table is created and/or populated using JavaScript.
 
 ### Bonus Points (10pts)
