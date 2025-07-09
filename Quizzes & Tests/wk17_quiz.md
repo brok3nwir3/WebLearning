@@ -38,10 +38,10 @@ What will be the result of `x`?
 - C. `const fruits = ('Orange', 'Banana', 'Apple');`
 
 6. Which one of the following is *not* a legal JavaScript String?
-- A. `"Hello world!"`
-- B. `""Hello world!""`
-- C. `'Hello world!'`
-- D. \`\`Hello world!\`\`
+- A. "Hello world!"
+- B. ""Hello world!""
+- C. 'Hello world!'
+- D. \`Hello world!\`
 
 7. When considering backup and recovery needs, what are the *two* metrics that should be considered?
 - A. RTP and RPO
