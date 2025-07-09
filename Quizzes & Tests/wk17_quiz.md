@@ -41,7 +41,7 @@ What will be the result of `x`?
 - A. `"Hello world!"`
 - B. `""Hello world!""`
 - C. `'Hello world!'`
-- D. `\`Hello world!`\`
+- D. ``Hello world!``
 
 7. When considering backup and recovery needs, what are the *two* metrics that should be considered?
 - A. RTP and RPO
