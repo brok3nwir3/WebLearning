@@ -113,7 +113,7 @@ test();`
 - C. `var x;`
 - D. `const x;`
 
-17. What is the main difference between var and let in terms of scope?
+17. What is the main difference between `var` and `let` in terms of scope?
 - A. `var` is block-scoped, while `let` is function-scoped.
 - B. `var` is function-scoped, while `let` is block-scoped.
 - C. Both `var` and `let` are globally scoped.
