@@ -67,5 +67,5 @@ Scroll down for the answers.
 16. B. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_variables1
 17. B. <- https://www.w3schools.com/js/js_let.asp
 18. A. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_hoisting2
-19. B. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_operators1
+19. B. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_operators1 NOTE: The answer (58) is a string, not a number.
 20. C. AWS CloudHSM <- Ch.6, Pg. 185
