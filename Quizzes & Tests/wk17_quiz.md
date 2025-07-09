@@ -6,7 +6,7 @@
 - A. Scalable, Memory Optimized, and Storage Optimized
 - B. Standard, Non-standard, and Bustable
 - C. Replica, Primary, and Backup
-- D. Standard, Memory Optimized, and Bustable
+- D. Standard, Memory Optimized, and Burstable
 
 2. Which of the following typically has an index specified?
 - A. `.getElementById`
