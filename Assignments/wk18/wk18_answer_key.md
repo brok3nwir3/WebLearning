@@ -63,7 +63,6 @@ document.getElementById("Q1").innerHTML = string1;
 - Question 2 - HTML
 ```html
 <p id="Q2"></p>
-
 <script src="wk13.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
