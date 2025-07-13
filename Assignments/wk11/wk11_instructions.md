@@ -1,1 +1,10 @@
+**`Week 11 - Quiz `**
 
+## Quiz
+- Take the week 11 quiz (in the Quizzes & Tests folder).
+- Once you've finished, check your answers against the answer key.
+
+
+## Project 1
+- Read through the `project2.md` file (in the Projects folder).
+- Use the remaining class time to start working on your project.
