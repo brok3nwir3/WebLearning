@@ -42,26 +42,23 @@
 - The statement should target ID `Q2` and be set to `output`.
 - Save the file, and check if your string is correctly displaying: `hellogoodworld14`.
 
-### Question 3 - 
+### Question 3 - String Slicing
 - Working within the `wk18.html` HTML file...
   - *HTML*
 - Inside the HTML file, create one new paragraph element within the body.
-- Add the `id` attribute to the paragraph element, and set the value `Q2`.
+- Add the `id` attribute to the paragraph element, and set the value `Q3`.
 - The paragraph element should be closed without any text inside.
-- Below the paragraph element, and below the script element, we need to add *another* script element.
-- This script element won't have any `src` but will call the function `concat_plus_length`.
-- Within the function, pass three strings: `"hello", "good", "world"`.
 - Save the HTML file.
   - *JavaScript*
 - Working within the `wk18.js` JavaScript file...
-- Create a new function called `concat_plus_length`, which requires three parameters.
-- Initialize a variable called `combined` within the function.
-- Set `combined` equal to the concatenation of the three parameters passed to the function.
-- Next, initialize a variable called `output` within the function.
-- Set `output` equal to `combined` plus the length of `combined`.
+- Initialize a new variable called `string_a` set to `"alpha"`.
+- Initialize a new variable called `string_b` set to `"bravo"`.
+- Initialize a new variable called `string_c` set to `"charlie"`.
+- Initialize a new variable called `slices`.
+- Set `slices` equal to the sliced first character from `string_a`, `string_b`, and `string_c`.
 - Once you've done this, write a get element by ID statement.
-- The statement should target ID `Q2` and be set to `output`.
-- Save the file, and check if your string is correctly displaying: `hellogoodworld14`.
+- The statement should target ID `Q2` and be set to `slices`.
+- Save the file, and check if your string is correctly displaying: `abc`.
 
 
 ## AWS
