@@ -93,3 +93,21 @@ let string_c = "charlie";
 let slices = string_a.slice(0,1) + string_b.slice(0,1) + string_c.slice(0,1);
 document.getElementById("Q3").innerHTML = slices;
 ```
+
+- Question 4 - HTML
+```html
+<p id="Q1"></p>
+<p id="Q2"></p>
+<p id="Q3"></p>
+<p id="Q4"></p>
+
+<script src="wk13.js"></script>  
+
+<script>concat_plus_length("hello", "good", "world");</script>
+```
+- Question 4 - JavaScript
+```js
+let text = "I receive snail mail DAILY!";
+let array1 = text.match(/ail/gi);
+document.getElementById("Q4").innerHTML = array1.length + " " + array1;
+```
