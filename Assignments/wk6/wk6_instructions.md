@@ -6,5 +6,5 @@
 
 
 ## Project 1
-- Read through the `project1.md` file (in the Projects folder).
+- Read through the `project1_prompt.md` file (in the Projects folder).
 - Use the remaining class time to start working on your project.
