@@ -57,7 +57,7 @@ Scroll down for the answers.
 
 <button onclick="hideText()">Button</button>
 
-<script src="wk13.js"></script>  
+<script src="wk15.js"></script>  
 ```
 - Question 1 - JavaScript
 ```js
@@ -84,7 +84,7 @@ function hideText(){
 
 <button onclick="hideText()">Button</button>
 
-<script src="wk13.js"></script>  
+<script src="wk15.js"></script>  
 ```
 
 - Question 2 - JavaScript
