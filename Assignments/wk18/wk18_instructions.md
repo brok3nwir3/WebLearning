@@ -21,7 +21,7 @@
 - The statement should target ID `Q1` and be set to `string1`.
 - Save the file, and check if your string is displaying correctly.
 
-### Question 2 - 
+### Question 2 - Manual String Comparison
 - Working within the `wk18.html` HTML file...
   - *HTML*
 - Inside the HTML file, create one new paragraph element within the body.
