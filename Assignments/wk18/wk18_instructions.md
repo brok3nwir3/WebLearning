@@ -57,8 +57,24 @@
 - Initialize a new variable called `slices`.
 - Set `slices` equal to the sliced first character from `string_a`, `string_b`, and `string_c`.
 - Once you've done this, write a get element by ID statement.
-- The statement should target ID `Q2` and be set to `slices`.
+- The statement should target ID `Q3` and be set to `slices`.
 - Save the file, and check if your string is correctly displaying: `abc`.
+
+### Question 4 - String Search
+- Working within the `wk18.html` HTML file...
+  - *HTML*
+- Inside the HTML file, create one new paragraph element within the body.
+- Add the `id` attribute to the paragraph element, and set the value `Q4`.
+- The paragraph element should be closed without any text inside.
+- Save the HTML file.
+  - *JavaScript*
+- Working within the `wk18.js` JavaScript file...
+- Initialize a new variable called `text` set to `"I receive snail mail DAILY!"`.
+- Initialize a new variable called `array1`.
+- Set `array1` to use the `match` string search method, selecting `ail` globally, regardless of case.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q4` and be set to the *length* of `array1`, plus `" "`, plus `array1`.
+- Save the file, and check if your string is correctly displaying: `3 ail,ail,AIL`.
 
 
 ## AWS
