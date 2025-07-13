@@ -76,6 +76,22 @@
 - The statement should target ID `Q4` and be set to the *length* of `array1`, plus `" "`, plus `array1`.
 - Save the file, and check if your string is correctly displaying: `3 ail,ail,AIL`.
 
+### Question 5 - Convert toString()
+- Working within the `wk18.html` HTML file...
+  - *HTML*
+- Inside the HTML file, create one new paragraph element within the body.
+- Add the `id` attribute to the paragraph element, and set the value `Q5`.
+- The paragraph element should be closed without any text inside.
+- Save the HTML file.
+  - *JavaScript*
+- Working within the `wk18.js` JavaScript file...
+- Initialize a new variable called `x` set to `123`.
+- Initialize a new variable called `new_string`.
+- Set `new_string` to use the `toString()` method against `x`.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q5` and be set to `new_string`.
+- Save the file, and check if your string is correctly displaying: `123`.
+
 
 ## AWS
 
