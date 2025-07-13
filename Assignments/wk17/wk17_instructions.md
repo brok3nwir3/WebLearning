@@ -6,6 +6,6 @@
 
 
 ## Project 3
-- Read through the `project3.md` file (in the Projects folder).
+- Read through the `project3_prompt.md` file (in the Projects folder).
 - Use the remaining class time to start working on your project.
 
