@@ -77,18 +77,19 @@ function concat_plus_length(first_string, second_string, third_string){
 
 - Question 3 - HTML
 ```html
-<p id="demo1"></p>
-<p id="demo2"></p>
-<p id="demo3"></p>
+<p id="Q1"></p>
+<p id="Q2"></p>
+<p id="Q3"></p>
 
 <script src="wk13.js"></script>  
+
+<script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 3 - JavaScript
 ```js
-const fruits = ["Banana", "Orange", "Apple", "Mango", "Lemon", "Cherry"];
-document.getElementById("demo1").innerHTML = fruits;
-fruits.pop();
-document.getElementById("demo2").innerHTML = fruits;
-fruits.push("Kiwi");
-document.getElementById("demo3").innerHTML = fruits;
+let string_a = "alpha";
+let string_b = "bravo";
+let string_c = "charlie";
+let slices = string_a.slice(0,1) + string_b.slice(0,1) + string_c.slice(0,1);
+document.getElementById("Q3").innerHTML = slices;
 ```
