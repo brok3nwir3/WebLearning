@@ -22,16 +22,22 @@
 - Save the file, and check if your string is displaying correctly.
 
 ### Question 2 - 
-- Now we'll convert our existing HTML and JavaScript files to use a class, instead of an ID.
-- First, replace `ID` with `class` in the HTML file.
-- Second, replace `getElementById` with `getElementsByClassName` in the Javascript.
-- Save the file, and check if your array is displaying correctly.
-- This change should break your HTML file, and nothing should display.
-- To fix this, we need to specify an element target of `[0]` for `getElementsByClassName`.
-- Save the file, and check if your array is displaying correctly.
-- Discuss your observations with the class.
-- Note: You can read more about the difference between ID and Class here:
-- https://www.geeksforgeeks.org/javascript-getelementsbyclassname-vs-getelementbyid-method/
+- Working within the `wk18.html` HTML file...
+  - *HTML*
+- Inside the HTML file, create one new paragraph element within the body.
+- Add the `id` attribute to the paragraph element, and set the value `Q2`.
+- The paragraph element should be closed without any text inside.
+- Below the paragraph element, add a script element.
+- Add the source attribute to the script element, and set it to `wk18.js`.
+- Save the HTML file.
+  - *JavaScript*
+- Working within the `wk18.js` HTML file...
+- Initialize an string named, `string2`.
+- Set `string2` to: `""`.
+- Next, you'll need to escape the inner double quote characters.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q2` and be set to `string2`.
+- Save the file, and check if your string is displaying correctly.
 
 
 
