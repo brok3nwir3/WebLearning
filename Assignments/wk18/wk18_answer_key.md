@@ -62,13 +62,18 @@ document.getElementById("Q1").innerHTML = string1;
 
 - Question 2 - HTML
 ```html
-<p class="wk16"></p>
-<script src="wk16.js"></script> 
+<p id="Q2"></p>
+
+<script src="wk13.js"></script>  
+<script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 2 - JavaScript
 ```js
-const fruits = ["Banana", "Orange", "Apple", "Mango", "Lemon", "Cherry"];
-document.getElementsByClassName("wk16")[0].innerHTML = fruits;
+function concat_plus_length(first_string, second_string, third_string){
+    let combined = first_string + second_string + third_string;
+    let output = combined + combined.length;
+    document.getElementById("Q2").innerHTML = output;
+}
 ```
 
 - Question 3 - HTML
