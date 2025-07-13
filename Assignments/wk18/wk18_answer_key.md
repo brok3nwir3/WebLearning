@@ -62,6 +62,7 @@ document.getElementById("Q1").innerHTML = string1;
 
 - Question 2 - HTML
 ```html
+<p id="Q1"></p>
 <p id="Q2"></p>
 <script src="wk13.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
@@ -80,9 +81,7 @@ function concat_plus_length(first_string, second_string, third_string){
 <p id="Q1"></p>
 <p id="Q2"></p>
 <p id="Q3"></p>
-
 <script src="wk13.js"></script>  
-
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 3 - JavaScript
@@ -100,9 +99,7 @@ document.getElementById("Q3").innerHTML = slices;
 <p id="Q2"></p>
 <p id="Q3"></p>
 <p id="Q4"></p>
-
 <script src="wk13.js"></script>  
-
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 4 - JavaScript
@@ -111,3 +108,21 @@ let text = "I receive snail mail DAILY!";
 let array1 = text.match(/ail/gi);
 document.getElementById("Q4").innerHTML = array1.length + " " + array1;
 ```
+
+- Question 5 - HTML
+```html
+<p id="Q1"></p>
+<p id="Q2"></p>
+<p id="Q3"></p>
+<p id="Q4"></p>
+<p id="Q5"></p>
+<script src="wk13.js"></script>  
+<script>concat_plus_length("hello", "good", "world");</script>
+```
+- Question 5 - JavaScript
+```js
+let x = 123;
+let new_string = x.toString(); 
+document.getElementById("Q5").innerHTML = new_string;
+```
+
