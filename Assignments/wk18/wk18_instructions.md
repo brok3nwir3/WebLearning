@@ -2,25 +2,25 @@
 
 ## JavaScript
 
-### Question 1 - More with Strings, Pt.1
-- For the next couple questions we'll be continuing to practice with arrays.
+### Question 1 - Escaping Within Strings
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk16.html`.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk18.html`.
 - Inside the HTML file, create one new paragraph element within the body.
-- Add the `id` attribute to the paragraph element, and set the value `wk16`.
+- Add the `id` attribute to the paragraph element, and set the value `Q1`.
 - The paragraph element should be closed without any text inside.
 - Below the paragraph element, add a script element.
-- Add the source attribute to the script element, and set it to `wk16.js`.
+- Add the source attribute to the script element, and set it to `wk18.js`.
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk16.js`, and open it.
-- Within the JavaScript file, initialize an array named, `fruits`.
-- Add the following strings to the array: `"Banana", "Orange", "Apple", "Mango", "Lemon", "Cherry"`.
-- Next, write a get element by ID statement.
-- The statement should target ID `wk16` and be set to `fruits`.
-- Save the file, and check if your array is displaying correctly.
+- Create a new JavaScript file, name it `wk18.js`, and open it.
+- Within the JavaScript file, initialize an string named, `string1`.
+- Set `string1` to: `"The "GOAT" is the greatest of all time."`.
+- Next, you'll need to escape the inner double quote characters.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q1` and be set to `string1`.
+- Save the file, and check if your string is displaying correctly.
 
-### Question 2 - More with Strings, Pt.2
+### Question 2 - 
 - Now we'll convert our existing HTML and JavaScript files to use a class, instead of an ID.
 - First, replace `ID` with `class` in the HTML file.
 - Second, replace `getElementById` with `getElementsByClassName` in the Javascript.
