@@ -95,16 +95,23 @@
 
 ## AWS
 
-### GuardDuty
-- Note: We won't be configuring GuardDuty, because it costs money. But we will review it as an AWS service.
-- Log into your AWS console and search "GuardDuty".
-- Read the following sections: "Benefits and features" and "Use cases".
-- Next, click the link titled "What is GuardDuty?".
-- Read the page and watch the video.
-- Next, use the Internet to find a list of all the GuardDuty detections AWS offers.
-- Next, use the Internet to find how GuardDuty is priced.
-- Lastly, discuss the following with a classmate:
-  - What is GuardDuty?
-  - Why might a company enable GuardDuty for their AWS account?
-  - What sort of things could GuardDuty detect?
-  - How much does GuardDuty cost?
+### Creating a Trail (CloudTrail), Pt. 1
+- Note: This lab is based on exercise 7.1 from the textbook.
+- Log into your AWS console and search "CloudTrail".
+- Click "Create a trail".
+- Name the trail: `coding-hour-trail` and click to continue.
+- Return to the CloudTrail home page.
+- Click the `coding-hour-trail` and view the details.
+- Click "Trail log location".
+- Identify the newly created S3 bucket used by your trail.
+- Discuss the following with a classmate...
+- 1) What is the name of the object within the new bucket?
+- 2) What file type is in the bucket?
+- 3) What information does the file contain?
+- 4) Return the trail, open the details, and identify the four main event categories.
+ 
+### Creating a Trail (CloudTrail), Pt. 2
+- Lastly, you should disable logging by the trail.
+- Open the trail properties and click "Stop logging".
+- Alternatively, you could simply delete the trail and the bucket.
+- However, we may use this trail in the future.
