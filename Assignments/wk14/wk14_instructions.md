@@ -97,4 +97,4 @@
 - Return to the database list, scroll to the right, and ensure the database states that it is Multi-AZ.
 
 ## Important Note
-- Ensure you delete all test resources once you're finished.
+- Ensure you disable or delete all newly created test/lab resources.
