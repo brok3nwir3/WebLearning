@@ -94,4 +94,4 @@
 - Review the public and private IP information.
 
 ## Important Note
-- Ensure you delete all test resources from week 12 and wek 13.
+- Ensure you disable or delete all newly created test/lab resources.
