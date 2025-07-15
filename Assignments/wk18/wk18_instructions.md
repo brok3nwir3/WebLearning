@@ -95,7 +95,7 @@
 
 ## AWS
 
-### Creating a Trail (CloudTrail), Pt. 1
+### Creating a Trail (CloudTrail)
 - Note: This lab is based on exercise 7.1 from the textbook.
 - Log into your AWS console and search "CloudTrail".
 - Click "Create a trail".
@@ -110,8 +110,5 @@
 - 3) What information does the file contain?
 - 4) Return the trail, open the details, and identify the four main event categories.
  
-### Creating a Trail (CloudTrail), Pt. 2
-- Lastly, you should disable logging by the trail.
-- Open the trail properties and click "Stop logging".
-- Alternatively, you could simply delete the trail and the bucket.
-- However, we may use this trail in the future.
+## Important Note
+- Ensure you disable or delete all newly created test/lab resources.
