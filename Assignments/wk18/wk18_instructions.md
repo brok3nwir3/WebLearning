@@ -109,6 +109,7 @@
 - 2) What file type is in the bucket?
 - 3) What information does the file contain?
 - 4) Return the trail, open the details, and identify the four main event categories.
+- 5) From the CloudTrail menu, click "Event History" (on the left), and review the latest events.
  
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
