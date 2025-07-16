@@ -105,6 +105,7 @@
 - Click "Trail log location".
 - Identify the newly created S3 bucket used by your trail.
 - Discuss the following with a classmate...
+- Note: You may need to wait a few minutes before you're able to answer the following.
 - 1) What is the name of the object within the new bucket?
 - 2) What file type is in the bucket?
 - 3) What information does the file contain?
