@@ -71,7 +71,7 @@ document.getElementById("Q1").innerHTML = string1;
 ```js
 function concat_plus_length(first_string, second_string, third_string){
     // let combined = first_string + second_string + third_string; // This is how to concat without using the method.
-    let combined = first_string.concat(second_string,third_string);
+    let combined = first_string.concat(second_string, third_string);
     let output = combined + combined.length;
     document.getElementById("Q2").innerHTML = output;
 }
