@@ -6,7 +6,7 @@ const requestOptions = {
   redirect: "follow"
 };
 
-fetch("https://api.ipgeolocation.io/v2/ipgeo?apiKey=a6f018ac072a4c8aa06b45d79180e5d7", requestOptions)
+fetch("https://api.ipgeolocation.io/v2/ipgeo?apiKey=123abc", requestOptions)
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     return response.json();
