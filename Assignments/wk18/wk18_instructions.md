@@ -1,4 +1,4 @@
-**`Week 18 - JavaScript String Methods, String Search, and toString); AWS GuardDuty`**
+**`Week 18 - JavaScript String Methods, String Search, and toString); AWS CloudTrail`**
 
 ## JavaScript
 
