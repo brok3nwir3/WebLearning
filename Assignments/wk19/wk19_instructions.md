@@ -2,8 +2,8 @@
 
 ## JavaScript
 
-### Question 1 - Objects
-- The following questions will focus on string usage and manipulation.
+### Question 1 - New Object
+- The following questions will focus on the basics of objects.
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk19.html`.
 - Inside the HTML file, create one new paragraph element within the body.
@@ -21,8 +21,20 @@
 - The statement should target ID `Q1` and return a string that contains all the properties of the `bird` object.
 - Save the file, and check if your string is displaying correctly.
 
-### Question 2 
-
+### Question 2 - Update an Object
+- Within your `wk19.html` file...
+  - *HTML*
+- Create a new paragraph element within the body.
+- Add the `id` attribute to the paragraph element, and set the value `Q2`.
+- The paragraph element should be closed without any text inside.
+- Save the HTML file.
+  - *JavaScript*
+- Within your `wk19.js` file...
+- Add a new `bird` object property: `habitat`.
+- Set the `habitat` property to: `Coastal`.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q2` and return a string that contains all the properties of the `bird` object.
+- Save the file, and check if your string is displaying correctly.
 
 ## AWS
 
