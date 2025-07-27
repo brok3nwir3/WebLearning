@@ -52,12 +52,15 @@ Scroll down for the answers.
 - Question 1 - HTML
 ```html
 <p id="Q1"></p>
-<script src="wk18.js"></script>
+<script src="wk19.js"></script>
 ```
 - Question 1 - JavaScript
 ```js
-let string1 = "The \"GOAT\" is the greatest of all time.";
-document.getElementById("Q1").innerHTML = string1;
+const bird = {type:"Seagull", size:"Medium", color:"White"};
+document.getElementById("Q1").innerHTML =
+"The bird object is of type " + bird.type 
++ " of size " + bird.size 
++ " and of color " + bird.color;
 ```
 
 - Question 2 - HTML
