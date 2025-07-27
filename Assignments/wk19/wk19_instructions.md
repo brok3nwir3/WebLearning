@@ -2,23 +2,23 @@
 
 ## JavaScript
 
-### Question 1 - Escaping Within Strings
+### Question 1 - Objects
 - The following questions will focus on string usage and manipulation.
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk18.html`.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk19.html`.
 - Inside the HTML file, create one new paragraph element within the body.
 - Add the `id` attribute to the paragraph element, and set the value `Q1`.
 - The paragraph element should be closed without any text inside.
 - Below the paragraph element, add a script element.
-- Add the source attribute to the script element, and set it to `wk18.js`.
+- Add the source attribute to the script element, and set it to `wk19.js`.
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk18.js`, and open it.
-- Within the JavaScript file, initialize an string named, `string1`.
-- Set `string1` to: `"The "GOAT" is the greatest of all time."`.
-- Next, you'll need to escape the inner double quote characters.
+- Create a new JavaScript file, name it `wk19.js`, and open it.
+- Within the JavaScript file, initialize an object named, `bird`.
+- Set the `bird` object to have the following properties: `type`, `size`, and `color`.
+- Next, set the three properties to have the following values: `"Seagull"`, `"Medium"`, and `"White"`.
 - Once you've done this, write a get element by ID statement.
-- The statement should target ID `Q1` and be set to `string1`.
+- The statement should target ID `Q1` and return a string that contains all the properties of the `bird` object.
 - Save the file, and check if your string is displaying correctly.
 
 ### Question 2 
