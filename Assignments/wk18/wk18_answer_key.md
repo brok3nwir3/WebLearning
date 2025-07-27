@@ -64,7 +64,7 @@ document.getElementById("Q1").innerHTML = string1;
 ```html
 <p id="Q1"></p>
 <p id="Q2"></p>
-<script src="wk13.js"></script>  
+<script src="wk18.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 2 - JavaScript
@@ -82,7 +82,7 @@ function concat_plus_length(first_string, second_string, third_string){
 <p id="Q1"></p>
 <p id="Q2"></p>
 <p id="Q3"></p>
-<script src="wk13.js"></script>  
+<script src="wk18.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 3 - JavaScript
@@ -100,7 +100,7 @@ document.getElementById("Q3").innerHTML = slices;
 <p id="Q2"></p>
 <p id="Q3"></p>
 <p id="Q4"></p>
-<script src="wk13.js"></script>  
+<script src="wk18.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 4 - JavaScript
@@ -117,7 +117,7 @@ document.getElementById("Q4").innerHTML = array1.length + " " + array1;
 <p id="Q3"></p>
 <p id="Q4"></p>
 <p id="Q5"></p>
-<script src="wk13.js"></script>  
+<script src="wk18.js"></script>  
 <script>concat_plus_length("hello", "good", "world");</script>
 ```
 - Question 5 - JavaScript
