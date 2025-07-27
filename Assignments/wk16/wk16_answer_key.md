@@ -77,7 +77,7 @@ document.getElementsByClassName("wk16")[0].innerHTML = fruits;
 <p id="demo2"></p>
 <p id="demo3"></p>
 
-<script src="wk13.js"></script>  
+<script src="wk16.js"></script>  
 ```
 - Question 3 - JavaScript
 ```js
