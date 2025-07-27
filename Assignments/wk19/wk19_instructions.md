@@ -21,7 +21,7 @@
 - The statement should target ID `Q1` and return a string that contains all the properties of the `bird` object.
 - Save the file, and check if your string is displaying correctly.
 
-### Question 2 - Update an Object
+### Question 2 - Add an Object Property
 - Within your `wk19.html` file...
   - *HTML*
 - Create a new paragraph element within the body.
@@ -31,10 +31,25 @@
   - *JavaScript*
 - Within your `wk19.js` file...
 - Add a new `bird` object property: `habitat`.
-- Set the `habitat` property to: `Coastal`.
+- Set the `habitat` property to a *list* containing: `Coastal` and `Inland`.
 - Once you've done this, write a get element by ID statement.
 - The statement should target ID `Q2` and return a string that contains all the properties of the `bird` object.
 - Save the file, and check if your string is displaying correctly.
+
+### Question 3 - Remove an Object Property
+- Within your `wk19.html` file...
+  - *HTML*
+- Create a new paragraph element within the body.
+- Add the `id` attribute to the paragraph element, and set the value `Q3`.
+- The paragraph element should be closed without any text inside.
+- Save the HTML file.
+  - *JavaScript*
+- Within your `wk19.js` file...
+- Add a delete statement that removes the property `size`.
+- Once you've done this, write a get element by ID statement.
+- The statement should target ID `Q3` and return a string that contains all the properties of the `bird` object; including `size`.
+- Save the file, and check if your string is displaying as expected.
+- Discuss with a classmate what you see returned for `size`, and why you're getting this result.
 
 ## AWS
 
