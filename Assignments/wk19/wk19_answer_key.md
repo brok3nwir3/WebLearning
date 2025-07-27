@@ -67,17 +67,16 @@ document.getElementById("Q1").innerHTML =
 ```html
 <p id="Q1"></p>
 <p id="Q2"></p>
-<script src="wk13.js"></script>  
-<script>concat_plus_length("hello", "good", "world");</script>
+<script src="wk19.js"></script>  
 ```
 - Question 2 - JavaScript
 ```js
-function concat_plus_length(first_string, second_string, third_string){
-    // let combined = first_string + second_string + third_string; // This is how to concat without using the method.
-    let combined = first_string.concat(second_string, third_string);
-    let output = combined + combined.length;
-    document.getElementById("Q2").innerHTML = output;
-}
+bird.habitat = "Coastal";
+document.getElementById("Q2").innerHTML =
+"The bird object is of type " + bird.type 
++ " of size " + bird.size 
++ " of color " + bird.color
++ " and of habitat " + bird.habitat;
 ```
 
 - Question 3 - HTML
