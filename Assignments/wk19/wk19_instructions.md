@@ -69,17 +69,27 @@
 - In the "Edit Math Expression" field, enter the expression `m1+m2` and click "Apply".
 - Lastly, test hovering your cursor over a timestamp in the graph, and ensuring you see all three metrics pop up.
 
-### Test and Use Your CloudWatch Graph
+### Test Your CloudWatch Graph
 - Open a new browser tab and navigate to the EC2 dashboard.
 - Log into your EC2 instance.
 - Perform a few curl commands to generate traffic, such as `curl google.com`.
 - Next, go back to your CloudWatch graph and set the timeframe (at the top) to the past hour (1h).
 - Change the "Period" to "1 minute".
 - Click the refresh icon at the top right of the graph.
+- Hover over the displayed timestamps and review the most recent activity.
+
+### Create a CloudWatch Dashboard
+- Continuing from the same CloudWatch metrics page...
 - Click "Actions" and "Add to dashboard".
 - Click the "Create new" button, and name the dashboard `test-dashboard`.
 - Click "Create" and "Add to dashboard".
-- Hover over the displayed timestamps and review the most recent activity.
+- Next, click the orange plus symbol (top right).
+- Select "Data type" as "Metrics" and "Widget type" as "Line", then click "Next".
+- Click "EC2" and then "Per-instance Metrics".
+- Filter for `cpu` in the search bar.
+- Select "CPUUtilization" and click "Create widget".
+- Click the orange "Save" button (top right).
+- Hover over the displayed timestamps (within the new widget) and review the most recent activity.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
