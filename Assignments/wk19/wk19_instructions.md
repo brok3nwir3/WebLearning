@@ -81,3 +81,5 @@
 - Click "Create" and "Add to dashboard".
 - Hover over the displayed timestamps and review the most recent activity.
 
+## Important Note
+- Ensure you disable or delete all newly created test/lab resources.
