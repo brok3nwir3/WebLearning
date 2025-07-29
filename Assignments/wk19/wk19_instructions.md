@@ -67,6 +67,17 @@
 - For each metric, select `Sum` for the "Statistic" and `5 minutes` for the "Period".
 - Click the "Add Math" button and select "Start with empty expression".
 - In the "Edit Math Expression" field, enter the expression `m1+m2` and click "Apply".
+- Lastly, test hovering your cursor over a timestamp in the graph, and ensuring you see all three metrics pop up.
 
-### 
-- 
+### Test and Use Your CloudWatch Graph
+- Open a new browser tab and navigate to the EC2 dashboard.
+- Log into your EC2 instance.
+- Perform a few curl commands to generate traffic, such as `curl google.com`.
+- Next, go back to your CloudWatch graph and set the timeframe (at the top) to the past hour (1h).
+- Change the "Period" to "1 minute".
+- Click the refresh icon at the top right of the graph.
+- Click "Actions" and "Add to dashboard".
+- Click the "Create new" button, and name the dashboard `test-dashboard`.
+- Click "Create" and "Add to dashboard".
+- Hover over the displayed timestamps and review the most recent activity.
+
