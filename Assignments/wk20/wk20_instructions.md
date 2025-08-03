@@ -3,7 +3,6 @@
 ## JavaScript
 
 ### Question 1 - Object Methods
-- The following questions will focus on the basics of objects.
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk19.html`.
 - Inside the HTML file, create one new paragraph element within the body.
