@@ -5,23 +5,25 @@
 ### Question 1 - Object Methods
 - *This question introduces object method creation.*
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk19.html`.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk20.html`.
 - Inside the HTML file, create one new paragraph element within the body.
 - Add the `id` attribute to the paragraph element, and set the value `Q1`.
 - The paragraph element should be closed without any text inside.
 - Below the paragraph element, add a script element.
-- Add the source attribute to the script element, and set it to `wk19.js`.
+- Add the source attribute to the script element, and set it to `wk20.js`.
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk19.js`, and open it.
-- Within the JavaScript file, initialize an object named, `bird`.
-- Set the `bird` object to have the following properties: `type`, `size`, and `color`.
-- Next, set the three properties to have the following values: `"Seagull"`, `"Medium"`, and `"White"`.
-- Once you've done this, write a get element by ID statement.
-- The statement should target ID `Q1` and return a string that contains all the properties of the `bird` object.
+- Create a new JavaScript file, name it `wk20.js`, and open it.
+- Within the JavaScript file, initialize an object named, `box`.
+- Set the `box` object to have the following properties: `length`, `width`, and `height`.
+- Next, set the three properties to have the following values: `"1ft"`, `"1ft"`, and `"2ft"`.
+- Once you've done this, create a new `function` (i.e. method) called `dimensions`, which returns the dimensions for the box object.
+- Lastly, write a get element by ID statement.
+- The statement should target ID `Q1` and return a string that contains all the properties of the `box` object.
 - Save the file, and check if your string is displaying correctly.
 
-### Question 2 - Add an Object Property
+### Question 2 - Object Display (Loop)
+- *Note: There are several ways to display object properties; here we'll use a loop.*
 - Within your `wk19.html` file...
   - *HTML*
 - Create a new paragraph element within the body.
