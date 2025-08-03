@@ -1,4 +1,4 @@
-**`Week 19 - JavaScript Objects, Object Properties; AWS GuardDuty`**
+**`Week 19 - JavaScript Objects, Object Properties; AWS CloudWatch`**
 
 ## JavaScript
 
