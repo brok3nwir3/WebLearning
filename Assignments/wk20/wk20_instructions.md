@@ -63,7 +63,7 @@
 - The statement should target ID `Q3` and return `text`.
 - Save the file, and check if your string is displaying correctly.
 
-- ### Question 4 - Type Conversion
+### Question 4 - Type Conversion
 - *Calling the date method and then converting it to a number.*
 - Within your `wk20.html` file...
   - *HTML*
