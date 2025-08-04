@@ -107,9 +107,9 @@
 - Create a new AWS Linux host with a security group allowing ports 443, 80, and 22.
 - Log into the new EC2 host.
 - Run the following commands:
-- `sudo yum update -y`
-- `sudo yum install -y httpd`
-- `sudo nano /var/www/html/index.html`
+```sudo yum update -y```
+```sudo yum install -y httpd```
+```sudo nano /var/www/html/index.html```
 - At this point, the nano text editor will open and you'll need to paste in the following HTML code:
 ```
 <!DOCTYPE html>
