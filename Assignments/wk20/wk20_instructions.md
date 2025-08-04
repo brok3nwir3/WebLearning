@@ -81,23 +81,54 @@
 
 ## AWS
 
-### Create a CloudWatch Metric Graph
-- Note: This lab is based on exercise 7.2 from the textbook.
-- As a prerequisite we need a running EC2 instance.
-- Log into your AWS console and search "EC2".
-- Navigate to the EC2 dashboard and start up a new or existing instance.
-- Next, search "CloudWatch" at the top of the console in the search bar.
-- On the left side, expand "Metrics" and click "All Metrics".
-- From the "Browse" tab, click "EC2" and then click "Per-Instance Metrics".
-- Search the string `network` in the search bar, to reduce the results displayed.
-- Find your EC2 instance and select "NetworkIn" and "NetworkOut".
-- Click the "Graphed metrics" tab.
-- For each metric, select `Sum` for the "Statistic" and `5 minutes` for the "Period".
-- Click the "Add Math" button and select "Start with empty expression".
-- In the "Edit Math Expression" field, enter the expression `m1+m2` and click "Apply".
-- Lastly, test hovering your cursor over a timestamp in the graph, and ensuring you see all three metrics pop up.
+### Register a Domain Name
+- *Note: This exercise will charge you ~$3 USD, for a year-long lease on a domain name.*
+- Log into the AWS web console, search "Route 53" in the search bar, and navigate to the page.
+- On the left side of the screen, under "Domains," click "Registered Domains."
+- Next, click the orange "Register domains" button (top right).
+- Expand the "Standard Pricing" tab, and click the arrow button in the "Price" column to sort by TLD price.
+- You should see a TLD that has a price around $3 USD, such as `.click`.
+- Next, enter a domain name, such as `test123.click` or `johntestserver.click`, and click the search button.
+- If the name is available, click the "Select" button.
+- Finally, click the orange "Proceed to checkout" button, and complete the payment process.
+
+### Verify the Domain Name
+- Return to the Route 53 dashboard page.
+- On the left side of the screen, under "Domains," click "Registered Domains."
+- Confirm your domain name appears in the list.
+- Next, navigate to: https://search.dnslytics.com/
+- Search your domain name.
+- Review the page contents and examine the registration information, including WHOIS data.
+
+### Start an EC2 Web Server
+- Navigate to the EC2 dashboard.
+- Click the "Instances" tab and click "Instances" (left side of screen).
+- Click the orange "Launch instances" button (top right).
+- Create a new AWS Linux host with a security group allowing ports 443, 80, and 22.
+- Log into the new EC2 host.
+- Run the following commands:
+- `sudo yum update -y`
+- `sudo yum install -y httpd`
+- `sudo nano /var/www/html/index.html`
+- At this point, the nano text editor will open and you'll need to paste in the following HTML code:
+- ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This is a simple page.</p>
+</body>
+</html>
+- 
+
+### Create a Route 53 Hosted Zone
+- *Note: This lab is based on exercise 8.1 from the textbook.*
+- 
 
 
 
 ## Important Note
-- Ensure you disable or delete all newly created test/lab resources.
+- Ensure you disable or delete all newly created test/lab resources; excluding your registered domain name (you already paid for it).
