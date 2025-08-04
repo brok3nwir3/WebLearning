@@ -1,4 +1,4 @@
-**`Week 20 - JavaScript Object Methods, Object Display, Sets, & Type Conversion); AWS XXX`**
+**`Week 20 - JavaScript Object Methods, Object Display, Sets, & Type Conversion); AWS Domain Name Registration, DNS Records, and DNS Hosted Zones`**
 
 ## JavaScript
 
@@ -107,10 +107,10 @@
 - Create a new AWS Linux host with a security group allowing ports 443, 80, and 22.
 - Log into the new EC2 host.
 - Run the following commands:
-```sudo yum update -y```
-```sudo yum install -y httpd```
-```sudo nano /var/www/html/index.html```
-- At this point, the nano text editor will open and you'll need to paste in the following HTML code:
+- `sudo yum update -y`
+- `sudo yum install -y httpd`
+- `sudo nano /var/www/html/index.html`
+- At this point, the nano text editor will open and you'll need to copy and paste in the following HTML code:
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -123,12 +123,25 @@
 </body>
 </html>
 ```
+- Close and save the nano file.
+- Run the following command: `sudo systemctl start httpd`
+- Open a new browser tab for the AWS EC2 instance dashboard.
+- Identify the public IP address for your test server and navigate to it in a new browser tab to confirm the web server is working.
 
-### Create a Route 53 Hosted Zone
+### Create a Route 53 Hosted Zone and A Record
 - *Note: This lab is based on exercise 8.1 from the textbook.*
-- 
-
-
+- Navigate to "Route 53" from the AWS web console.
+- Click "Hosted Zones" on the left side of the screen.
+- Click the orange "Create hosted zone" button (top right).
+- Enter your domain name and then click the orange "Create hosted zone" button (bottom right).
+- Return to the "Hosted zones" tab and click the hosted zone assigned to your domain name.
+- You should see two records, an SOA and an NS, for your domain.
+- Next, you'll click the orange "Create record" button (top right).
+- For the record name, enter `www`.
+- For the value, enter the public IP address of your EC2 web server.
+- Next, click the orange "Create records" button (bottom right).
+- This new record will take a minute to populate, but you can check progress by running the command: `nslookup www.<your-domain-name>.click`
+- Eventually your record should return, and you can test A record by opening a new browser tab and searching `www.<your-domain-name>.click`
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources; excluding your registered domain name (you already paid for it).
