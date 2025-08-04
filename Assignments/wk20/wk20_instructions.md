@@ -111,7 +111,7 @@
 - `sudo yum install -y httpd`
 - `sudo nano /var/www/html/index.html`
 - At this point, the nano text editor will open and you'll need to paste in the following HTML code:
-- ```
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +122,7 @@
     <p>This is a simple page.</p>
 </body>
 </html>
-- 
+```
 
 ### Create a Route 53 Hosted Zone
 - *Note: This lab is based on exercise 8.1 from the textbook.*
