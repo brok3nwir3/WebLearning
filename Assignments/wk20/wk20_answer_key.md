@@ -90,6 +90,7 @@ document.getElementById("Q2").innerHTML = box_data;
 ```
 - Question 3 - JavaScript
 ```js
+const colors = new Set(["yellow","green","purple"]);
 let text = "";
 for (const x of colors) {
   text += x + " ";
