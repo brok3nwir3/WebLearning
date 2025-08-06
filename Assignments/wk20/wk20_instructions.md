@@ -37,10 +37,10 @@
 - Once you've done this, create two new variable...
 - `let` the first variable be `box_data` set to an empty string.
 - `let` the second variable be `count` set to the number 1.
-- Next create a loop that runs for each item `in box`.
+- Next create a loop that runs `x` times, for each item `in box`.
 - The loop should create a formatted string for the current property.
-- Each line should include the current `count`, plus a new line at the end; using `<br>`.
-- The end of the loop should include a statement to incremeent `count`.
+- Each line should include the current `count`, item `x`, and a new line at the end using `<br>`.
+- The end of the loop should include a statement to increment `count`.
 - Lastly, write a get element by ID statement.
 - The statement should target ID `Q2` and return `box_data`.
 - Save the file, and check if your string is displaying correctly.
