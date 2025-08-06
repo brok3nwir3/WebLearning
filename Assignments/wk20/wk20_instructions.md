@@ -126,7 +126,7 @@
 - Close and save the nano file.
 - Run the following command: `sudo systemctl start httpd`
 - Open a new browser tab for the AWS EC2 instance dashboard.
-- Identify the public IP address for your test server and navigate to it in a new browser tab to confirm the web server is working.
+- Identify the public IP address for your test server and navigate to it in a new browser tab (via HTTP, not HTTPS) to confirm the web server is working.
 
 ### Create a Route 53 Hosted Zone and A Record
 - *Note: This lab is based on exercise 8.1 from the textbook.*
