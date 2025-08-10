@@ -51,16 +51,17 @@ Scroll down for the answers.
 
 - Question 1 - HTML
 ```html
-<p id="Q1"></p>
-<script src="wk20.js"></script>
+<canvas id="Q1" width="700" height="700" style="border:2px solid #164996;">
+</canvas>
+<script src="wk21.js"></script>  
+
 ```
 - Question 1 - JavaScript
 ```js
-const box = {length:"1ft", width:"1ft", height:"2ft"};
-box.dimensions = function() {
-    return this.length + " x " + this.width + " x " + this.height;
-};
-document.getElementById("Q1").innerHTML = box.dimensions(); 
+const canvas = document.getElementById("Q1");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "green";
+ctx.fillRect(10, 100, 150, 70);
 ```
 
 - Question 2 - HTML
