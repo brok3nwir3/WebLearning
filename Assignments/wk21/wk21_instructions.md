@@ -1,4 +1,4 @@
-**`Week 21 - HTML Canvas Element; JavaScript ; AWS `**
+**`Week 21 - HTML Canvas Element; JavaScript Drawing, Coordinates, and Lines ; AWS `**
 
 ## JavaScript
 
@@ -13,8 +13,9 @@
 - Set the canvas to have a `style` attribute with `2` pixel border, `solid`, with color `#164996`.
 - Below the canvas element, add a script element.
 - Add the source attribute to the script element, and set it to `wk21.js`.
-- Save the HTML file.
+- Save the HTML file, and check if your canvas is displaying correctly.
   - *JavaScript*
+- Note: Refer to the following page if you get stuck: https://www.w3schools.com/graphics/canvas_drawing.asp
 - Create a new JavaScript file, name it `wk21.js`, and open it.
 - Within the JavaScript file, initialize a *constant* variable named, `canvas`.
 - Set the `canvas` variable to a `getElementById` for `Q1`.
@@ -23,31 +24,17 @@
 - Next, set `ctx` to have a `fillStyle` of `"green"`.
 - Then, draw a rectangle, i.e. `fillRect` with the dimension `150` by `70`.
 - Place the rectangle at an X position of `10` and a Y position of `100`.
-- Save the file, and check if your string is displaying correctly.
+- Save the file, and check if your rectangle is displaying correctly.
 
-### Question 2 - Object Display (Loop)
-- *Note: There are several ways to display object properties; here we'll use a loop.*
-- Within your `wk20.html` file...
-  - *HTML*
-- Create a new paragraph element within the body.
-- Add the `id` attribute to the paragraph element, and set the value `Q2`.
-- The paragraph element should be closed without any text inside.
-- Save the HTML file.
+### Question 2 - Coordinates and Drawing Lines
+- We will continue using the `Q1` canvas, so no changes will be made to the `wk21.html` file.
   - *JavaScript*
-- Within your `wk20.js` file...
-- Add a new `box` object property: `material`.
-- Set the `material` property to: `cardboard`.
-- Once you've done this, create two new variable...
-- `let` the first variable be `box_data` set to an empty string.
-- `let` the second variable be `count` set to the number 1.
-- Next create a loop that runs `x` times, for each item `in box`.
-- The loop should create a formatted string for the current property.
-- Each line should include the current `count`, item `x`, and a new line at the end using `<br>`.
-- The end of the loop should include a statement to increment `count`.
-- Lastly, write a get element by ID statement.
-- The statement should target ID `Q2` and return `box_data`.
-- Save the file, and check if your string is displaying correctly.
-
+- Within your `wk21.js` file...
+- Read the following page: https://www.w3schools.com/graphics/canvas_lines.asp
+- Based on the information from your reading, create two new line drawings on the canvas.
+- Position the two new lines create a black X going through the green rectangle you made in question 1.
+- The two lines should appear to start and end in the corners of the rectangle.
+- Save the file, and check if your lines are displaying correctly.
 
 
 ## AWS
