@@ -1,4 +1,4 @@
-**`Week 21 - HTML Canvas Element; JavaScript Drawing, Coordinates, and Lines ; AWS `**
+**`Week 21 - HTML Canvas Element; JavaScript Drawing, Coordinates, Lines, and Text; AWS Permission Boundaries and Assuming Roles`**
 
 ## JavaScript
 
@@ -40,10 +40,11 @@
 - We will continue using the `Q1` canvas, so no changes will be made to the `wk21.html` file.
   - *JavaScript*
 - Within your `wk21.js` file...
-- Read the following page: https://www.w3schools.com/graphics/canvas_lines.asp
-- Based on the information from your reading, create two new line drawings on the canvas.
-- Position the two new lines create a black X going through the green rectangle you made in question 1.
-- The two lines should appear to start and end in the corners of the rectangle.
+- Read the following page: https://www.w3schools.com/graphics/canvas_text.asp
+- Based on the information from your reading, create a new text string on the canvas.
+- The X & Y position for the new text should be centered above the green rectangle you made in question 1.
+- The text should use the following *font* settings: `bolder oblique 45px monospace`.
+- Lastly, text message should be set to `XBOX`.
 - Save the file, and check if your lines are displaying correctly.
 
 
