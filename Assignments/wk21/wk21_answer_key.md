@@ -82,3 +82,15 @@ ctx.moveTo(160,100);
 ctx.lineTo(10,170);
 ctx.stroke();
 ```
+
+- Question 3 - HTML
+```html
+<canvas id="Q1" width="700" height="700" style="border:2px solid #164996;">
+</canvas>
+<script src="wk21.js"></script>  
+```
+- Question 3 - JavaScript
+```js
+ctx.font = "bolder oblique 45px monospace";
+ctx.strokeText("XBOX", 35, 95);
+```
