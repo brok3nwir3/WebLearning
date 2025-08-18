@@ -62,7 +62,7 @@ Scroll down for the answers.
 - Question 1 - CSS
 ```css
 canvas {
-    border:2px solid #174680;
+    border: 2px solid #174680;
     background-color: #acb1af;
 }
 ```
