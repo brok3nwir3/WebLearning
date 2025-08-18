@@ -36,16 +36,30 @@ var myGameArea = {
 - Within `startGame` call `myGameArea.start();`.
 - Save the file, and check if your canvas (game area) is displaying correctly.
 
-### Question 2 - Coordinates and Drawing Lines
-- We will continue using the `Q1` canvas, so no changes will be made to the `wk21.html` file.
+### Question 2 - Adding an Object to the Canvas
+- *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
+  - *HTML*
+- No changes.
+  - *CSS*
+- No changes.
   - *JavaScript*
-- Within your `wk21.js` file...
-- Read the following page: https://www.w3schools.com/graphics/canvas_lines.asp
-- Based on the information from your reading, create two new line drawings on the canvas.
-- Position the two new lines create a black X going through the green rectangle you made in question 1.
-- The two lines should appear to start and end in the corners of the rectangle.
-- Save the file, and check if your lines are displaying correctly.
-
+- Open `wk22.js`.
+- Within the JavaScript file, initialize a variable named, `myGamePiece`.
+- Next, create a function called `component`, which takes five parameters: `width`, `height`, `color`, `x`. `y`.
+- Within `component` add the following:
+```
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+```
+- Lastly, we'll use our `myGamePiece` variable and our `component` function to create an actual game piece *object*.
+- Within the `startGame()` function, add a new line to set `myGamePiece` to be a `new component`, with the properties:
+- width `30`, height `30`, color `"red"`, X position `10`, and Y position `120`.
+- Save the file, and check if your new object is displaying correctly.
 
 ## AWS
 
