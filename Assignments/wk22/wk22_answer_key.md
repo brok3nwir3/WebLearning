@@ -83,23 +83,34 @@ var myGameArea = {
 }
 ```
 
-- Question 2 - HTML
-```html
-<canvas id="Q1" width="700" height="700" style="border:2px solid #164996;">
-</canvas>
-<script src="wk21.js"></script>  
-```
 - Question 2 - JavaScript
 ```js
-ctx.beginPath();
-ctx.moveTo(10,100);
-ctx.lineTo(160,170);
-ctx.stroke();
+var myGamePiece;
 
-ctx.beginPath();
-ctx.moveTo(160,100);
-ctx.lineTo(10,170);
-ctx.stroke();
+function startGame() {
+    myGameArea.start();
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+}
 ```
 
 - Question 3 - HTML
