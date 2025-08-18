@@ -1,4 +1,4 @@
-**`Week 22 - HTML Canvas Element; JavaScript ???; AWS ???`**
+**`Week 22 - HTML On-Load; JavaScript ???; AWS ???`**
 
 ## JavaScript
 
