@@ -2,29 +2,39 @@
 
 ## JavaScript
 
-### Question 1 - HTML Canvas Element & JavaScript Drawing
-- *This question introduces the HTML canvas element.*
+### Question 1 - Create Canvas Element On-Load
+- *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk21.html`.
-- Inside the HTML file, create one new canvas element within the body.
-- Add the `id` attribute to the paragraph element, and set the value `Q1`.
-- The canvas element should be closed without any text inside.
-- Set the canvas to have a `height` attribute of `700` and a `width` attribute of `700`.
-- Set the canvas to have a `style` attribute with `2` pixel border, `solid`, with color `#164996`.
-- Below the canvas element, add a script element.
-- Add the source attribute to the script element, and set it to `wk21.js`.
-- Save the HTML file, and check if your canvas is displaying correctly.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk22.html`.
+- Inside the HTML file, add a link to a file called `wk22.css`.
+- Next, add an `onload` parameter to the body element, and point it to the function `"startGame()"`.
+- Lastly, add a script element and add the source attribute set to `wk22.js`.
+- Save the HTML file.
+  - *CSS*
+- Create a new CSS file or copy of one of your website CSS files, and name it `wk22.css`. 
+- Open your `wk22.css` file.
+- Add a style section for `canvas` elements.
+- Set the `border` to two pixels, type solid, and color #174680.
+- Set the `background-color` to #acb1af.
+- Save the CSS file.
   - *JavaScript*
-- Note: Refer to the following page if you get stuck: https://www.w3schools.com/graphics/canvas_drawing.asp
-- Create a new JavaScript file, name it `wk21.js`, and open it.
-- Within the JavaScript file, initialize a *constant* variable named, `canvas`.
-- Set the `canvas` variable to a `getElementById` for `Q1`.
-- Next, initialize a *constant* variable named, `ctx` (context).
-- Set the `ctx` variable to a `"2d"` canvas context.
-- Next, set `ctx` to have a `fillStyle` of `"green"`.
-- Then, draw a rectangle, i.e. `fillRect` with the dimension `150` by `70`.
-- Place the rectangle at an X position of `10` and a Y position of `100`.
-- Save the file, and check if your rectangle is displaying correctly.
+- Create a new JavaScript file, name it `wk22.js`, and open it.
+- Within the JavaScript file, initialize a variable named, `myGameArea`.
+- Set the `myGameArea` definition equal to the following properties:
+```
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+```
+- Next, create a new function to start the game, called `startGame()`.
+- Within `startGame` call `myGameArea.start();`.
+- Save the file, and check if your canvas (game area) is displaying correctly.
 
 ### Question 2 - Coordinates and Drawing Lines
 - We will continue using the `Q1` canvas, so no changes will be made to the `wk21.html` file.
