@@ -1,4 +1,4 @@
-**`Week 22 - HTML On-Load; JavaScript ???; AWS ???`**
+**`Week 22 - HTML/JavaScript On-Load; AWS Lambdas, Lambda Triggers, Lambda Permissions, CloudWatch Logging`**
 
 ## JavaScript
 
@@ -63,28 +63,69 @@ var myGameArea = {
 
 ## AWS
 
-### Create New Admin w/ Permission Boundary
-- *Note: This exercise is a spin-off of exercise 12.1 from the textbook.*
+### Create an S3 Bucket (to be used w/ Lambda)
+- Log into the AWS web console, search "S3" in the search bar, and navigate to the page.
+- Click the "General purpose buckets" tab on the left, and then click the "Create bucket" button.
+- Name the bucket `lambda-bucket-yourname-1234` (or something similar).
+- Click "Create bucket".
+
+### Create a Lambda Function
+- Log into the AWS web console, search "Lambda" in the search bar, and navigate to the page.
+- On the right side of the screen, click "Create a function".
+- Select the "Author from scratch" radio button.
+- Name the Lambda `lambda-test`.
+- Search "Python" in the Runtime filter, and select the latest version.
+- Leave all other settings to their defaults.
+- Click the "Create function" button; This will take you to the function dashboard.
+- Scroll down to the code editor, and paste the following code:
+```
+import json
+
+def lambda_handler(event, context):
+    # Log the event
+    print("Received event: " + json.dumps(event, indent=2))
+    
+    # Get the bucket name and file name from the event
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    file_key = event['Records'][0]['s3']['object']['key']
+    
+    # Process the file (e.g., log the file name)
+    print(f"New file added: {file_key} in bucket: {bucket}")
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('File processed successfully!')
+    }
+```
+- This code will log any time a new file has been uploaded to the target bucket.
+- Next, scroll back up to the top and click the button to "Add trigger".
+- Search for "S3" and select it as the trigger source.
+- You should see "All object create events" selected by default.
+- Add a "Prefix" requirement of `test-image-`.
+- Click the orange "Add" button.
+
+### Set Lambda IAM Permissions
 - Log into the AWS web console, search "IAM" in the search bar, and navigate to the page.
-- On the left side of the screen, find "Acess managment" and click the "Users" tab.
-- Click the orange "Create new user" button on the right.
-- Name the user: `TestAdmin`
-- Click the checkbox for "Provide user access to the AWS Management Console - optional".
-- Click "Custom password".
-- Set the password and write the password down somewhere (we will be deleting this account/password at the end).
-- Un-check the option for "Users must create a new password at next sign-in - Recommended".
-- Click "Next".
-- Click the radio button for "Attach policies directly".
-- Attach the "AdministratorAccess" policy.
-- Click "Next".
-- Click "Create user".
-- From the "Acess managment" and "Users" tab, click the new `TestAdmin` user.
-- Under the "Permissions" tab, expand the "Permissions boundary", and click "Set permissions boundary".
-- Select the "AdministratorAccess" policy from the list.
-- Scroll to the bottom and click the orange "Set boundary" button on the right.
-- *Note: This user is for demonstration purposes, normally the boundary would place a maximum permissions boundary on a less privileged user.*
+- Click the "Roles" tab on the left.
+- Search "lambda-test" and you should see a role for the previously created Lambda function.
+- Click the role.
+- Click the "Add permissions" drop-down menu (right of screen) and select "Attach policies".
+- Search for and attach the "AmazonS3ReadOnlyAccess" policy to allow the Lambda function to read from the S3 bucket.
 
-
+### Lambda Testing
+- Open a browser tab for the S3 bucket.
+- Open a second browser tab for CloudWatch.
+- Open a third browser tab for Google, and download three image files; these can be cat pictures or something.
+- For each of the image, rename them so that one image is `test-image-1`, another is `non-matching-image`, and the last is `test-image-2`.
+- Next, go to the CloudWatch browser tab and click the "Log Groups" tab (left of screen).
+- Find the log group for your lambda function; it should have the name `/aws/lambda/lambda-test`.
+- Click the log group, then under the "Log streams" tab, click the link to the Log Stream.
+- Note the events (if any) that are in the log stream.
+- Next, switch to your S3 bucket browser tab.
+- Upload `test-image-1`, then switch back to the CloudWatch browser tab and hit the refresh icon.
+- You should see some new logs.
+- Lastly, upload the other images one at a time, and then review the new logs in CloudWatch.
+- Discuss your observations with a classmate.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
