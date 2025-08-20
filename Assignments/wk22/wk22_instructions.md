@@ -64,6 +64,7 @@ var myGameArea = {
 ## AWS
 
 ### Create an S3 Bucket (to be used w/ Lambda)
+- *Note: This exercise, and the following, will be used to create a Lambda that alerts on each new file upload.*
 - Log into the AWS web console, search "S3" in the search bar, and navigate to the page.
 - Click the "General purpose buckets" tab on the left, and then click the "Create bucket" button.
 - Name the bucket `lambda-bucket-yourname-1234` (or something similar).
