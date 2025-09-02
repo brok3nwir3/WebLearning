@@ -37,11 +37,11 @@ const car = {
 - C. Contact information for the domain owner.
 - D. All of the above. <--- Week 20 labs and discussion.
 
-6. 
-- A. 
-- B. 
-- C. 
-- D. 
+6. What is a hosted zone in AWS Route 53?
+- A. A physical server that hosts websites.
+- B. A container for DNS records for a specific domain. <--- Week 20 labs and discussion.
+- C. A service for managing IAM users.
+- D. A type of Amazon S3 bucket.
 
 7. What is a correct syntax to delete the property `model` from an object named `car`?
 - A. `del car.model`
