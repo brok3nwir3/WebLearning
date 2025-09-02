@@ -55,11 +55,11 @@ const car = {
 - C. top-left <--- https://www.w3schools.com/graphics/canvas_coordinates.asp
 - D. top-right
 
-9. 
-- A. 
-- B. 
-- C. 
-- D. 
+9. What is the primary purpose of assuming a role in AWS?
+- A. To create new IAM users.
+- B. To grant temporary access to AWS resources. <--- Week 21 labs and discussion.
+- C. To permanently change user permissions.
+- D. To manage billing information.
 
 10. Which of the following is *not* a valid JavaScript object method?
 - A. `duplicate()` <--- https://www.w3schools.com/js/js_object_reference.asp
@@ -85,11 +85,11 @@ const car = {
 - C. `entries()` <--- https://www.w3schools.com/Js/exercise.asp?x=xrcise_object_display1
 - D. `methods()`
 
-14. 
-- A. 
-- B. 
-- C. 
-- D. 
+14. What is the billing model for AWS Lambda?
+- A. Pay only for the number of functions created.
+- B. Pay for the amount of memory allocated and the execution time. <--- Week 22 labs and discussion.
+- C. Pay a flat monthly fee.
+- D. Pay for the number of API calls made.
 
 15. Given the following code, which one of the following statements returns 'fun'?
 ```
@@ -100,11 +100,11 @@ let x = 'Having fun?';
 - C. `x.substr(7, 10)`
 - D. `x.toString(7, 9)`
 
-16. 
-- A. 
-- B. 
-- C. 
-- D. 
+16. Which AWS service can be used to monitor AWS Lambda function performance?
+- A. Amazon CloudWatch <--- Week 22 labs and discussion.
+- B. AWS Config
+- C. Amazon S3
+- D. AWS CloudTrail
 
 17. Which method can be used to add a value to a set?
 - A. `add()` <--- https://www.w3schools.com/Js/exercise.asp?x=xrcise_sets2
