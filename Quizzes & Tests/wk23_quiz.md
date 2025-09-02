@@ -61,11 +61,11 @@ const car = {
 - C. 
 - D. 
 
-10. 
-- A. 
-- B. 
-- C. 
-- D. 
+10. Which of the following is *not* a valid JavaScript object method?
+- A. `duplicate()` <--- https://www.w3schools.com/js/js_object_reference.asp
+- B. `valueOf()`
+- C. `assign()`
+- D. `toString()`
 
 11. 
 - A. 
@@ -77,7 +77,7 @@ const car = {
 - A. `initialize`
 - B. `execute`
 - C. `launch`
-- D. `onload` <--- 
+- D. `onload` <--- https://github.com/brok3nwir3/WebLearning/blob/main/Assignments/wk22/wk22_instructions.md
 
 13. Only one of the following methods are a built-in JavaScript Object method, which one?
 - A. `return()`
@@ -91,11 +91,14 @@ const car = {
 - C. 
 - D. 
 
-15. 
-- A. 
-- B. 
-- C. 
-- D. 
+15. Given the following code, which one of the following statements returns 'fun'?
+```
+let x = 'Having fun?';
+```
+- A. `x.slice(7, 10)` <--- https://www.w3schools.com/Js/exercise.asp?x=xrcise_string_methods1
+- B. `x.substring(7, 9)`
+- C. `x.substr(7, 10)`
+- D. `x.toString(7, 9)`
 
 16. 
 - A. 
