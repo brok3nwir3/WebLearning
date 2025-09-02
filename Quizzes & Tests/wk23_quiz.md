@@ -2,11 +2,16 @@
 
 ### This is a quiz (not a test), so feel free to use notes, books, the Internet, etc. if needed.
 
-1. 
-- A. 
-- B. 
-- C. 
-- D. 
+1. What is *not* a correct syntax to alert 'Volvo'?
+```
+const car = {
+  brand : 'Volvo',
+  model : 'EX90'
+};
+```
+- A. alert(car[brand]) <----
+- B. alert(car.brand)
+- C. alert(car['brand'])
 
 2. 
 - A. 
