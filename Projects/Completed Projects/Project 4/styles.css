@@ -1,0 +1,23 @@
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  color: rgb(13, 68, 104);
+}
+
+p {
+  color: rgb(13, 68, 104);
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.myclass {
+  background-color: steelblue;
+  color: snow;
+  padding: 5px;
+}
+
+canvas {
+    border: 2px solid #174680;
+}
