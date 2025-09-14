@@ -1,8 +1,8 @@
-**`Week 24 - HTML/JavaScript On-Load; AWS Lambdas, Lambda Triggers, Lambda Permissions, CloudWatch Logging`**
+**`Week 24 - JavaScript Switches & Regular Expressions; AWS TBD`**
 
 ## JavaScript
 
-### Question 1 - Create Canvas Element On-Load
+### Question 1 - Create a Switch Statement
 - *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk22.html`.
