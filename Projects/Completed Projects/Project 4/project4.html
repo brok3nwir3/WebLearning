@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" href="styles.css">
+<body onload="startGame()">
+
+<h1 style="text-align: left;">Flappy Block</h1>
+
+<script src="project4.js"></script>  
+
+<p>How long can you stay alive?</p>
+<p style="font-size: 15px;">Use the UP and DOWN arrow keys to stay in the air.</p>
+<p style="font-size: 15px;">Refresh the page (F5) to start over.</p>
+
+<script>
+    window.addEventListener('keydown', function(event) {
+        if (event.key === "ArrowUp") {
+            accelerate(-0.2); // Accelerate upwards.
+        } else if (event.key === "ArrowDown") {
+            accelerate(0.2); // Apply gravity.
+        }
+    });
+
+    window.addEventListener('keyup', function(event) {
+        if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+            accelerate(0.05); // Reset to default gravity when key is released.
+        }
+    });
+</script>
+
+</body>
+</html>
