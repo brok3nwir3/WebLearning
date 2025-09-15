@@ -52,35 +52,39 @@ Scroll down for the answers.
 - Question 1 - HTML
 ```html
 <!DOCTYPE html>
-<html lang="en-US">
-<link rel="stylesheet" href="wk22.css">
-<body onload="startGame()">
-<script src="wk22.js"></script>  
+<html>
+<body>
+    <p id="Q1"></p>
+    <script src="wk13.js"></script>  
 </body>
 </html>
 ```
-- Question 1 - CSS
-```css
-canvas {
-    border: 2px solid #174680;
-    background-color: #acb1af;
-}
-```
 - Question 1 - JavaScript
 ```js
-function startGame() {
-    myGameArea.start();
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
 }
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-    }
-}
+document.getElementById("Q1").innerHTML = "Today is " + day;
 ```
 
 - Question 2 - JavaScript
