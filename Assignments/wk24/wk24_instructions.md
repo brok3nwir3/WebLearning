@@ -18,30 +18,37 @@
 - Lastly, create a `getElementById` statement that returns the current day.
 - Save the file, and check if your code is displaying the expected day.
 
-### Question 2 - Adding an Object to the Canvas
-- *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
+### Question 2 - Searching with Regular Expressions
+- *W3 Schools Reference: https://www.w3schools.com/js/js_regexp.asp*
   - *HTML*
-- No changes.
-  - *CSS*
-- No changes.
+- Continuing in your `wk24.html` file...
+- Add a new empty paragraph element, with an ID set to `Q2`
+- Save the HTML file.
   - *JavaScript*
-- Open `wk22.js`.
-- Within the JavaScript file, initialize a variable named, `myGamePiece`.
-- Next, create a function called `component`, which takes five parameters: `width`, `height`, `color`, `x`. `y`.
-- Within `component` add the following:
-```
-    this.width = width;
-    this.height = height;
-    this.x = x;
-    this.y = y;
-    ctx = myGameArea.context;
-    ctx.fillStyle = color;
-    ctx.fillRect(this.x, this.y, this.width, this.height);
-```
-- Lastly, we'll use our `myGamePiece` variable and our `component` function to create an actual game piece *object*.
-- Within the `startGame()` function, add a new line to set `myGamePiece` to be a `new component`, with the properties:
-- width `30`, height `30`, color `"red"`, X position `10`, and Y position `120`.
-- Save the file, and check if your new object is displaying correctly.
+- Continuing in your `wk24.js` file...
+- Within the JavaScript file, initialize a variable named, `text` and set it to the value `"Coding Hour!";`.
+- Next, initialize a variable called `a` and set it `text.search(/Hour!/i);`.
+- Next, initialize a variable called `b` and set it `text.search(/Hour/i);`.
+- Next, initialize a variable called `c` and set it `text.search(/Hrrr/i)`.
+- Lastly, create a `getElementById` statement that returns `"first " + a + " | second " + b + " | third " + c;`.
+- Save the file, and review the results.
+- Discuss your findings with a classmate.
+
+### Question 3 - Adding an Object to the Canvas
+- *W3 Schools Reference: https://www.w3schools.com/js/js_regexp.asp*
+  - *HTML*
+- Continuing in your `wk24.html` file...
+- Add a new empty paragraph element, with an ID set to `Q2`
+- Save the HTML file.
+  - *JavaScript*
+- Continuing in your `wk24.js` file...
+- Within the JavaScript file, initialize a variable named, `text` and set it to the value `"Coding Hour!";`.
+- Next, initialize a variable called `a` and set it `text.search(/Hour!/i);`.
+- Next, initialize a variable called `b` and set it `text.search(/Hour/i);`.
+- Next, initialize a variable called `c` and set it `text.search(/Hrrr/i)`.
+- Lastly, create a `getElementById` statement that returns `"first " + a + " | second " + b + " | third " + c;`.
+- Save the file, and review the results.
+- Discuss your findings with a classmate.
 
 ## AWS
 
