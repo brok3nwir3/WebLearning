@@ -3,22 +3,13 @@
 ## JavaScript
 
 ### Question 1 - Create a Switch Statement
-- *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
+- *W3 Schools Reference: https://www.w3schools.com/js/js_switch.asp*
   - *HTML*
-- Create a new HTML file or copy of one of your website HTML files, and name it `wk22.html`.
-- Inside the HTML file, add a link to a file called `wk22.css`.
-- Next, add an `onload` parameter to the body element, and point it to the function `"startGame()"`.
-- Lastly, add a script element and add the source attribute set to `wk22.js`.
+- Create a new HTML file or copy of one of your website HTML files, and name it `wk24.html`.
+- Also, add a script element and add the source attribute set to `wk24.js`.
 - Save the HTML file.
-  - *CSS*
-- Create a new CSS file or copy of one of your website CSS files, and name it `wk22.css`. 
-- Open your `wk22.css` file.
-- Add a style section for `canvas` elements.
-- Set the `border` to two pixels, type solid, and color #174680.
-- Set the `background-color` to #acb1af.
-- Save the CSS file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk22.js`, and open it.
+- Create a new JavaScript file, name it `wk24.js`, and open it.
 - Within the JavaScript file, initialize a variable named, `myGameArea`.
 - Set the `myGameArea` definition equal to the following properties:
 ```
