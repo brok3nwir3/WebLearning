@@ -69,7 +69,7 @@ switch (true) {
 ```
 - Lastly, create a `getElementById` statement that returns `strengthMessage;`.
 - Save the file, and review the results.
-- Test different passwords, and try to trigger each of the different switch case outcomes.
+- Modify the `password` variable, and test different passwords; try to trigger each of the different switch case outcomes.
 
 ## AWS
 
