@@ -112,34 +112,34 @@ document.getElementById("Q2").innerHTML = "first " + a + " | second " + b + " | 
 <html>
 <body>
     <p id="Q1"></p>
+    <p id="Q2"></p>
+    <p id="Q3"></p>
     <script src="wk13.js"></script>  
 </body>
 </html>
 ```
 - Question 3 - JavaScript
 ```js
-let day;
-switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
+let password = "mypw";
+let strengthMessage = "";
+switch (true) {
+  case (password.length < 6):
+    strengthMessage = "This password is too short.";
     break;
-  case 1:
-    day = "Monday";
+  case (!/[A-Z]/.test(password)):
+    strengthMessage = "This password should contain at least one uppercase letter.";
     break;
-  case 2:
-    day = "Tuesday";
+  case (!/[0-9]/.test(password)):
+    strengthMessage = "This password should contain at least one number.";
     break;
-  case 3:
-    day = "Wednesday";
+  case (!/[!@#$%^&*]/.test(password)):
+    strengthMessage = "This password should contain at least one special character.";
     break;
-  case 4:
-    day = "Thursday";
+  case (password.length >= 6 && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[!@#$%^&*]/.test(password)):
+    strengthMessage = "This password is strong.";
     break;
-  case 5:
-    day = "Friday";
-    break;
-  case  6:
-    day = "Saturday";
+  default:
+    strengthMessage = "This password is acceptable.";
 }
-document.getElementById("Q1").innerHTML = "Today is " + day;
+document.getElementById("Q3").innerHTML = strengthMessage;
 ```
