@@ -6,26 +6,17 @@
 - *W3 Schools Reference: https://www.w3schools.com/js/js_switch.asp*
   - *HTML*
 - Create a new HTML file or copy of one of your website HTML files, and name it `wk24.html`.
-- Also, add a script element and add the source attribute set to `wk24.js`.
+- Next, add an empty paragraph element, with an ID set to `Q1`
+- Lastly, add a script element and set the source attribute to `wk24.js`.
 - Save the HTML file.
   - *JavaScript*
 - Create a new JavaScript file, name it `wk24.js`, and open it.
-- Within the JavaScript file, initialize a variable named, `myGameArea`.
-- Set the `myGameArea` definition equal to the following properties:
-```
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-    }
-}
-```
-- Next, create a new function to start the game, called `startGame()`.
-- Within `startGame` call `myGameArea.start();`.
-- Save the file, and check if your canvas (game area) is displaying correctly.
+- Within the JavaScript file, initialize a variable named, `day`.
+- Next, create a `switch` statement that accounts for *seven* different *cases*.
+- Within the switch *expression* you should call `new Date().getDay()`, to get the current date.
+- Then, within each case, you check the current value of the `day` parameter.
+- Lastly, create a `getElementById` statement that returns the current day.
+- Save the file, and check if your code is displaying the expected day.
 
 ### Question 2 - Adding an Object to the Canvas
 - *This question is based on the game here: https://www.w3schools.com/graphics/game_components.asp.*
