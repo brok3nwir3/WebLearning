@@ -34,21 +34,42 @@
 - Save the file, and review the results.
 - Discuss your findings with a classmate.
 
-### Question 3 - Adding an Object to the Canvas
-- *W3 Schools Reference: https://www.w3schools.com/js/js_regexp.asp*
+### Question 3 - Switches and RegEx Together
+- *W3 Schools Reference 1: https://www.w3schools.com/js/js_regexp_methods.asp*
+- *W3 Schools Reference 2: https://www.w3schools.com/js/js_regexp_characters.asp*
   - *HTML*
 - Continuing in your `wk24.html` file...
-- Add a new empty paragraph element, with an ID set to `Q2`
+- Add a new empty paragraph element, with an ID set to `Q3`
 - Save the HTML file.
   - *JavaScript*
 - Continuing in your `wk24.js` file...
-- Within the JavaScript file, initialize a variable named, `text` and set it to the value `"Coding Hour!";`.
-- Next, initialize a variable called `a` and set it `text.search(/Hour!/i);`.
-- Next, initialize a variable called `b` and set it `text.search(/Hour/i);`.
-- Next, initialize a variable called `c` and set it `text.search(/Hrrr/i)`.
-- Lastly, create a `getElementById` statement that returns `"first " + a + " | second " + b + " | third " + c;`.
+- Within the JavaScript file, copt the following code...
+```
+let password = "mypw";
+let strengthMessage = "";
+switch (true) {
+  case (password.length < 6):
+    strengthMessage = "This password is too short.";
+    break;
+  case (!/[A-Z]/.test(password)):
+    strengthMessage = "This password should contain at least one uppercase letter.";
+    break;
+  case (!/[0-9]/.test(password)):
+    strengthMessage = "This password should contain at least one number.";
+    break;
+  case (!/[!@#$%^&*]/.test(password)):
+    strengthMessage = "This password should contain at least one special character.";
+    break;
+  case (password.length >= 6 && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[!@#$%^&*]/.test(password)):
+    strengthMessage = "This password is strong.";
+    break;
+  default:
+    strengthMessage = "This password is acceptable.";
+}
+```
+- Lastly, create a `getElementById` statement that returns `strengthMessage;`.
 - Save the file, and review the results.
-- Discuss your findings with a classmate.
+- Test different passwords, and try to trigger each of the different switch case outcomes.
 
 ## AWS
 
