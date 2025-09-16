@@ -1,4 +1,4 @@
-**`Week 24 - JavaScript Switches & Regular Expressions; AWS TBD`**
+**`Week 24 - JavaScript Switches & Regular Expressions; AWS Config & Simple Notification Service`**
 
 ## JavaScript
 
