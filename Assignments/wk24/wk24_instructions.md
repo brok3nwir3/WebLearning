@@ -43,100 +43,57 @@
 - Save the HTML file.
   - *JavaScript*
 - Continuing in your `wk24.js` file...
-- Within the JavaScript file, copt the following code...
+- Initialize a new variable named, `password` and set it to the value `"mypw";`.
+- Initialize another new variable named, `strengthMessage` and set it as an empty string.
+- Next, we need to create a switch that has several cases...
+  - Each case in the switch should perform a different *strength* check on the `password` variable.
+- Use the following example code to get started...
 ```
-let password = "mypw";
-let strengthMessage = "";
 switch (true) {
   case (password.length < 6):
     strengthMessage = "This password is too short.";
     break;
-  case (!/[A-Z]/.test(password)):
-    strengthMessage = "This password should contain at least one uppercase letter.";
-    break;
-  case (!/[0-9]/.test(password)):
-    strengthMessage = "This password should contain at least one number.";
-    break;
-  case (!/[!@#$%^&*]/.test(password)):
-    strengthMessage = "This password should contain at least one special character.";
-    break;
-  case (password.length >= 6 && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[!@#$%^&*]/.test(password)):
-    strengthMessage = "This password is strong.";
-    break;
-  default:
-    strengthMessage = "This password is acceptable.";
+  case ...
+    ...
+    ...
 }
 ```
-- Lastly, create a `getElementById` statement that returns `strengthMessage;`.
+- Once you've added a few different strength checks, create a `getElementById` statement that returns `strengthMessage;`.
 - Save the file, and review the results.
 - Modify the `password` variable, and test different passwords; try to trigger each of the different switch case outcomes.
 
 ## AWS
 
-### Create an S3 Bucket (to be used w/ Lambda)
-- *Note: This exercise, and the following, will be used to create a Lambda that alerts on each new file upload.*
-- Log into the AWS web console, search "S3" in the search bar, and navigate to the page.
-- Click the "General purpose buckets" tab on the left, and then click the "Create bucket" button.
-- Name the bucket `lambda-bucket-yourname-1234` (or something similar).
-- Click "Create bucket".
+### AWS Config
+- Log into the AWS web console, search "aws config" in the search bar, and navigate to the page.
+- Read the description and information about AWS Config. 
+- Click on "1 Click Setup" option and complete the setup.
+- After completing the setup, you should be redirected to the AWS Config Dashboard.
+- Review the dashboard modules.
+- Next, click the "Settings" tab (on the left).
+- You should see the name of an S3 bucket used by AWS Config, under the section titled "S3 bucket name."
+- Open a new tab for S3, and review the details for the bucket AWS Config bucket.
+- Empty and delete the bucket.
+- Return to the AWS Config browser tab, and navigate to the "Settings" tab.
+- Click "Stop Recording."
 
-### Create a Lambda Function
-- Log into the AWS web console, search "Lambda" in the search bar, and navigate to the page.
-- On the right side of the screen, click "Create a function".
-- Select the "Author from scratch" radio button.
-- Name the Lambda `lambda-test`.
-- Search "Python" in the Runtime filter, and select the latest version.
-- Leave all other settings to their defaults.
-- Click the "Create function" button; This will take you to the function dashboard.
-- Scroll down to the code editor, and paste the following code:
-```
-import json
-
-def lambda_handler(event, context):
-    # Log the event
-    print("Received event: " + json.dumps(event, indent=2))
-    
-    # Get the bucket name and file name from the event
-    bucket = event['Records'][0]['s3']['bucket']['name']
-    file_key = event['Records'][0]['s3']['object']['key']
-    
-    # Process the file (e.g., log the file name)
-    print(f"New file added: {file_key} in bucket: {bucket}")
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps('File processed successfully!')
-    }
-```
-- This code will log any time a new file has been uploaded to the target bucket.
-- Next, scroll back up to the top and click the button to "Add trigger".
-- Search for "S3" and select it as the trigger source.
-- You should see "All object create events" selected by default.
-- Add a "Prefix" requirement of `test-image-`.
-- Click the orange "Add" button.
-
-### Set Lambda IAM Permissions
-- Log into the AWS web console, search "IAM" in the search bar, and navigate to the page.
-- Click the "Roles" tab on the left.
-- Search "lambda-test" and you should see a role for the previously created Lambda function.
-- Click the role.
-- Click the "Add permissions" drop-down menu (right of screen) and select "Attach policies".
-- Search for and attach the "AmazonS3ReadOnlyAccess" policy to allow the Lambda function to read from the S3 bucket.
-
-### Lambda Testing
-- Open a browser tab for the S3 bucket.
-- Open a second browser tab for CloudWatch.
-- Open a third browser tab for Google, and download three image files; these can be cat pictures or something.
-- For each of the image, rename them so that one image is `test-image-1`, another is `non-matching-image`, and the last is `test-image-2`.
-- Next, go to the CloudWatch browser tab and click the "Log Groups" tab (left of screen).
-- Find the log group for your lambda function; it should have the name `/aws/lambda/lambda-test`.
-- Click the log group, then under the "Log streams" tab, click the link to the Log Stream.
-- Note the events (if any) that are in the log stream.
-- Next, switch to your S3 bucket browser tab.
-- Upload `test-image-1`, then switch back to the CloudWatch browser tab and hit the refresh icon.
-- You should see some new logs.
-- Lastly, upload the other images one at a time, and then review the new logs in CloudWatch.
-- Discuss your observations with a classmate.
+### AWS Simple Notification Service
+- Log into the AWS web console, search "SNS" in the search bar, and navigate to the page.
+- In the top-right of the SNS home page, enter the name `TestTopic` for a new topic, then click "Next Step."
+- Ensure the topic type "Standard" is selected, then scroll to the bottom and click "Create topic."
+- Enter a name for your topic (e.g., MyTestTopic).
+- Click "Create topic."
+- After creating the topic, click on the "Topics" tab, and click the topic name to open its details.
+- Click on "Create subscription."
+- For "Protocol," select "Email."
+- In the "Endpoint" field, enter your email address.
+- Click "Create subscription."
+- Check your email for a confirmation message from AWS SNS and confirm the subscription.
+- Go back to the topic details page.
+- Click on "Publish message."
+- Enter a subject (e.g., Test Message) and a message body (e.g., Hello, this is a test message from AWS SNS!).
+- Click "Publish message."
+- After publishing the message, check your email inbox for the message you sent through SNS.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
