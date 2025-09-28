@@ -6,7 +6,7 @@
 - *W3 Schools Reference: https://www.w3schools.com/js/js_htmldom_methods.asp*
 - We've been using DOM methods and properties for a while, but we haven't really acknowledged that fact until now. 
 - Examine the following code...
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
