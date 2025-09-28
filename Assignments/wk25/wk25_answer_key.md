@@ -49,7 +49,7 @@ Scroll down for the answers.
 \
 \
 
-- Question 1 - HTML
+- Question 1
 ```
 Method: getElementById
 Property: innerHTML
