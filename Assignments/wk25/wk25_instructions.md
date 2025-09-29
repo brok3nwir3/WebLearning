@@ -57,21 +57,34 @@ document.getElementById("item1").innerHTML = "TEST! TEST!";
 
 ## AWS
 
-### TBD
-- Log into the AWS web console, search "aws config" in the search bar, and navigate to the page.
-- Read the description and information about AWS Config. 
-- Click on "1 Click Setup" option and complete the setup.
-- After completing the setup, you should be redirected to the AWS Config Dashboard.
-- Review the dashboard modules.
-- Next, click the "Settings" tab (on the left).
-- You should see the name of an S3 bucket used by AWS Config, under the section titled "S3 bucket name."
-- Open a new tab for S3, and review the details for the bucket AWS Config bucket.
-- Empty and delete the bucket.
-- Return to the AWS Config browser tab, and navigate to the "Settings" tab.
-- Click "Stop Recording."
+### CloudFormation Prerequisites
+- *Note: CloudFormation is a useful AWS service that lets you create multiple resources through use of a template.*
+- Watch the short CloudFormation demo video here: https://www.youtube.com/watch?v=1h-GPXQrLZw
+- Next, download the `config.yaml` file from the `wk25` folder.
+- Open and review the contents of the `config.yaml` file, and discuss with a classmate what the template will create.
+- You'll need to modify the bucket name suffix in the template to use something globally unique.
+- Next, log into the AWS console and navigate to the EC2 page.
+- From here, click "Instances" tab (on the left) and then click "Launch instance".
+- Scroll down to the AMI settings and then paste the ImageID from `config.yaml` template.
+- Verify the ImageID exists; and replace the ImageID with a new ImageID, if needed.
+- Lastly, return to the EC2 home page and click the "Key Pairs" tab.
+- Create a new key pair called `my-key-pair` using the default settings.
 
-### TBD
-- 
+### Creating a CloudFormation Stack
+- Log into the AWS web console, search "CloudFormation" in the search bar, and navigate to the page.
+- Click "Create stack".
+- For the section titled "Prerequisite - Prepare template" select "Choose an existing template".
+- For the section titled "Specify template" select "Upload a template file".
+- Back in the console, click the "Choose file" button and upload `config.yaml`.
+- IMPORTANT: Before moving ahead, click the "View in Infrastructure Composer" button, and review the template graphically.
+- Once you're done with the Infrastructure Composer tool, return the the stack creation page (you may need to repeat earlier steps).
+- Click the "Next" button.
+- Name the stack `coding-hour-test-template`, and click the "Next" button.
+- On the page related to "Configure stack options" leave all settings to their defaults, and click the "Next" button.
+- On the last page, review the configuration settings and then click the "Submit" button.
+- Next, you'll be directed to the new page created for your stack.
+- Use the refresh button and wait for all your creation events to complete within the "Events" tab.
+- Lastly, visit the dashboard for EC2 and S3; and ensure all resources were created successfully.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
