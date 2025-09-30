@@ -51,8 +51,11 @@ Scroll down for the answers.
 
 - Question 1
 ```
-Method: getElementById
-Property: innerHTML
+Method 1: getElementsByTagName
+Property 1: style
+
+Method 2: getElementById
+Property 2: textContent
 ```
 
 - Question 2 - HTML
