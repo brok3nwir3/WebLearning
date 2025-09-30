@@ -8,21 +8,34 @@
 - Examine the following code...
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <title>Simple Example</title>
+</head>
 <body>
+    <h1 id="title">My Simple Page</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
+    <button onclick="changeTitle()">Change Title</button>
 
-<h2>Test Page</h2>
+    <script>
+        function highlightParagraphs() {
+            var paragraphs = document.getElementsByTagName('p');
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.backgroundColor = 'yellow'; // Highlight each paragraph
+            }
+        }
 
-<p id="item1"></p>
-
-<script>
-document.getElementById("item1").innerHTML = "TEST! TEST!";
-</script>
-
+        function changeTitle() {
+            var title = document.getElementById('title');
+            title.textContent = 'New Title!'; // Change the title text
+        }
+    </script>
 </body>
 </html>
 ```
-- Use the reference link (above) to identify the DOM *method* and the DOM *property*.
+- Use the reference link (above) to identify the DOM *methods* and the DOM *properties*.
 - Discuss your findings with a classmate before moving on.
 
 ### Question 2 - Creating Elements with HTML DOM
