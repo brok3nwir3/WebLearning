@@ -1,4 +1,4 @@
-**`Week 26 - JavaScript HTML DOM Methods & Document Objects; AWS Trusted Advisor`**
+**`Week 26 - JavaScript TBD; AWS Trusted Advisor`**
 
 ## JavaScript
 
@@ -70,19 +70,29 @@
 
 ## AWS
 
-### Trusted Advisor
-- *Note: CloudFormation is a useful AWS service that lets you create multiple resources through use of a template.*
-- Watch the short CloudFormation demo video here: https://www.youtube.com/watch?v=1h-GPXQrLZw
-- Next, download the `config.yaml` file from the `wk25` folder.
-- Open and review the contents of the `config.yaml` file, and discuss with a classmate what the template will create.
-- You'll need to modify the bucket name suffix in the template to use something globally unique.
-- Next, log into the AWS console and navigate to the EC2 page.
-- From here, click "Instances" tab (on the left) and then click "Launch instance".
-- Scroll down to the AMI settings and then paste the ImageID from `config.yaml` template.
-- Verify the ImageID exists; and replace the ImageID with a new ImageID, if needed.
-- Lastly, return to the EC2 home page and click the "Key Pairs" tab.
-- Create a new key pair called `my-key-pair` using the default settings.
+### Trusted Advisor Prerequisites
+- Start by logging into your AWS account and navigating the to "EC2" dashboard.
+- Click the "Security Groups" tab (left of screen).
+- First, create a new security group named "outbound-allow-all".
+- Add a new outbound rule to the security group that allows all traffic outbound (Type: All Traffic, Destination: 0.0.0.0/0).
+- Second, create a new security group named "inbound-allow-ssh".
+- Add a new inbound rule to the security group that allows SSH traffic inbound (Type: SSH, Source: 0.0.0.0/0).
+- Next, start the process of launching a new EC2 instance.
+- Name the instance "insecure-test-ec2" and set the security group to "inbound-allow-ssh".
+- Leave all other settings to their defaults, and launch the instance.
 
+### Trusted Advisor Check
+- *Note: Trusted Advisor is an AWS administractive and reporting service that lets you identify potential account or resource issues.*
+- Navigate to the "Trusted Advisor" dashboard.
+- Review the "Recommendations" tab, and look for a red "Action recommended" item; and if needed, click "Refresh all checks".
+- Eventually you should see a recommendation titled "Security Groups - Specific Ports Unrestricted".
+- Click the "Info" button next to the "Actions recommended;" this will display a detailed explanation of the issue.
+- Within the detailed explanation you should see any problematic resources listed (the "inbound-allow-ssh" security group in this case).
+- To fix the issue, return to your "insecure-ec2-test" instance, then select "Actions" > "Security" > "Change security groups".
+- Remove the "inbound-allow-ssh" security group, and then add the "outbound-allow-all" security group.
+- Next, return to the "Security Groups" tab within the EC2 page.
+- Find the "inbound-allow-ssh" security group and delete it.
+- Lastly, return to the Trusted Advisor page, and ensure the problematic resource is no longer listed.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
