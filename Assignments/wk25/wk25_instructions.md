@@ -1,4 +1,4 @@
-**`Week 25 - JavaScript HTML DOM Methods & Document Objects; AWS TBD`**
+**`Week 25 - JavaScript HTML DOM Methods & Document Objects; AWS CloudFormation`**
 
 ## JavaScript
 
