@@ -1,4 +1,4 @@
-**`Week 26 - JavaScript HTML DOM Methods & Document Objects; AWS TBD`**
+**`Week 26 - JavaScript HTML DOM Methods & Document Objects; AWS Trusted Advisor`**
 
 ## JavaScript
 
@@ -70,7 +70,7 @@
 
 ## AWS
 
-### CloudFormation Prerequisites
+### Trusted Advisor
 - *Note: CloudFormation is a useful AWS service that lets you create multiple resources through use of a template.*
 - Watch the short CloudFormation demo video here: https://www.youtube.com/watch?v=1h-GPXQrLZw
 - Next, download the `config.yaml` file from the `wk25` folder.
@@ -83,21 +83,6 @@
 - Lastly, return to the EC2 home page and click the "Key Pairs" tab.
 - Create a new key pair called `my-key-pair` using the default settings.
 
-### Creating a CloudFormation Stack
-- Log into the AWS web console, search "CloudFormation" in the search bar, and navigate to the page.
-- Click "Create stack".
-- For the section titled "Prerequisite - Prepare template" select "Choose an existing template".
-- For the section titled "Specify template" select "Upload a template file".
-- Back in the console, click the "Choose file" button and upload `config.yaml`.
-- IMPORTANT: Before moving ahead, click the "View in Infrastructure Composer" button, and review the template graphically.
-- Once you're done with the Infrastructure Composer tool, return the the stack creation page (you may need to repeat earlier steps).
-- Click the "Next" button.
-- Name the stack `coding-hour-test-template`, and click the "Next" button.
-- On the page related to "Configure stack options" leave all settings to their defaults, and click the "Next" button.
-- On the last page, review the configuration settings and then click the "Submit" button.
-- Next, you'll be directed to the new page created for your stack.
-- Use the refresh button and wait for all your creation events to complete within the "Events" tab.
-- Lastly, visit the dashboard for EC2 and S3; and ensure all resources were created successfully.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
