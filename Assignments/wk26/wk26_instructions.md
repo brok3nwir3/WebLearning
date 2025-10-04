@@ -81,7 +81,7 @@
 - Name the instance "insecure-test-ec2" and set the security group to "inbound-allow-ssh".
 - Leave all other settings to their defaults, and launch the instance.
 
-### Trusted Advisor Check
+### Trusted Advisor Recommendations
 - *Note: Trusted Advisor is an AWS administractive and reporting service that lets you identify potential account or resource issues.*
 - Navigate to the "Trusted Advisor" dashboard.
 - Review the "Recommendations" tab, and look for a red "Action recommended" item; and if needed, click "Refresh all checks".
@@ -93,6 +93,13 @@
 - Next, return to the "Security Groups" tab within the EC2 page.
 - Find the "inbound-allow-ssh" security group and delete it.
 - Lastly, return to the Trusted Advisor page, and ensure the problematic resource is no longer listed.
+
+### Trusted Advisor Service Limits
+- Navigate to the "Trusted Advisor" dashboard.
+- Click the "Service limits" tab (on the left).
+- Scroll through the page, and review the service limits that AWS automatically set for your account.
+- Identify the service limits for IAM Users, EC2 On-Demand Instances, and VPC.
+- Discuss your findings with a classmate.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
