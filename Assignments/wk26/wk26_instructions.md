@@ -4,6 +4,7 @@
 
 ### Question 1 - Using Arrow Functions
 - *W3 Schools Reference: https://www.w3schools.com/js/js_arrow_function.asp*
+- *Arrow functions are sometimes shorter and quicker to write, than a typical function.*
   - *HTML*
 - Create a new HTML file or copy one of your website HTML files, and name it `wk26.html`.
 - Add a `body` element and a `paragraph` element within.
@@ -30,8 +31,9 @@ document.getElementById("Q1").innerHTML = "Add function (1+2): " + add(1, 2) + "
 - Lastly, rewrite the `add()` function and the `isEven()` function to be arrow functions.
 - Save the file, and check if your code is displaying the unordered list with the fruit item.
 
-### Question 2 - 
-- *W3 Schools Reference: https://www.w3schools.com/js/js_arrow_function.asp*
+### Question 2 - JavaScript Performance
+- *W3 Schools Reference: https://www.w3schools.com/js/js_performance.asp*
+- *Given the same program can be written many ways, it's important to run performance tests on your programs.*
   - *HTML*
 - Create a new HTML file or copy one of your website HTML files, and name it `wk26.html`.
 - Add a `body` element and a `paragraph` element within.
