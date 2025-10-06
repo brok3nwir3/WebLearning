@@ -50,32 +50,23 @@ Scroll down for the answers.
 \
 
 - Question 1
-```
-Method 1: getElementsByTagName
-Property 1: style
-
-Method 2: getElementById
-Property 2: textContent
-```
-
-- Question 2 - HTML
 ```html
 <!DOCTYPE html>
 <html>
 <body>
-    <h2>My Favorite Fruits</h2>
-    <ul id="Q2"></ul>
-    <script src="wk25.js"></script>
+    <p id="Q1"></p>
+    <script src="wk26.js"></script>
 </body>
 </html>
 ```
-- Question 2 - JavaScript
+- Question 1 - JavaScript
 ```js
-var newListItem = document.createElement("li");
-newListItem.textContent = "Apple";
-document.getElementById("Q2").appendChild(newListItem);
+const add = (a, b) => a + b; // More concise; no need for return or braces
+const isEven = (num) => num % 2 === 0; // Directly returns the boolean value
+
+document.getElementById("Q1").innerHTML = "Add function (1+2) : " + add(1,2) + "<br>Even check function (7) : " + isEven(7);
 ```
-- Question 3 - HTML
+- Question 2 - HTML
 ```html
 <!DOCTYPE html>
 <html>
@@ -91,7 +82,7 @@ document.getElementById("Q2").appendChild(newListItem);
 </body>
 </html>
 ```
-- Question 3 - JavaScript
+- Question 2 - JavaScript
 ```js
 var currentURL = document.URL;
 document.getElementById("Q3").textContent = currentURL;
