@@ -1,72 +1,51 @@
-**`Week 26 - JavaScript TBD; AWS Trusted Advisor`**
+**`Week 26 - JavaScript Arrow Functions; AWS Trusted Advisor`**
 
 ## JavaScript
 
-### Question 1 - Identifying HTML DOM Methods & Properties
-- *W3 Schools Reference: https://www.w3schools.com/js/js_htmldom_methods.asp*
-- We've been using DOM methods and properties for a while, but we haven't really acknowledged that fact until now. 
-- Examine the following code...
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Simple Example</title>
-</head>
-<body>
-    <h1 id="title">My Simple Page</h1>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
-    <button onclick="changeTitle()">Change Title</button>
-
-    <script>
-        function highlightParagraphs() {
-            var paragraphs = document.getElementsByTagName('p');
-            for (var i = 0; i < paragraphs.length; i++) {
-                paragraphs[i].style.backgroundColor = 'yellow'; // Highlight each paragraph
-            }
-        }
-
-        function changeTitle() {
-            var title = document.getElementById('title');
-            title.textContent = 'New Title!'; // Change the title text
-        }
-    </script>
-</body>
-</html>
-```
-- Use the reference link (above) to identify the DOM *methods* and the DOM *properties*.
-- Discuss your findings with a classmate before moving on.
-
-### Question 2 - Creating Elements with HTML DOM
-- *W3 Schools Reference: https://www.w3schools.com/js/js_htmldom_document.asp*
+### Question 1 - Using Arrow Functions
+- *W3 Schools Reference: https://www.w3schools.com/js/js_arrow_function.asp*
   - *HTML*
-- Create a new HTML file or copy one of your website HTML files, and name it `wk25.html`.
-- Add an empty heading #2 `<h2>` element, with the text "My favorite fruits:"
-- Next, add a new unordered list `<ul>` element, with the ID set to `Q2`.
-- Lastly, add a script element and set the source attribute to `wk25.js`.
+- Create a new HTML file or copy one of your website HTML files, and name it `wk26.html`.
+- Add a `body` element and a `paragraph` element within.
+- Have the `body` element point to `id="Q1"`.
+- Add a `script` element within the `body` element, below the `paragraph` element.
+- Have the `script` element point to `src="wk26.js"`. 
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk25.js`, and open it.
-- Within the JavaScript file, initialize a new variable called `newListItem`.
-- Use the DOM reference page (above) to set `newListItem` to create a new document list item `<li>` element.
-- Next, use `newListItem.textContent = "Apple";` to add "Apple" (or whatever fruit you like) to the list.
-- Lastly, use DOM to *get* your `Q2` element by ID, and then use the `appendChild` command to add your favorite fruit to the unordered list.
+- Create a new JavaScript file, name it `wk26.js`, and open it.
+- Within the JavaScript file, you can copy the following javascript code:
+```
+function add(a, b) {
+    return a + b;
+}
+
+function isEven(num) {
+    return num % 2 === 0;
+}
+
+document.getElementById("Q1").innerHTML = "Add function (1+2): " + add(1, 2) + "<br>Even check function (7): " + isEven(7);
+```
+- Open the  `wk26.html` HTML file and ensure the contents are displaying correctly.
+- Next, read the arrow function reference page (above).
+- Lastly, rewrite the `add()` function and the `isEven()` function to be arrow functions.
 - Save the file, and check if your code is displaying the unordered list with the fruit item.
 
-### Question 3 - Using HTML DOM to Find an Object
-- *W3 Schools Reference: https://www.w3schools.com/js/js_htmldom_document.asp*
+### Question 2 - 
+- *W3 Schools Reference: https://www.w3schools.com/js/js_arrow_function.asp*
   - *HTML*
-- Open your HTML file; `wk25.html`.
-- Add another empty heading #2 `<h2>` element, with the text "Current Page URL:"
-- Next, add a new paragraph `<p>` element, with the ID set to `Q3`.
+- Create a new HTML file or copy one of your website HTML files, and name it `wk26.html`.
+- Add a `body` element and a `paragraph` element within.
+- Have the `body` element point to `id="Q1"`.
+- Add a `script` element within the `body` element, below the `paragraph` element.
+- Have the `script` element point to `src="wk26.js"`. 
 - Save the HTML file.
   - *JavaScript*
-- Open your JavaScript file; `wk25.js`.
-- Within the file, initialize a new variable called `currentURL`.
-- Use the DOM reference page (above) to set `currentURL` equal to the current HTML document URL.
-- Next, use DOM to *get* your `Q3` element by ID, and then use the `textContent` command to display `currentURL`.
-- Save the file, and check if your code is displaying the URL path for your HTML file.
+- Create a new JavaScript file, name it `wk26.js`, and open it.
+- Within the JavaScript file, you can copy the following javascript code:
+- Open the  `wk26.html` HTML file and ensure the contents are displaying correctly.
+- Next, read the arrow function reference page (above).
+- Lastly, rewrite the `add()` function and the `isEven()` function to be arrow functions.
+- Save the file, and check if your code is displaying the unordered list with the fruit item.
 
 ## AWS
 
