@@ -1,4 +1,4 @@
-**`Week 26 - JavaScript Arrow Functions; AWS Trusted Advisor`**
+**`Week 26 - JavaScript Arrow Functions & Performance Testing; AWS Trusted Advisor`**
 
 ## JavaScript
 
