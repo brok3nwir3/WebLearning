@@ -23,5 +23,5 @@
 ### Walk-through Guide/s
 - The following example guide can be used for this project:
 - https://www.freecodecamp.org/news/how-to-launch-a-site-on-aws-for-free-in-15-minutes-7b3ce5d8d053/
-- Also, this additional guide can be used for creating a DNS A record for a static website located in an S3 bucket.
+- Also, this additional guide can be used for creating a DNS A record for a static website located in an S3 bucket:
 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/RoutingToS3Bucket.html
