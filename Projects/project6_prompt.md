@@ -1,6 +1,6 @@
 **`Project 6 - AWS Static Website, Continued`**
 
-### Adding to the Static Website
+### Enhancing Your Static Website
 - For this project, we will be expanding on the static website created for Project 6.
 
 ### Requirements (100pts)
