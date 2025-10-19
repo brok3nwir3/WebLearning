@@ -95,6 +95,11 @@ $(document).ready(function() {
 - Question 2 - JavaScript
 ```js
 $(document).ready(function() {
+  var myElements = $("#Q1");
+  $("#demo").text("The text from the Q1 paragraph element is: " + myElements[0].innerHTML);
+});
+
+$(document).ready(function() {
   $("#Q2").html("<p>Text Overwritten!</p>");
 });
 ```
