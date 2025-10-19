@@ -1,67 +1,50 @@
-**`Week 27 - JavaScript TBD; AWS TBD`**
+**`Week 27 - JavaScript JQuery; AWS TBD`**
 
 ## JavaScript
 
-### Question 1 - Using Arrow Functions
-- *W3 Schools Reference: https://www.w3schools.com/js/js_arrow_function.asp*
-- *Arrow functions are sometimes shorter and quicker to write, than a typical function.*
+### Question 1 - JQuery Find Element by ID
+- *W3 Schools Reference: https://www.w3schools.com/js/js_jquery_selectors.asp*
+- *JQuery offers several benefits when working with JavaScript, including concise code and improved browser compatibility.*
   - *HTML*
-- Create a new HTML file or copy one of your website HTML files, and name it `wk26.html`.
-- Add a `body` element and a `paragraph` element within.
-- Have the `body` element point to `id="Q1"`.
-- Add a `script` element within the `body` element, below the `paragraph` element.
-- Have the `script` element point to `src="wk26.js"`. 
+- Create a new HTML file or copy one of your website HTML files, and name it `wk27.html`.
+- At the top of your document, before the `body` element, create a `head` element.
+- Within `head` element, add an empty `script` element pointing to: `src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"`
+- Below the `head` element, add a `body` element and two `paragraph` elements within.
+- Have the first `paragraph` element filled with text `Hello world!` and set the ID to `id="Q1"`.
+- Have the second `paragraph` element empty and set the ID to `id="demo"`.
+- Next, add a `script` element at the bottom of the `body` element, below the `paragraph` elements.
+- Have the `script` element empty and set the soruce to `src="wk26.js"`.
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk26.js`, and open it.
+- Create a new JavaScript file, name it `wk27.js`, and open it.
 - Within the JavaScript file, you can copy the following javascript code:
 ```
-function add(a, b) {
-    return a + b;
-}
-
-function isEven(num) {
-    return num % 2 === 0;
-}
-
-document.getElementById("Q1").innerHTML = "Add function (1+2): " + add(1, 2) + "<br>Even check function (7): " + isEven(7);
+$(document).ready(function() {
+  var myElements = $("#Q1");
+  $("#demo").text("The text from the Q1 paragraph element is: " + myElements[0].innerHTML);
+});
 ```
-- Open the  `wk26.html` HTML file and ensure the contents are displaying correctly.
-- Next, read the arrow function reference page (above).
-- Lastly, rewrite the `add()` function and the `isEven()` function to be arrow functions.
-- Save the file, and check if your code is displaying the unordered list with the fruit item.
+- Save the file, and open it in your browser.
+- Check if your code is correctly displaying *two* lines of text.
+- Discuss with a classmate how jQuery simplifies the process of accessing HTML elements.
 
-### Question 2 - JavaScript Performance
-- *W3 Schools Reference: https://www.w3schools.com/js/js_performance.asp*
-- *Given the same program can be written many ways, it's important to run performance tests on your programs.*
+### Question 2 - JQuery Set HTML Content
+- *W3 Schools Reference: https://www.w3schools.com/js/js_jquery_elements.asp*
   - *HTML*
-- No changes required.
+- Open your `wk27.html` file.
+- Below your empty second `paragraph` that's set to `id="demo"` create a new `paragraph` element.
+- Fill the new `paragraph` element with the text `Text to replace.` and set the ID to `id="Q2"`.
+- Save the HTML file.
   - *JavaScript*
-- Open your `wk26.js` file, and copy the following javascript code:
+- Open your `wk27.js` file, and copy the following javascript code:
 ```
-// Timing the for loop
-console.time("For Loop Time");
-let sum1 = 0;
-for (let i = 1; i <= 1000000; i++) {
-    sum1 += i;
-}
-console.timeEnd("For Loop Time"); // Outputs the time taken for the for loop
-
-// Timing the while loop
-console.time("While Loop Time");
-let sum2 = 0;
-let i = 1;
-while (i <= 1000000) {
-    sum2 += i;
-    i++;
-}
-console.timeEnd("While Loop Time"); // Outputs the time taken for the while loop
+$(document).ready(function() {
+  $("#Q2").html("<p>Text overwritten!</p>");
+});
 ```
-- Save the file, and then launch the HTML file in a new browser tab.
-- Open the developer console and review the performance times.
-- Next, add a zero to the number of iteractions both the loops use (1,000,000 > 10,000,000).
-- Refresh the webpage and check the console output again.
-- Discuss your findings with a classmate.
+- Save the file, and open it in your browser.
+- Check if your code is correctly displaying the replacement line of text.
+- Discuss with a classmate how jQuery simplifies the process of manipulating HTML elements.
 
 ## AWS
 
