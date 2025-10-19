@@ -11,7 +11,7 @@
 - Use AWS Certificate Manager and CloudFront to setup an SSL certificate for your domain.
 
 ### Bonus Points (0pts)
-- N/A
+- Add a `robots.txt` file to your website.
 
 ### Expectations
 - Each person in the class will demonstrate their project.
