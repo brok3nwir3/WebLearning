@@ -49,7 +49,7 @@ Scroll down for the answers.
 \
 \
 
-- Question 1
+- Question 1 - HTML
 ```html
 <!DOCTYPE html>
 <html>
