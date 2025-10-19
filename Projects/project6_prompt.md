@@ -4,7 +4,7 @@
 - For this project, we will be expanding on the static website created for Project 6.
 
 ### Requirements (100pts)
-- Create a second S3 bucket to ensure request are handled for both your root domain (example.com) and subdomain (www.example.com).
+- Create a second S3 bucket to ensure requests are handled for both your root domain ([example.com](http://example.com)) and subdomain ([www.example.com](http://www.example.com)).
 - Configure your subdomain bucket for website redirects to your root domain bucket.
 - Add a Route53 alias record for your subdomain.
 - Create a third S3 bucket for logging server traffic logs, and enable logging; with a retention of 30 days.
