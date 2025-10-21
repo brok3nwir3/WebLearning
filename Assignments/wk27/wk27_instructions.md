@@ -1,4 +1,4 @@
-**`Week 27 - JavaScript JQuery; AWS TBD`**
+**`Week 27 - JavaScript JQuery; AWS Aurora`**
 
 ## JavaScript
 
@@ -48,36 +48,84 @@ $(document).ready(function() {
 
 ## AWS
 
-### Trusted Advisor Prerequisites
-- Start by logging into your AWS account and navigating the to "EC2" dashboard.
-- Click the "Security Groups" tab (left of screen).
-- First, create a new security group named "outbound-allow-all".
-- Add a new outbound rule to the security group that allows all traffic outbound (Type: All Traffic, Destination: 0.0.0.0/0).
-- Second, create a new security group named "inbound-allow-ssh".
-- Add a new inbound rule to the security group that allows SSH traffic inbound (Type: SSH, Source: 0.0.0.0/0).
-- Next, start the process of launching a new EC2 instance.
-- Name the instance "insecure-test-ec2" and set the security group to "inbound-allow-ssh".
-- Leave all other settings to their defaults, and launch the instance.
+### Create an Aurora Database
+- *Note: Aurora is Amazon's proprietary database.*
+- Navigate to "Aurora and RDS", using the search bar.
+- Click the "Create database" button.
+- For *Engine*, select "Aurora (MySQL-compatible)".
+- For *Template*, select "Dev/Test".
+- Set the *DB Cluster Identifier* to `coding-hour-database`
+- Under "Instance Configuration" choose the *Serverless* option (for simplicity and cost management).
+- Set the "Capacity Range" to a minimum of `1 ACU` and a maxiumum of `10 ACUs`.
+- Leave all other options to their defaults, and scroll to the bottom of the screen.
+- Click "Create database".
+- *Note: The default settings will set your username to `admin` and create an AWS Secrets Manager entry for your password.*
+- This creation process may take a few minutes to complete.
+- Once the database has been created, review your database details, and proceed to the next step.
 
-### Trusted Advisor Recommendations
-- *Note: Trusted Advisor is an AWS administractive and reporting service that lets you identify potential account or resource issues.*
-- Navigate to the "Trusted Advisor" dashboard.
-- Review the "Recommendations" tab, and look for a red "Action recommended" item; and if needed, click "Refresh all checks".
-- Eventually you should see a recommendation titled "Security Groups - Specific Ports Unrestricted".
-- Click the "Info" button next to the "Actions recommended;" this will display a detailed explanation of the issue.
-- Within the detailed explanation you should see any problematic resources listed (the "inbound-allow-ssh" security group in this case).
-- To fix the issue, return to your "insecure-ec2-test" instance, then select "Actions" > "Security" > "Change security groups".
-- Remove the "inbound-allow-ssh" security group, and then add the "outbound-allow-all" security group.
-- Next, return to the "Security Groups" tab within the EC2 page.
-- Find the "inbound-allow-ssh" security group and delete it.
-- Lastly, return to the Trusted Advisor page, and ensure the problematic resource is no longer listed.
+### Aurora Configuration
+- Navigate to "Aurora and RDS", using the search bar.
+- Select the "Databases" tab (left side of screen).
+- Select your database cluster, click the "Actions" drop-down, and then click "Enable Data API".
+- In a new browser tab open "Secrets Manager".
+- Click the Secrets Manager entry for your database.
+- Copy the "Secrets ARN to clipboard" and return to the previous browser tab.
+- Next, select the "Query editor" tab (left side of screen).
+- You should see a pop-up appear to configure login information.
+- Select your `coding-hour-database` cluster.
+- For "username" select the drop-down option "Connect with a Secrets Manager ARN".
+- In the "Secrets manager ARN" section paste your clipboard contents.
+- Lastly, click "Connect to database" and proceed to the next step.
 
-### Trusted Advisor Service Limits
-- Navigate to the "Trusted Advisor" dashboard.
-- Click the "Service limits" tab (on the left).
-- Scroll through the page, and review the service limits that AWS automatically set for your account.
-- Identify the service limits for IAM Users, EC2 On-Demand Instances, and VPC.
-- Discuss your findings with a classmate.
+### Test the Aurora Database
+- You should be on the "Query Editor" panel, but if not, click the "Query Editor" (left side of screen).
+- *Note: The query editor lets you run database commands over HTTPS and uses the Data API enabled earlier.*
+- Next we will run a series of commands to test the Aurora database.
+- As you run each command, check the output section.
+- 1st command (Create a Database):
+```
+CREATE DATABASE studentDB;
+USE studentDB;
+```
+- 2nd command (Create a Table):
+```
+USE studentDB;
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    major VARCHAR(50)
+);
+```
+- 3rd command (Insert Data):
+```
+USE studentDB;
+INSERT INTO students (name, age, major)
+VALUES ('Alice', 22, 'Computer Science'),
+       ('Bob', 23, 'Engineering'),
+       ('Charlie', 20, 'Mathematics');
+```
+- 4th command (Query the Data):
+```
+USE studentDB;
+SELECT * FROM students;
+```
+- 5th command (Perform an Update):
+```
+USE studentDB;
+UPDATE students
+SET age = 23
+WHERE name = 'Alice';
+
+```
+- 6th command (Perform a Delete):
+```
+USE studentDB;
+DELETE FROM students
+WHERE name = 'Charlie';
+
+```
+- Once you've finished, discuss your experience with a classmate.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
