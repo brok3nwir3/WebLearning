@@ -3,15 +3,16 @@
 ### Enhancing Your Static Website
 - For this project, we will be expanding on the static website created for Project 6.
 
-### Requirements (100pts)
+### Requirements (90pts)
 - Create a second S3 bucket to ensure requests are handled for both your root domain ([example.com](http://example.com)) and subdomain ([www.example.com](http://www.example.com)).
 - Configure your subdomain bucket for website redirects to your root domain bucket.
 - Add a Route53 alias record for your subdomain.
 - Create a third S3 bucket for logging server traffic logs, and enable logging; with a retention of 30 days.
 - Use AWS Certificate Manager and CloudFront to setup an SSL certificate for your domain.
 
-### Bonus Points (0pts)
+### Bonus Points (10pts)
 - Add a `robots.txt` file to your website.
+- Create a CloudFormation template for your infrastructure.
 
 ### Expectations
 - Each person in the class will demonstrate their project.
