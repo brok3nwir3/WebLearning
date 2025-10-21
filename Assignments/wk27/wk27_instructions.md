@@ -116,14 +116,12 @@ USE studentDB;
 UPDATE students
 SET age = 23
 WHERE name = 'Alice';
-
 ```
 - 6th command (Perform a Delete):
 ```
 USE studentDB;
 DELETE FROM students
 WHERE name = 'Charlie';
-
 ```
 - Once you've finished, discuss your experience with a classmate.
 
