@@ -1,4 +1,4 @@
-**`Week 27 - JavaScript JQuery; AWS Aurora`**
+**`Week 27 - JavaScript JQuery; AWS Aurora & Secrets Manager`**
 
 ## JavaScript
 
