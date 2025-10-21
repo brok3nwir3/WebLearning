@@ -49,7 +49,7 @@ $(document).ready(function() {
 ## AWS
 
 ### Create an Aurora Database
-- *Note: Aurora is Amazon's proprietary database.*
+- *Note: Aurora is Amazon's proprietary relational database service that is designed to offer high performance, scalability, and availability.*
 - Navigate to "Aurora and RDS", using the search bar.
 - Click the "Create database" button.
 - For *Engine*, select "Aurora (MySQL-compatible)".
