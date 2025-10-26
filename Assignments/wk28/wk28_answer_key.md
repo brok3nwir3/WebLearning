@@ -55,7 +55,7 @@ Scroll down for the answers.
 <html>
 <body>
     <p id="Q1"></p>
-    <script src="wk13.js"></script>
+    <script src="wk28.js"></script>
 </body>
 </html>
 ```
@@ -79,28 +79,33 @@ document.getElementById("Q1").innerHTML =
 ```html
 <!DOCTYPE html>
 <html>
-
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-
 <body>
-<p id="Q1">Hello World!</p>
-<p id="demo"></p>
-<p id="Q2">Text to replace.</p>
-<script src="wk13.js"></script>
+    <p id="Q1"></p>
+    <p id="Q2"></p>
+    <script src="wk28.js"></script>
 </body>
-
 </html>
 ```
 - Question 2 - JavaScript
 ```js
-$(document).ready(function() {
-  var myElements = $("#Q1");
-  $("#demo").text("The text from the Q1 paragraph element is: " + myElements[0].innerHTML);
-});
+class Seagull {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  squawk() {
+    return this.name + " says: 'Squawk!'";
+  }
+}
 
-$(document).ready(function() {
-  $("#Q2").html("<p>Text Overwritten!</p>");
-});
+const seagull1 = new Seagull("Sally", 1);
+const seagull2 = new Seagull("Alfred", 4);
+
+document.getElementById("Q1").innerHTML =
+"The seagulls are named " + seagull1.name + " and " + seagull2.name + ".";
+
+document.getElementById("Q2").innerHTML =
+  "You pet the seagulls." + "<br>" +
+  seagull1.squawk() + "<br>" +
+  seagull2.squawk();
 ```
