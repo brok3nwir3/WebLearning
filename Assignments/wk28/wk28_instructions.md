@@ -2,13 +2,11 @@
 
 ## JavaScript
 
-### Question 1 - JQuery Find Element by ID
-- *W3 Schools Reference: https://www.w3schools.com/js/js_jquery_selectors.asp*
-- *JQuery offers several benefits when working with JavaScript, including concise code and improved browser compatibility.*
+### Question 1 - Working w/ Classes
+- *W3 Schools Reference: https://www.w3schools.com/js/js_classes.asp*
+- *Note: A JavaScript class is not an object; It's a template for JavaScript objects.*
   - *HTML*
-- Create a new HTML file or copy one of your website HTML files, and name it `wk27.html`.
-- At the top of your document, before the `body` element, create a `head` element.
-- Within `head` element, add an empty `script` element pointing to: `src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"`
+- Create a new HTML file or copy one of your website HTML files, and name it `wk28.html`.
 - Below the `head` element, add a `body` element and two `paragraph` elements within.
 - Have the first `paragraph` element filled with text `Hello world!` and set the ID to `id="Q1"`.
 - Have the second `paragraph` element empty and set the ID to `id="demo"`.
