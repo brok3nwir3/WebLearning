@@ -14,7 +14,7 @@
 - Save the HTML file.
   - *JavaScript*
 - Create a new JavaScript file, name it `wk26.js`, and open it.
-- Within the JavaScript file, you can copy the following javascript code:
+- Within the JavaScript file, you can copy the following JavaScript code:
 ```
 function add(a, b) {
     return a + b;
