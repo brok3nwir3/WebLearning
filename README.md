@@ -11,7 +11,7 @@ Open the [Assignments](https://github.com/brok3nwir3/WebLearning/tree/main/Assig
 _Note: Your code might have some differences from the official answers for assignments or projects. This is normal and expected due to the many options for solving coding problems. As long as your code achieves the same end goal, it is considered correct._
 
 ## Textbook
-The AWS portions of this course build on the material covered in, "AWS Certified Solutions Architect Study Guide" by Ben Piper and David Clinton [textbook link](https://a.co/d/1GcSBtC). While the textbook is not required, it will provide detailed explanations for the topics covered in the course exercises. 
+The AWS portions of this course build on the material covered in, "AWS Certified Solutions Architect Study Guide" by Ben Piper and David Clinton [(link)](https://a.co/d/1GcSBtC). While the textbook is not required, it will provide detailed explanations for the topics covered in the course exercises. 
 
 ## Setup
  1. Install an interactive development environment (IDE), such as [Visual Studio Code](https://code.visualstudio.com/download). ...Psst! It's free to download/use!
