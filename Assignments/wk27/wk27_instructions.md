@@ -13,7 +13,7 @@
 - Have the first `paragraph` element filled with text `Hello world!` and set the ID to `id="Q1"`.
 - Have the second `paragraph` element empty and set the ID to `id="demo"`.
 - Next, add a `script` element at the bottom of the `body` element, below the `paragraph` elements.
-- Have the `script` element empty and set the soruce to `src="wk26.js"`.
+- Have the `script` element empty and set the source to `src="wk26.js"`.
 - Save the HTML file.
   - *JavaScript*
 - Create a new JavaScript file, name it `wk27.js`, and open it.
