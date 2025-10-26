@@ -45,7 +45,7 @@ Alfred says: 'Squawk!'"
 
 ## AWS
 
-### Create an Aurora Database
+### WIP
 - *Note: Aurora is Amazon's proprietary relational database service that is designed to offer high performance, scalability, and availability.*
 - Navigate to "Aurora and RDS", using the search bar.
 - Click the "Create database" button.
@@ -60,8 +60,8 @@ Alfred says: 'Squawk!'"
 - This creation process may take a few minutes to complete.
 - Once the database has been created, review your database details, and proceed to the next step.
 
-### Aurora Configuration
-- N
+### WIP
+- WIP
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
