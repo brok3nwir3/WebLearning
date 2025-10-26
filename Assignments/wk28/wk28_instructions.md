@@ -1,4 +1,4 @@
-**`Week 28 - JavaScript Classes; AWS EventBridge`**
+**`Week 28 - JavaScript Classes & Class Methods; AWS EventBridge`**
 
 ## JavaScript
 
@@ -23,23 +23,25 @@
 - Save the file, and open it in your browser.
 - Check if your code is correctly displaying the names successfully.
 
-### Question 2 - JQuery Set HTML Content
-- *W3 Schools Reference: https://www.w3schools.com/js/js_jquery_elements.asp*
+### Question 2 - Additional Class Methods
+- *W3 Schools Reference: https://www.w3schools.com/js/js_classes.asp*
   - *HTML*
-- Open your `wk27.html` file.
-- Below your empty second `paragraph` that's set to `id="demo"` create a new `paragraph` element.
-- Fill the new `paragraph` element with the text `Text to replace.` and set the ID to `id="Q2"`.
+- Open your `wk28.html` file.
+- Add a second `paragraph` element below your first one, with the ID set to `id="Q2"`.
 - Save the HTML file.
   - *JavaScript*
-- Open your `wk27.js` file, and copy the following javascript code:
+- Open your `wk28.js` file.
+- Within the JavaScript file, update your `Seagull` class to include a new method called `squawk`.
+- The new method should return the given seagulls name, plus `" says: 'Squawk!'"`.
+- Lastly, add a getElementById statement that populates the `Q2` ID.
+- The Q2 text should  produce the following output...
 ```
-$(document).ready(function() {
-  $("#Q2").html("<p>Text overwritten!</p>");
-});
+"You pet the seagulls.
+Sally says: 'Squawk!'
+Alfred says: 'Squawk!'"
 ```
 - Save the file, and open it in your browser.
-- Check if your code is correctly displaying the replacement line of text.
-- Discuss with a classmate how jQuery simplifies the process of manipulating HTML elements.
+- Check whether your code is correctly displaying the text.
 
 ## AWS
 
