@@ -7,24 +7,21 @@
 - *Note: A JavaScript class is not an object; It's a template for JavaScript objects.*
   - *HTML*
 - Create a new HTML file or copy one of your website HTML files, and name it `wk28.html`.
-- Below the `head` element, add a `body` element and two `paragraph` elements within.
-- Have the first `paragraph` element filled with text `Hello world!` and set the ID to `id="Q1"`.
-- Have the second `paragraph` element empty and set the ID to `id="demo"`.
-- Next, add a `script` element at the bottom of the `body` element, below the `paragraph` elements.
-- Have the `script` element empty and set the soruce to `src="wk26.js"`.
+- Add a `body` element and a `paragraph` element within.
+- Have the `paragraph` element set the ID to `id="Q1"`.
+- Next, add a `script` element at the bottom of the `body` element, below the `paragraph` element.
+- Have the `script` element empty and set the source to `src="wk28.js"`.
 - Save the HTML file.
   - *JavaScript*
-- Create a new JavaScript file, name it `wk27.js`, and open it.
-- Within the JavaScript file, you can copy the following javascript code:
-```
-$(document).ready(function() {
-  var myElements = $("#Q1");
-  $("#demo").text("The text from the Q1 paragraph element is: " + myElements[0].innerHTML);
-});
-```
+- Create a new JavaScript file, name it `wk28.js`, and open it.
+- Within the JavaScript file, create a new class called `Seagull`.
+- Create a constructor within the class, which includes properties `name` and `age`.
+- Next, use the constructor to create `seagull1` and `seagull2`.
+- For `seagull1` set the name to "Sally" and the age to "1".
+- For `seagull2` set the name to "Alfred" and the age to "4".
+- Lastly, add a getElementById statement to display the names of *both* seagull objects.
 - Save the file, and open it in your browser.
-- Check if your code is correctly displaying *two* lines of text.
-- Discuss with a classmate how jQuery simplifies the process of accessing HTML elements.
+- Check if your code is correctly displaying the names successfully.
 
 ### Question 2 - JQuery Set HTML Content
 - *W3 Schools Reference: https://www.w3schools.com/js/js_jquery_elements.asp*
