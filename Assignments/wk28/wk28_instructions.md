@@ -45,23 +45,56 @@ Alfred says: 'Squawk!'"
 
 ## AWS
 
-### WIP
-- *Note: Aurora is Amazon's proprietary relational database service that is designed to offer high performance, scalability, and availability.*
-- Navigate to "Aurora and RDS", using the search bar.
-- Click the "Create database" button.
-- For *Engine*, select "Aurora (MySQL-compatible)".
-- For *Template*, select "Dev/Test".
-- Set the *DB Cluster Identifier* to `coding-hour-database`
-- Under "Instance Configuration" choose the *Serverless* option (for simplicity and cost management).
-- Set the "Capacity Range" to a minimum of `1 ACU` and a maxiumum of `10 ACUs`.
-- Leave all other options to their defaults, and scroll to the bottom of the screen.
-- Click "Create database".
-- *Note: The default settings will set your username to `admin` and create an AWS Secrets Manager entry for your password.*
-- This creation process may take a few minutes to complete.
-- Once the database has been created, review your database details, and proceed to the next step.
+### EventBridge Prep
+- First start by reading the short AWS documenation regarding EventBridge, here...
+- *https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html*
+- Next, login to AWS and navigate to the S3 page.
+- Click on "Create bucket".
+- Name the bucket `eventbridge-test-bucket-123123`, you'll need to append slightly different numbers to be globally unique.
+- Leave all other bucket settings as default, and click "Create bucket".
+- Next, navigate to the Lambda service page in the AWS console.
+- Click on Create function, and choose "Author from scratch".
+- Set the function name to `test-S3-event-handler`.
+- For runtime select the latest version of Python.
+- Click "Create function".
+- After the function is created, scroll down to the "Code" tab, and paste in the following code...
+```
+import json
 
-### WIP
-- WIP
+def lambda_handler(event, context):
+    print("Event received:", json.dumps(event, indent=2))
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Event processed successfully!')
+    }
+```
+- Lastly, click the "Deploy" button.
+
+### EventBridge Rule
+- Start by navigating to the EventBridge service in the AWS console.
+- Click on "Rules" on the left panel (under "Buses").
+- Click the "Create rule" button.
+- Name the rule `s3-object-upload-rule` and click "Next".
+- Under "Build event pattern", select "Custom event pattern".
+- Copy the following pattern to match S3 object uploads...
+```
+{
+  "source": ["aws.s3"],
+  "detail-type": ["AWS API Call via CloudTrail"],
+  "detail": {
+    "eventSource": ["s3.amazonaws.com"],
+    "eventName": ["PutObject"]
+  }
+}
+```
+- Click "Next" to move to the "Target" section.
+- Select "Lambda function" from the target drop-down menu.
+- Choose the function created earlier: `test-S3-event-handler`.
+- Click "Next" and "Create rule".
+- Next, return to your S3 bucket.
+- Click on the "Upload" button, and upload any small file.
+- Lastly, return to the "Monitor" tab of your Lambda function.
+- Check the CloudWatch Logs to see if the event was processed successfully.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
