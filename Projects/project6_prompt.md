@@ -11,6 +11,7 @@
 - Use AWS Certificate Manager and CloudFront to setup an SSL certificate for your domain.
 
 ### Bonus Points (10pts)
+- Create a Lifecycle rule for your server logging bucket.
 - Add a `robots.txt` file to your website.
 - Create a CloudFormation template for your infrastructure.
 
