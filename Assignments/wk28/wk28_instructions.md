@@ -93,7 +93,7 @@ def lambda_handler(event, context):
 - Click "Next" and "Create rule".
 - Lastly, return to your S3 bucket to perform a test.
 - Click on the "Upload" button, and upload any small file.
-- Return to the "Monitor" tab of your Lambda function.
+- Next, return to the "Monitor" tab of your Lambda function.
 - Check the CloudWatch Logs to see if the event was processed successfully.
 
 ## Important Note
