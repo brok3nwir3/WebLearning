@@ -91,10 +91,32 @@ def lambda_handler(event, context):
 - Select "Lambda function" from the target drop-down menu.
 - Choose the function created earlier: `test-S3-event-handler`.
 - Click "Next" and "Create rule".
-- Lastly, return to your S3 bucket to perform a test.
-- Click on the "Upload" button, and upload any small file.
-- Next, return to the "Monitor" tab of your Lambda function.
-- Check the CloudWatch Logs to see if the event was processed successfully.
+
+### Testing the EventBridge Rule
+- *Note: For simplicity we will only test that the Lambda function is working.*
+- Return to lambda function.
+- Click the "Test" tab.
+- Paste in the following test event JSON...
+```
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "eventbridge-test-bucket-321321"
+        },
+        "object": {
+          "key": "test-file.txt"
+        }
+      }
+    }
+  ]
+}
+```
+- Next, click the "Test" button.
+- Switch to the "Monitor" tab, and click the link to "View CloudWatch Logs".
+- If the test was successful, you should be taken to the log events for a newly created Log Group.
+- Lastly, you should be able to identify "Event received..." and "test-file.txt" in the log events.
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
