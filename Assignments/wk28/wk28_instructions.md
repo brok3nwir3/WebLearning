@@ -91,9 +91,9 @@ def lambda_handler(event, context):
 - Select "Lambda function" from the target drop-down menu.
 - Choose the function created earlier: `test-S3-event-handler`.
 - Click "Next" and "Create rule".
-- Next, return to your S3 bucket.
+- Lastly, return to your S3 bucket to perform a test.
 - Click on the "Upload" button, and upload any small file.
-- Lastly, return to the "Monitor" tab of your Lambda function.
+- Return to the "Monitor" tab of your Lambda function.
 - Check the CloudWatch Logs to see if the event was processed successfully.
 
 ## Important Note
