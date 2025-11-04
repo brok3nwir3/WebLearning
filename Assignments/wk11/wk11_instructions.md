@@ -1,4 +1,4 @@
-**`Week 11 - Quiz and Project 2`**
+**`Week 11 - Quiz #2 and Project #2`**
 
 ## Quiz
 - Take the week 11 quiz (in the Quizzes & Tests folder).
