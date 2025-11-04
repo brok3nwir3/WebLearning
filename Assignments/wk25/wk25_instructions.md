@@ -101,7 +101,3 @@
 
 ## Important Note
 - Ensure you disable or delete all newly created test/lab resources.
-
-## Project 5
-- Read through the `project5_prompt.md` file (in the Projects folder).
-- Use the remaining class time to start working on your project.
