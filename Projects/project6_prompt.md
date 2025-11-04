@@ -5,13 +5,15 @@
 
 ### Requirements (90pts)
 - Create a second S3 bucket to ensure requests are handled for both your root domain ([example.com](http://example.com)) and subdomain ([www.example.com](http://www.example.com)).
-- Configure your subdomain bucket for website redirects to your root domain bucket.
-- Add a Route53 alias record for your subdomain.
-- Create a third S3 bucket for logging server traffic logs, and enable logging; with a retention of 30 days.
-- Use AWS Certificate Manager and CloudFront to setup an SSL certificate for your domain.
+- Configure your subdomain bucket for website redirects to your root domain bucket (refer to the guide below).
+- Add a Route 53 alias record for your subdomain.
+- Create a third S3 bucket for logging server traffic logs, and enable logging.
+- Use AWS Certificate Manager to request a new public certificate for your domain name.
+- Create a new CloudFront distribution for your domain, pointed at your S3 bucket, and utilizing your public certificate.
+- Lastly, update your Route 53 DNS records to point to your CloudFront distribution, via your distribution General Tab.
 
 ### Bonus Points (10pts)
-- Create a Lifecycle rule for your server logging bucket.
+- Create a Lifecycle rule for your server logging bucket (i.e. delete logs older than 30 days).
 - Add a `robots.txt` file to your website.
 - Create a CloudFormation template for your infrastructure.
 
