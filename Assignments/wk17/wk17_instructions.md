@@ -1,4 +1,4 @@
-**`Week 17 - Quiz and Project 3`**
+**`Week 17 - Quiz #3 and Project #3`**
 
 ## Quiz
 - Take the week 17 quiz (in the Quizzes & Tests folder).
