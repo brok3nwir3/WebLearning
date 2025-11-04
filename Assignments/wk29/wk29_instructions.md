@@ -1,4 +1,4 @@
-**`Week 29 - Quiz `**
+**`Week 29 - Quiz and Project 6`**
 
 ## Quiz
 - Take the week 29 quiz (in the Quizzes & Tests folder).
