@@ -1,4 +1,4 @@
-**`Week 23 - Quiz and Project 4`**
+**`Week 23 - Quiz #4 and Project #4`**
 
 ## Quiz
 - Take the week 23 quiz (in the Quizzes & Tests folder).
