@@ -1,4 +1,4 @@
-**`Project 5 - AWS Static Website, Part 1`**
+**`Project 5 - AWS Static Website, Pt. 1`**
 
 ### A Simple Static Website
 - For this project, we will be creating a static website using AWS, plus previous work from this course.
