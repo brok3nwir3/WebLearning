@@ -3,6 +3,7 @@
 ## AWS Flashcard Quiz
 - Use the following link to review the flashcards for the AWS Certified Solutions Architect Associate exam:
 - [SAA-C03 Flashcards](https://quizlet.com/1081955227/aws-solutions-architect-associate-saa-c03-flash-cards/?x=1jqt)
+- Note: These flashcards should still be helpful for future exam versions.
 - Study for 30 minutes, and be sure to "star" questions you miss for later review.
 - Be sure to bookmark the flashcard set, and continue using it to aid your studying.
 - Once you've finished, move on to the project below.
