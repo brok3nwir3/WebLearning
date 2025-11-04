@@ -1,4 +1,4 @@
-**`Week 17 - Quiz `**
+**`Week 17 - Quiz and Project 3`**
 
 ## Quiz
 - Take the week 17 quiz (in the Quizzes & Tests folder).
@@ -8,4 +8,3 @@
 ## Project 3
 - Read through the `project3_prompt.md` file (in the Projects folder).
 - Use the remaining class time to start working on your project.
-
