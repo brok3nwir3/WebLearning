@@ -1,4 +1,4 @@
-**`Week 6 - Quiz and Project 1`**
+**`Week 6 - Quiz #1 and Project #1`**
 
 ## Quiz
 - Take the week 6 quiz (in the Quizzes & Tests folder).
