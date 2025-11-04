@@ -1,4 +1,4 @@
-**`Project 6 - AWS Static Website, Part 2`**
+**`Project 6 - AWS Static Website, Pt. 2`**
 
 ### Enhancing Your Static Website
 - For this project, we will be expanding on the static website created for Project 6.
