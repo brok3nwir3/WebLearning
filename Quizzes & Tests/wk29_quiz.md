@@ -112,8 +112,8 @@ let l = arr.length; for (let i = 0; i < l; i++) {
 - C. `innerHTML`
 - D. `label`
 
-20. What is the primary advantage of using arrow functions in JavaScript?
-- A. They automatically bind `this` to the surrounding context.
-- B. They can be used as constructor functions.
-- C. They require a semicolon after the function definition.
-- D. They support the arguments object.
+20. What is a key benefit of using arrow functions in JavaScript?
+- A. They have their own `this` context.
+- B. They cannot be used as methods.
+- C. They are always more performant than regular functions.
+- D. They provide a concise syntax for writing functions.
