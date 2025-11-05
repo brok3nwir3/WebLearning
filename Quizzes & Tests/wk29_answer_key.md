@@ -68,4 +68,4 @@ Scroll down for the answers.
 17. C. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_htmldom_document1
 18. B. <- Textbook, Pg. 361
 19. C. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_htmldom_methods2
-20. A. <- https://www.w3schools.com/js/js_arrow_function.asp
+20. D. <- https://www.w3schools.com/js/js_arrow_function.asp
