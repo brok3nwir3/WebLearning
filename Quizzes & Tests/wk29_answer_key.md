@@ -55,7 +55,7 @@ Scroll down for the answers.
 4. B. <- https://www.w3schools.com/Js/exercise.asp?x=xrcise_classes1
 5. A. <- Textbook, Pg. 295
 6. D. <- Textbook, Pg. 298
-7. A. <- https://www.w3schools.com/js/js_performance.asp
+7. B. <- https://www.w3schools.com/js/js_performance.asp
 8. C. <- Textbook, Pg. 325
 9. A. <- https://www.w3schools.com/js/js_performance.asp
 10. C. <- Textbook, Pg. 326
